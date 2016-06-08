@@ -1,3 +1,50 @@
+GIT
+  remote: https://github.com/rspec/rspec-core.git
+  revision: bc1482605763cc16efa55c98b8da64a89c8ff5f9
+  branch: master
+  specs:
+    rspec-core (3.5.0.pre)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-expectations.git
+  revision: 56a7598fd870d2bcf385241c666d6ca0b9d17b21
+  branch: master
+  specs:
+    rspec-expectations (3.5.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-mocks.git
+  revision: 5ccf92597a6cfa3aca3d37ed29c0162ed3845a5e
+  branch: master
+  specs:
+    rspec-mocks (3.5.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-rails.git
+  revision: b019fdd96f46b325ef2ea3a1d82812bbbc706f4c
+  branch: master
+  specs:
+    rspec-rails (3.5.0.pre)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (= 3.5.0.pre)
+      rspec-expectations (= 3.5.0.pre)
+      rspec-mocks (= 3.5.0.pre)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-support.git
+  revision: 46055576b22461ca61ef41e4ceb370867753e517
+  branch: master
+  specs:
+    rspec-support (3.5.0.pre)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,6 +97,7 @@ GEM
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.10)
@@ -191,6 +239,11 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (>= 5.0.0.rc1, < 5.1)
   rails_12factor
+  rspec-core!
+  rspec-expectations!
+  rspec-mocks!
+  rspec-rails!
+  rspec-support!
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
