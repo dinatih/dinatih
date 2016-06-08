@@ -36,6 +36,7 @@ group :development, :test do
   %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
     gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
   end
+  gem 'rspec_junit_formatter', '0.2.2'
 end
 
 group :development do
