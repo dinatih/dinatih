@@ -24,7 +24,7 @@
 - Tests et Déploiement Continus
 
 ## Environnement local de développement
-```
+```sh
 # System tools
 http://brew.sh
 
@@ -37,7 +37,6 @@ brew cask install atom
 brew cask install github-desktop
 brew cask install google-chrome
 brew cask install iterm2
-brew cask install macdown
 
 # Ruby gems
 
@@ -89,11 +88,11 @@ npm install bootstrap
 - newrelic.com
 
 ### Continous Integration
-- circleci.com | travis-ci.org | codeship.com
+- circleci.com | travis-ci.org
 - browserstack.com
 
 ### Project management
-- pivotaltracker.com | trello.com
+- ~~pivotal,~~ github.com Issues
 - docs.google.com
 - gmail.com
 
@@ -107,12 +106,10 @@ Architecture centralisé sur serveur dedié, passenger, apache, mysql... mais to
 
 ## Saisirprudhommes.com
 3 ans
-
 - découverte de bootstrap
 
 ## Jobteaser.com
 2 ans
-
 - découverte de ruby on rails
 
 ## EPITECH / ETNA
@@ -123,7 +120,6 @@ Architecture centralisé sur serveur dedié, passenger, apache, mysql... mais to
 ---
 # Le projet
 ## Pourquoi app web et mobile ?
-
 serveur API et different clients
 ## Pourquoi open-source ?
 Pour debugger sans aide du support commercial.
@@ -135,37 +131,8 @@ MVC, open-source, *convention over configuration*, communauté, documentation
 Projet à taille humaine
 ## Pourquoi pas vous ?
 
-
-
 ---
 ## Matériel
-- MacBook 13"
+- MacBook 13" | 12"
 - Connexion internet
 - Smartphone
-
----
-
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
