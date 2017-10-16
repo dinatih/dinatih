@@ -32,11 +32,12 @@ http://brew.sh
 brew install git
 
 # Mac OS apps
-brew tap caskroom/cask
+brew install cask
 brew cask install atom
-brew cask install github-desktop
 brew cask install google-chrome
 brew cask install iterm2
+brew cask install spectacle
+brew cask install google-drive
 
 # Ruby gems
 
