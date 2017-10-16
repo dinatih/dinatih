@@ -31,13 +31,16 @@ http://brew.sh
 # Version Control System
 brew install git
 
+# Heroku
+brew install heroku/brew/heroku
+
 # Mac OS apps
 brew install cask
 brew cask install atom
 brew cask install google-chrome
+brew cask install google-drive
 brew cask install iterm2
 brew cask install spectacle
-brew cask install google-drive
 
 # Ruby gems
 
@@ -89,11 +92,11 @@ npm install bootstrap
 - newrelic.com
 
 ### Continous Integration
-- circleci.com | travis-ci.org
+- heroku-ci | circleci.com | travis-ci.org
 - browserstack.com
 
 ### Project management
-- ~~pivotal,~~ github.com Issues
+- ~~pivotal,~~ github.com: Issues, Projects
 - docs.google.com
 - gmail.com
 
@@ -136,4 +139,4 @@ Projet à taille humaine
 ## Matériel
 - MacBook 13" | 12"
 - Connexion internet
-- Smartphone
+- Iphone
