@@ -87,18 +87,21 @@ npm install bootstrap
 
 ### Distributed plateform
 - heroku.com
-- cloud.google.com
+
+### Cloud Storage
+- Amazone S3
 
 ### Analytics
 - google.com/analytics
-- newrelic.com
+
+### Ruby monitoring
+- appsignal.com
 
 ### Continous Integration
-- heroku-ci | circleci.com | travis-ci.org
-- browserstack.com
+- heroku-ci
 
 ### Project management
-- ~~pivotal,~~ github.com: Issues, Projects
+- github.com: Issues, Projects
 - docs.google.com
 - gmail.com
 
@@ -139,6 +142,6 @@ Projet à taille humaine
 
 ---
 ## Matériel
-- MacBook 13" | 12"
+- MacBook 12"
 - Connexion internet
 - Iphone
