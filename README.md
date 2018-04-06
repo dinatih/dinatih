@@ -28,9 +28,6 @@
 # System tools
 http://brew.sh
 
-# Version Control System
-brew install git
-
 # Heroku
 brew install heroku/brew/heroku
 
@@ -43,6 +40,7 @@ brew cask install iterm2
 brew cask install psequel
 brew cask install slack
 brew cask install spectacle
+brew cask install yujitach-menumeters
 
 # Ruby gems
 
