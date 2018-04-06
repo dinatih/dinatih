@@ -37,6 +37,7 @@ brew cask install atom
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install iterm2
+brew cask install postgres
 brew cask install psequel
 brew cask install slack
 brew cask install spectacle
