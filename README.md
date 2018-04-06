@@ -21,18 +21,25 @@
 - Client Web / Serveur
 - Architecture Distribuée: 12factor.net
 - App Web et Mobile
-- Tests et Déploiement Continus
+- Tests et Déploiement Continu
 
 ## Environnement local de développement
-```sh
+<details>
+  <summary>Détails</summary>
+<p>
+
+```ruby
 # System tools
 http://brew.sh
 
-# Version Control System
-brew install git
-
 # Heroku
 brew install heroku/brew/heroku
+
+# Databases
+brew install postgresql
+brew services start postgresql
+brew install redis
+brew services start redis
 
 # Mac OS apps
 brew install cask
@@ -44,10 +51,13 @@ brew cask install psequel
 brew cask install slack
 brew cask install spectacle
 
-# Ruby gems
+# Node.js
+brew install nodejs
 
 # Ruby env
 # install rvm or rbenv
+
+# Ruby gems
 
 # Web server
 gem install puma
@@ -69,17 +79,17 @@ gem install rspec # or minitest
 gem install spring
 gem install capybara
 
-# Deployment tool
-gem install capistrano
-
 # Debugger
 gem install byebug
+
 # Static code analyzer
 gem install rubocop
 
 # Web packages
 npm install bootstrap
 ```
+</p>
+</details>
 
 ## Web Services
 ### CVS server
@@ -87,28 +97,37 @@ npm install bootstrap
 
 ### Distributed plateform
 - heroku.com
-- cloud.google.com
+
+### Cloud Storage
+- Amazone S3
 
 ### Analytics
 - google.com/analytics
-- newrelic.com
+
+### Ruby monitoring
+- appsignal.com
 
 ### Continous Integration
-- heroku-ci | circleci.com | travis-ci.org
-- browserstack.com
+- heroku-ci
 
 ### Project management
-- ~~pivotal,~~ github.com: Issues, Projects
+- github.com: Issues, Projects, Milestones
 - docs.google.com
 - gmail.com
 
 ---
 # Expériences
-5 ans d'experiences cummulées sur 2 start-up. En tant qu'unique développeur *full-stack* ruby on rails.
++ 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* ruby on rails.
 
 **Ancien** stack :
 
 Architecture centralisé sur serveur dedié, passenger, apache, mysql... mais tout ça c'est bien vieux maintenant...
+
+## Tracktor.fr
+1 ans 
+- découverte d'heroku
+
+### Tech4Team, Paycar.fr, Mooncard.co (1 ans)
 
 ## Saisirprudhommes.com
 3 ans
@@ -139,6 +158,6 @@ Projet à taille humaine
 
 ---
 ## Matériel
-- MacBook 13" | 12"
+- MacBook 13'3"
 - Connexion internet
 - Iphone
