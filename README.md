@@ -43,6 +43,7 @@ brew cask install psequel
 brew cask install slack
 brew cask install spectacle
 brew cask install yujitach-menumeters
+brew cask install gifcapture
 
 # Ruby gems
 
