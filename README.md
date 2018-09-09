@@ -31,24 +31,29 @@ http://brew.sh
 # Heroku
 brew install heroku/brew/heroku
 
+# Databases
+brew install postgresql
+brew services start postgresql
+brew install redis
+brew services start redis
+
 # Mac OS apps
 brew install cask
 brew cask install atom
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install iterm2
-brew cask install postgres
-brew services start postgresql
 brew cask install psequel
 brew cask install slack
 brew cask install spectacle
-brew cask install yujitach-menumeters
-brew cask install gifcapture
 
-# Ruby gems
+# Node.js
+brew install nodejs
 
 # Ruby env
 # install rvm or rbenv
+
+# Ruby gems
 
 # Web server
 gem install puma
@@ -70,11 +75,9 @@ gem install rspec # or minitest
 gem install spring
 gem install capybara
 
-# Deployment tool
-gem install capistrano
-
 # Debugger
 gem install byebug
+
 # Static code analyzer
 gem install rubocop
 
