@@ -24,7 +24,11 @@
 - Tests et Déploiement Continu
 
 ## Environnement local de développement
-```sh
+<details>
+  <summary>Détails</summary>
+<p>
+
+```ruby
 # System tools
 http://brew.sh
 
@@ -84,6 +88,8 @@ gem install rubocop
 # Web packages
 npm install bootstrap
 ```
+</p>
+</details>
 
 ## Web Services
 ### CVS server
@@ -105,7 +111,7 @@ npm install bootstrap
 - heroku-ci
 
 ### Project management
-- github.com: Issues, Projects
+- github.com: Issues, Projects, Milestones
 - docs.google.com
 - gmail.com
 
@@ -152,6 +158,6 @@ Projet à taille humaine
 
 ---
 ## Matériel
-- MacBook 12"
+- MacBook 13'3"
 - Connexion internet
 - Iphone
