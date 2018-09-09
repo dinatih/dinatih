@@ -21,7 +21,7 @@
 - Client Web / Serveur
 - Architecture Distribuée: 12factor.net
 - App Web et Mobile
-- Tests et Déploiement Continus
+- Tests et Déploiement Continu
 
 ## Environnement local de développement
 ```sh
@@ -111,11 +111,17 @@ npm install bootstrap
 
 ---
 # Expériences
-5 ans d'experiences cummulées sur 2 start-up. En tant qu'unique développeur *full-stack* ruby on rails.
++ 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* ruby on rails.
 
 **Ancien** stack :
 
 Architecture centralisé sur serveur dedié, passenger, apache, mysql... mais tout ça c'est bien vieux maintenant...
+
+## Tracktor.fr
+1 ans 
+- découverte d'heroku
+
+### Tech4Team, Paycar.fr, Mooncard.co (1 ans)
 
 ## Saisirprudhommes.com
 3 ans
