@@ -168,7 +168,8 @@ Projet à taille humaine.
 > *Vous n'êtes pas prêt à accepter cette ensemble précis: **Ruby on Rails**, **Postgresql**, **Bootstrap**, **Heroku**, **Github**, **G Suite**.*
 
 ---
-## Matériel
+## Poste de Travail
 - MacBook Pro 13'3" (Clavier Anglais international)
 - Connexion internet 
 - Iphone
+- Bureaux à Paris intramuros, Télétravail
