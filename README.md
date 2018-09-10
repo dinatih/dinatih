@@ -93,19 +93,19 @@ npm install bootstrap
 
 ## Web Services
 ### CVS server
-- [github.com](https://github.com)
+- [Github](https://github.com)
 
 ### Distributed plateform
-- [heroku.com](https://heroku.com)
+- [Heroku](https://heroku.com)
 
 ### Cloud Storage
 - [Amazone S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html)
 
 ### Analytics
-- [google.com/analytics](https://google.com/analytics)
+- [Google Analytics](https://google.com/analytics)
 
 ### Ruby monitoring
-- [appsignal.com](https://appsignal.com)
+- [Appsignal](https://appsignal.com)
 
 ### Continous Integration
 - [Heroku CI](https://devcenter.heroku.com/articles/heroku-ci)
