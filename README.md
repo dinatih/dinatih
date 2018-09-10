@@ -143,16 +143,29 @@ Plus de 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout)
 ---
 # Le projet
 ## Pourquoi app web et mobile ?
-serveur API et different clients
+Serveur API et different clients.
 ## Pourquoi open-source ?
 Pour debugger sans aide du support commercial.
 ## Pourquoi Ruby ?
-Lisibilité du code, plaisir de passé en revu le code constament à la recherche d'optimisation
+Lisibilité du code, plaisir de passé en revu le code constament à la recherche d'optimisation.
 ## Pourquoi Ruby on Rails ?
-MVC, open-source, *convention over configuration*, communauté, documentation
+MVC, open-source, *convention over configuration*, communauté, documentation.
+## Pourquoi Postgresql ?
+Sa popularité dans le domain scientifique et le type de donnée jsonb.
+## Pourquoi Bootstrap ?
+Mac OS et Windows ont leur UI Kit, Les app web on Bootstrap.
+## Pourquoi Heroku ?
+Qui a besoin d'un Admin système et réseaux de nos jours.
+## Pourquoi Github ?
+Les issues en markdown, les uploads simple d'image ou gif, les labels, les milestones.
+## Pourquoi G Suite ?
+Gmail, Google Analytics, Google Doc, Google Search Console...
 ## Pourquoi une start-up ou PME ?
-Projet à taille humaine
-## Pourquoi pas vous ?
+Projet à taille humaine.
+
+# Pourquoi pas vous ?
+
+*Vous n'êtes pas prêt à accepter cette ensemble précis: **Ruby on Rails**, **Postgresql**, **Bootstrap**, **Heroku**, **Github**, **G Suite**.*
 
 ---
 ## Matériel
