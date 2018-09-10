@@ -165,10 +165,10 @@ Projet à taille humaine.
 
 # Pourquoi pas vous ?
 
-*Vous n'êtes pas prêt à accepter cette ensemble précis: **Ruby on Rails**, **Postgresql**, **Bootstrap**, **Heroku**, **Github**, **G Suite**.*
+> *Vous n'êtes pas prêt à accepter cette ensemble précis: **Ruby on Rails**, **Postgresql**, **Bootstrap**, **Heroku**, **Github**, **G Suite**.*
 
 ---
 ## Matériel
-- MacBook Pro 13'3"
-- Connexion internet
+- MacBook Pro 13'3" (Clavier Anglais international)
+- Connexion internet 
 - Iphone
