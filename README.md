@@ -93,31 +93,30 @@ npm install bootstrap
 
 ## Web Services
 ### CVS server
-- github.com
+- [github.com](https://github.com)
 
 ### Distributed plateform
-- heroku.com
+- [heroku.com](https://heroku.com)
 
 ### Cloud Storage
-- Amazone S3
+- [Amazone S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html)
 
 ### Analytics
-- google.com/analytics
+- [google.com/analytics](https://google.com/analytics)
 
 ### Ruby monitoring
-- appsignal.com
+- [appsignal.com](https://appsignal.com)
 
 ### Continous Integration
-- heroku-ci
+- [heroku-ci](https://devcenter.heroku.com/articles/heroku-ci)
 
 ### Project management
-- github.com: Issues, Projects, Milestones
-- docs.google.com
-- gmail.com
+- [Github Issues](https://guides.github.com/features/issues/)
+- [G Suite](https://gsuite.google.com/intl/fr/features/)
 
 ---
 # Expériences
-+ 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* ruby on rails.
+Plus de 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* ruby on rails.
 
 **Ancien** stack :
 
@@ -127,7 +126,9 @@ Architecture centralisé sur serveur dedié, passenger, apache, mysql... mais to
 1 ans 
 - découverte d'heroku
 
-### [Tech4Team.fr](http://Tech4Team.fr), [Paycar.fr](https://paycar.fr), [Mooncard.co](http://mooncard.co) (1 ans)
+### [Tech4Team.fr](http://Tech4Team.fr), [Paycar.fr](https://paycar.fr), [Mooncard.co](http://mooncard.co) 
+1 ans
+- découverte de postgresql
 
 ## [Saisirprudhommes.com](https://saisirprudhommes.com)
 3 ans
