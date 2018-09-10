@@ -108,19 +108,16 @@ npm install bootstrap
 - [appsignal.com](https://appsignal.com)
 
 ### Continous Integration
-- [heroku-ci](https://devcenter.heroku.com/articles/heroku-ci)
+- [Heroku CI](https://devcenter.heroku.com/articles/heroku-ci)
+- [Hound CI](https://houndci.com)
 
 ### Project management
-- [Github Issues](https://guides.github.com/features/issues/)
-- [G Suite](https://gsuite.google.com/intl/fr/features/)
+- [Github Issues](https://guides.github.com/features/issues)
+- [G Suite](https://gsuite.google.com/intl/fr/features)
 
 ---
 # Expériences
 Plus de 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* ruby on rails.
-
-**Ancien** stack :
-
-Architecture centralisé sur serveur dedié, passenger, apache, mysql... mais tout ça c'est bien vieux maintenant...
 
 ## [Tracktor.fr](https://tracktor.fr)
 1 ans 
@@ -159,6 +156,6 @@ Projet à taille humaine
 
 ---
 ## Matériel
-- MacBook 13'3"
+- MacBook Pro 13'3"
 - Connexion internet
 - Iphone
