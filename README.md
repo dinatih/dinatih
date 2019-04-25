@@ -93,47 +93,45 @@ npm install bootstrap
 
 ## Web Services
 ### CVS server
-- github.com
+- [Github](https://github.com)
 
 ### Distributed plateform
-- heroku.com
+- [Heroku](https://heroku.com)
 
 ### Cloud Storage
-- Amazone S3
+- [Amazone S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html)
 
 ### Analytics
-- google.com/analytics
+- [Google Analytics](https://google.com/analytics)
 
 ### Ruby monitoring
-- appsignal.com
+- [Appsignal](https://appsignal.com)
 
 ### Continous Integration
-- heroku-ci
+- [Heroku CI](https://devcenter.heroku.com/articles/heroku-ci)
+- [Hound CI](https://houndci.com)
 
 ### Project management
-- github.com: Issues, Projects, Milestones
-- docs.google.com
-- gmail.com
+- [Github Issues](https://guides.github.com/features/issues)
+- [G Suite](https://gsuite.google.com/intl/fr/features)
 
 ---
 # Expériences
-+ 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* ruby on rails.
+Plus de 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* ruby on rails.
 
-**Ancien** stack :
-
-Architecture centralisé sur serveur dedié, passenger, apache, mysql... mais tout ça c'est bien vieux maintenant...
-
-## Tracktor.fr
+## [Tracktor.fr](https://tracktor.fr)
 1 ans 
 - découverte d'heroku
 
-### Tech4Team, Paycar.fr, Mooncard.co (1 ans)
+### [Tech4Team.fr](http://Tech4Team.fr), [Paycar.fr](https://paycar.fr), [Mooncard.co](http://mooncard.co) 
+1 ans
+- découverte de postgresql
 
-## Saisirprudhommes.com
+## [Saisirprudhommes.com](https://saisirprudhommes.com)
 3 ans
 - découverte de bootstrap
 
-## Jobteaser.com
+## [Jobteaser.com](https://jobteaser.com)
 2 ans
 - découverte de ruby on rails
 
@@ -145,19 +143,32 @@ Architecture centralisé sur serveur dedié, passenger, apache, mysql... mais to
 ---
 # Le projet
 ## Pourquoi app web et mobile ?
-serveur API et different clients
+Serveur API et different clients.
 ## Pourquoi open-source ?
 Pour debugger sans aide du support commercial.
 ## Pourquoi Ruby ?
-Lisibilité du code, plaisir de passé en revu le code constament à la recherche d'optimisation
+Lisibilité du code, plaisir de passé en revu le code constament à la recherche d'optimisation.
 ## Pourquoi Ruby on Rails ?
-MVC, open-source, *convention over configuration*, communauté, documentation
+MVC, open-source, *convention over configuration*, communauté, documentation.
+## Pourquoi Postgresql ?
+Sa popularité dans le domain scientifique et le type de donnée jsonb.
+## Pourquoi Bootstrap ?
+Mac OS et Windows ont leur UI Kit, Les app web on Bootstrap.
+## Pourquoi Heroku ?
+Qui a besoin d'un Admin système et réseaux de nos jours.
+## Pourquoi Github ?
+Les issues en markdown, les uploads simple d'image ou gif, les labels, les milestones.
+## Pourquoi G Suite ?
+Gmail, Google Analytics, Google Doc, Google Search Console...
 ## Pourquoi une start-up ou PME ?
-Projet à taille humaine
-## Pourquoi pas vous ?
+Projet à taille humaine.
+
+# Pourquoi pas vous ?
+
+> *Vous n'êtes pas prêt à accepter cette ensemble précis: **Ruby on Rails**, **Postgresql**, **Bootstrap**, **Heroku**, **Github**, **G Suite**.*
 
 ---
 ## Matériel
-- MacBook 13'3"
-- Connexion internet
+- MacBook Pro 13'3" (Clavier Anglais international)
+- Connexion internet 
 - Iphone
