@@ -148,7 +148,7 @@ Serveur API et different clients.
 ## Pourquoi open-source ?
 Pour debugger sans aide du support commercial.
 ## Pourquoi Ruby ?
-Lisibilité du code, plaisir de passé en revu le code constament à la recherche d'optimisation.
+Lisibilité du code, plaisir de passer en revu le code constament à la recherche d'optimisation.
 ## Pourquoi Ruby on Rails ?
 MVC, open-source, *convention over configuration*, communauté, documentation.
 ## Pourquoi Postgresql ?
