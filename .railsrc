@@ -1,2 +1,1 @@
--T # Skip Test-Unit
 -d postgresql # Use postgres
