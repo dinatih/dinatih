@@ -1,3 +1,4 @@
+![alt text](https://github.com/dinatih/dinatih/blob/master/profile_header.jpeg)
 # Ma vie de développeur web
 ---
 # Le projet
