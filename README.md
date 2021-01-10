@@ -21,9 +21,9 @@ Les issues en markdown, les uploads simples d'image ou gif, les labels, les mile
 ## Pourquoi G Suite ?
 Gmail, Google Analytics, Google Doc, Google Search Console...
 
-# Pourquoi pas vous ?
+## ~Pourquoi pas vous ?~
 
-> *Vous n'êtes pas prêt à accepter cette ensemble précis: **Ruby on Rails**, **Postgresql**, **Bootstrap**, **Heroku**, **Github**, **G Suite**.*
+> *Vous n'êtes pas prêt à accepter cette ensemble précis: **Ruby on Rails**, **Postgresql**, **Bootstrap**, **Heroku**, **Github**.*
 
 ---
 # Compétences
