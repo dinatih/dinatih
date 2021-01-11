@@ -1,5 +1,29 @@
 ![alt text](https://github.com/dinatih/dinatih/blob/master/profile_header.jpeg)
-# Ma vie de développeur web
+# Ma vie de développeur web Ruby on Rails 
+---
+# Expériences
+Plus de 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* Ruby on Rails.
+
+## [Tracktor.fr](https://tracktor.fr)
+1 ans 
+- découverte d'heroku
+
+### [Tech4Team.fr](http://Tech4Team.fr), [Paycar.fr](https://paycar.fr), [Mooncard.co](http://mooncard.co) 
+1 ans
+- découverte de postgresql
+
+## [Saisirprudhommes.com](https://saisirprudhommes.com)
+3 ans
+- découverte de bootstrap
+
+## [Jobteaser.com](https://jobteaser.com)
+2 ans
+- découverte de ruby on rails
+
+## EPITECH / ETNA
+4 ans
+
+- C, Shell script, C++, LISP, JAVA, SQL, PHP and finaly Ruby !
 ---
 # Le projet
 ## Pourquoi app web et mobile ?
@@ -139,33 +163,8 @@ npm install bootstrap
 - [Hound CI](https://houndci.com)
 
 ### Project management
-- [Github Issues](https://guides.github.com/features/issues)
+- [Github Issues](https://guides.github.com/features/issues) write with [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/)
 - [G Suite](https://gsuite.google.com/intl/fr/features)
-
----
-# Expériences
-Plus de 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* ruby on rails.
-
-## [Tracktor.fr](https://tracktor.fr)
-1 ans 
-- découverte d'heroku
-
-### [Tech4Team.fr](http://Tech4Team.fr), [Paycar.fr](https://paycar.fr), [Mooncard.co](http://mooncard.co) 
-1 ans
-- découverte de postgresql
-
-## [Saisirprudhommes.com](https://saisirprudhommes.com)
-3 ans
-- découverte de bootstrap
-
-## [Jobteaser.com](https://jobteaser.com)
-2 ans
-- découverte de ruby on rails
-
-## EPITECH / ETNA
-4 ans
-
-- C, Shell script, C++, LISP, JAVA, SQL, PHP and finaly Ruby !
 
 ---
 ## Poste de Travail
