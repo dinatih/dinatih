@@ -1,5 +1,6 @@
 ![alt text](https://github.com/dinatih/dinatih/blob/master/profile_header.jpeg)
-# Ma vie de développeur web Ruby on Rails 
+# David HERELLE : Ma vie de développeur web Ruby on Rails 
+
 ---
 # Expériences
 Plus de 7 ans d'experiences cummulées sur 3 start-up principalement (6 en tout). En tant qu'unique développeur *full-stack* Ruby on Rails.
