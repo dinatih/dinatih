@@ -1,7 +1,11 @@
 ![alt text](https://github.com/dinatih/dinatih/raw/master/profile_header.jpeg)
 
+<p align="center">
+<img width="100" height="100" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.jpeg">
+</p>
+
+
 # 👷🏾‍♂️ David HERELLE
-<img align="right" width="100" height="100" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.jpeg">
 
 ## A Web Developer Life with PostgreSQL, Ruby, Rails, GitHub, Heroku and Bootstrap
 
@@ -29,7 +33,7 @@ Code Quality, [RubyCritic](https://github.com/whitesmith/rubycritic), [Ruby Styl
 [Test](https://guides.rubyonrails.org/testing.html), [TDD](https://en.wikipedia.org/wiki/Test-driven_development), Spec, [Rspec](https://rspec.info/documentation/), Acceptance tests, [Capybara](https://github.com/teamcapybara/capybara), Selenium, ChromeDriver, [FactoryBot](https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md), [Application Performance Management (APM)](https://en.wikipedia.org/wiki/Application_performance_management), [AppSignal](https://appsignal.com/), [New Relic](https://blog.newrelic.com/product-news/ruby-agent-secret-super-powers/),
 [Github](https://guides.github.com/), [Git](https://ndpsoftware.com/git-cheatsheet.html), [Codebase](https://12factor.net/codebase), Commit,  
 [Heroku](https://devcenter.heroku.com/categories/reference), [12factor](https://12factor.net/), [Stateless Processes](https://12factor.net/processes), [Deployment](https://devcenter.heroku.com/articles/github-integration), [Buildpacks](https://devcenter.heroku.com/articles/buildpacks), [Slug](https://devcenter.heroku.com/articles/slug-compiler), [Config Vars](https://devcenter.heroku.com/articles/config-vars), [Dynos](https://devcenter.heroku.com/articles/dynos), [Releases](https://devcenter.heroku.com/articles/releases), [Pipelines](https://devcenter.heroku.com/articles/pipelines), [Heroku review apps](https://devcenter.heroku.com/articles/github-integration-review-apps),  [Heroku Postgres](https://www.heroku.com/postgres), [Heroku Redis](https://devcenter.heroku.com/articles/heroku-redis), Papertrail ,  
-[CI/CD](https://en.wikipedia.org/wiki/CI/CD), [Continuous Delivery](https://www.heroku.com/continuous-delivery), [GitHub Actions](https://docs.github.com/en/actions), [Heroku CI](https://www.heroku.com/continuous-integration) ,  
+[CI/CD](https://en.wikipedia.org/wiki/CI/CD), [Continuous Delivery](https://www.heroku.com/continuous-delivery), [Continuous Integration](https://docs.github.com/en/actions/guides/about-continuous-integration), [GitHub Actions](https://docs.github.com/en/actions), [Heroku CI](https://www.heroku.com/continuous-integration) ,  
 Web Server, [Puma](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server),
 [Amazone S3](https://docs.aws.amazon.com/s3/index.html),
 [Stripe](https://stripe.com/docs), Mangopay, [Twilio SendGrid](https://sendgrid.com/docs/api-reference/), Mailchimp,  
