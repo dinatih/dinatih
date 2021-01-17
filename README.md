@@ -270,6 +270,8 @@ GitHub integration, https, pipeline, production, staging, demo, review apps, her
 # System tools
 http://brew.sh
 
+#GitHub CLI
+brew install gh
 # Heroku
 brew install heroku/brew/heroku
 
