@@ -1,8 +1,8 @@
-![alt text](https://github.com/dinatih/dinatih/raw/master/profile_header.jpeg)
+![alt text](https://github.com/dinatih/dinatih/raw/master/profile_header.png)
 
 # 👷🏾‍♂️ David HERELLE
 <p align="center">
-  <img  width="100" height="100" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.png">
+  <img  width="100" height="100" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.jpeg">
 </p>
 
 ## A Web Developer Life with PostgreSQL, Ruby, Rails, GitHub, Heroku and Bootstrap
