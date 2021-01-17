@@ -2,7 +2,7 @@
 
 # 👷🏾‍♂️ David HERELLE
 <p align="center">
-  <img  width="100" height="100" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.jpeg">
+  <img  width="100" height="100" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.png">
 </p>
 
 ## A Web Developer Life with PostgreSQL, Ruby, Rails, GitHub, Heroku and Bootstrap
@@ -46,7 +46,7 @@ My best [gist/comment](https://github.com/rails/rails/issues/31419#issuecomment-
 - Web Server, [Puma](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server),
 [Amazone S3](https://docs.aws.amazon.com/s3/index.html),
 [Stripe](https://stripe.com/docs), Mangopay, [Twilio SendGrid](https://sendgrid.com/docs/api-reference/), Mailchimp
- 
+
 - [Twitter Bootstrap 5](https://getbootstrap.com/docs), HTML5, CSS3, Javascript, Haml, Sass, Scss, CoffeeScript, Webpacker, Node.js, Yarn, package.json, [Stimulus](https://stimulus.hotwire.dev/),
 [Google Map API](https://developers.google.com/maps/documentation/javascript/overview),  
 RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
