@@ -1,9 +1,7 @@
-![alt text](https://github.com/dinatih/dinatih/raw/master/profile_header.png)
+<img style="height: 12em;" src="https://github.com/dinatih/dinatih/raw/master/profile_header.png">
+<img style="height: 12em;" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.jpeg">
 
 # 👷🏾‍♂️ David HERELLE
-<p align="center">
-  <img  width="100" height="100" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.jpeg">
-</p>
 
 ## A Web Developer Life with PostgreSQL, Ruby, Rails, GitHub, Heroku and Bootstrap
 
@@ -81,6 +79,10 @@ Qui a besoin d'un Admin système et réseaux de nos jours. [heroku-cli](https://
 
 ### [👷Tracktor.fr](https://tracktor.fr) 1 year - découverte d'Heroku
 
+<details>
+  <summary>détails</summary>
+  <p>
+
 Full-stack Ruby on Rails Developer  
 Company Name Tracktor SAS Full-time  
 Dates Employed Aug 2017 – Oct 2018  
@@ -114,8 +116,14 @@ En gros, Mon Stack parfait !
 
 - Le Cargo, à 15 min à pieds de chez moi
 
+  </p>
+</details>
 
 ### [Tech4Team.fr](http://Tech4Team.fr) - découverte de PostgreSQL
+
+<details>
+  <summary>détails</summary>
+  <p>
 
 Full-stack Ruby on Rails Developer  
 Company Name TECH'4'TEAM Full-time  
@@ -131,7 +139,14 @@ Ce que j'ai adoré :
 - heroku
 - github issues pour la gestion de projet
 
+  </p>
+</details>
+
 ### [Mooncard.co](http://mooncard.co)
+
+<details>
+  <summary>détails</summary>
+  <p>
 
 Full-stack Ruby on Rails Developer  
 Company Name Mooncard - mooncard.co Full-time  
@@ -150,7 +165,14 @@ Ce que j'ai adoré ou découvert :
 - Heroku Professional
 - Slim
 
+  </p>
+</details>
+
 ### [🧑‍💼Saisirprudhommes.com](https://saisirprudhommes.com) 3 years - découverte de bootstrap
+
+<details>
+  <summary>détails</summary>
+  <p>
 
 Chef de projet étude et développement informatique (Ruby on Rails)  
 Company Name Demander Justice Full-time  
@@ -196,7 +218,14 @@ Ce que j'ai adoré :
 - twitter bootstrap
 - github
 
+  </p>
+</details>
+
 ### [🧑‍🎓Jobteaser.com](https://jobteaser.com) 2 years - découverte de ruby on rails
+
+<details>
+  <summary>détails</summary>
+  <p>
 
 Chef de projet étude et développement informatique (Ruby on Rails)  
 Company Name JobTeaser Full-time  
@@ -231,6 +260,9 @@ Déploiement automatisé (Capistrano).
 Ce que j'ai adoré :
 - ruby
 - rails
+
+  </p>
+</details>
 
 ###### IT school : [EPITECH](https://www.epitech.eu/en/) / ETNA 4 years
 
