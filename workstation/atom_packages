@@ -1,0 +1,3 @@
+# Atom packages
+
+apm install linter-rubocop
