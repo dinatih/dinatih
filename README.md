@@ -16,14 +16,14 @@ My profiles : [Github](https://github.com/dinatih),
 
 My best [gist/comment](https://github.com/rails/rails/issues/31419#issuecomment-370900013) is an example of a metaprogramming "patch" for ActiveStorage before they introduce the [public access](https://edgeguides.rubyonrails.org/active_storage_overview.html#public-access).
 
-###### 📕Readings
+###### 📕 Readings
 [Shape Up: Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup), [Getting Real](https://basecamp.com/gettingreal) ,  
 [Business Model Generation](https://www.strategyzer.com/books/business-model-generation), [Value Proposition Design](https://www.strategyzer.com/books/value-proposition-design) ,    
 [Rails Test Prescriptions](https://pragprog.com/titles/nrtest3/rails-5-test-prescriptions/),
 [Programming Ruby](https://pragprog.com/titles/ruby4/programming-ruby-1-9-2-0-4th-edition/), [Metaprogramming Ruby 2](https://pragprog.com/titles/ppmetr2/metaprogramming-ruby-2/),
 [Agile Web Development with Rails](https://pragprog.com/titles/rails4/agile-web-development-with-rails-4/), [Effective Testing with RSpec 3](https://pragprog.com/titles/rspec3/effective-testing-with-rspec-3/) and more from [pragprog](https://pragprog.com/).
 
-###### 🧠In my head : Keywords with link to main documentation
+###### 🧠 In my head : Keywords with link to main documentation
 
 - Web application, [Security](https://guides.rubyonrails.org/security.html), Open-source, [Client–server model](https://en.wikipedia.org/wiki/Client-server_model), [Model-View-Controller (MVC)](https://en.wikipedia.org/wiki/Model-view-controller), [DevOps](https://en.wikipedia.org/wiki/DevOps), [Responsive, mobile-first sites](https://getbootstrap.com/docs/5.0/getting-started/introduction/), [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming), [Refactoring](https://refactoring.guru/refactoring), [Design Patterns](https://refactoring.guru/design-patterns/ruby), [Code Smells](https://refactoring.guru/refactoring/smells), [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), [Domain model](https://en.wikipedia.org/wiki/Domain_model), Domain-specific language (DSL)
 
