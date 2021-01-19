@@ -1,7 +1,9 @@
-<img style="height: 12em;" src="https://github.com/dinatih/dinatih/raw/master/profile_header.png">
-<img style="height: 12em;" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.jpeg">
+![alt text](https://github.com/dinatih/dinatih/raw/master/profile_header.png)
 
 # 👷🏾‍♂️ David HERELLE
+<p align="center">
+  <img  width="100" height="100" src="https://github.com/dinatih/dinatih/raw/master/profile_picture.jpeg">
+</p>
 
 ## A Web Developer Life with PostgreSQL, Ruby, Rails, GitHub, Heroku and Bootstrap
 
@@ -325,6 +327,9 @@ brew install --cask google-drive
 
 # Node.js
 brew install nodejs
+
+# Atom packages
+apm install linter-rubocop
 
 # Ruby env
 # install rvm or rbenv
