@@ -305,9 +305,6 @@ GitHub integration, https, pipeline, production, staging, demo, review apps, her
   <p>
 
 ```ruby
-# Atom packages
-apm install linter-rubocop
-
 # Ruby env
 # install rvm or rbenv
 
