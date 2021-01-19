@@ -1,0 +1,19 @@
+# Global Ruby Gems
+
+# Web framework
+gem install rails
+
+# Relational database
+gem install postgres
+
+# No-SQL, in memory database
+gem install redis
+
+# Testing framework
+gem install rspec
+
+# Debugger
+gem install byebug
+
+# Static code analyzer
+gem install rubocop
