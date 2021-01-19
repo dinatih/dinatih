@@ -305,41 +305,6 @@ GitHub integration, https, pipeline, production, staging, demo, review apps, her
   <p>
 
 ```ruby
-# Ruby env
-# install rvm or rbenv
-
-# Ruby gems
-
-# Web server
-gem install puma
-
-# Web framework
-gem install rails
-
-# Relational database
-gem install postgres
-
-# No-SQL, in memory database
-gem install redis
-
-# Queueing system
-gem install sidekiq
-
-# Testing framework
-gem install rspec # or minitest
-gem install spring
-gem install capybara
-
-# Debugger
-gem install byebug
-
-# Static code analyzer
-gem install rubocop
-
-# Web services
-
-gem install newrelic_rpm
-
 # Web packages
 npm install bootstrap
 ```
