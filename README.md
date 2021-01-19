@@ -305,33 +305,6 @@ GitHub integration, https, pipeline, production, staging, demo, review apps, her
   <p>
 
 ```ruby
-# System tools
-http://brew.sh
-
-#GitHub CLI
-brew install gh
-# Heroku
-brew install heroku/brew/heroku
-
-# Databases
-brew install postgresql
-brew services start postgresql
-brew install redis
-brew services start redis
-
-# Mac OS apps
-brew install cask
-brew install --cask google-chrome
-brew install --cask atom
-brew install --cask superproductivity
-brew install --cask tableplus
-brew install --cask slack
-brew install --cask rectangle
-brew install --cask google-drive
-
-# Node.js
-brew install nodejs
-
 # Atom packages
 apm install linter-rubocop
 
