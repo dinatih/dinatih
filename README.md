@@ -245,6 +245,7 @@ Ce que j'ai adoré :
 ###### IT school : [EPITECH](https://www.epitech.eu/en/) / ETNA 4 years
 
 - C, Shell script, C++, LISP, JAVA, SQL, PHP and finally Ruby !
+
 ---
 
 ## Le projet
@@ -298,20 +299,6 @@ GitHub integration, https, pipeline, production, staging, demo, review apps, her
 
 ---
 
-## Local development environment
-
-<details>
-  <summary>Détails</summary>
-  <p>
-
-```ruby
-# Web packages
-npm install bootstrap
-```
-  </p>
-</details>
-
----
 ## 💻 Work Station
 - MacBook Pro 13'3" (International English keyboard)
 - A good internet connection
