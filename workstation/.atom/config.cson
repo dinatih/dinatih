@@ -1,0 +1,6 @@
+"*":
+  core:
+    restorePreviousWindowsOnStart: "always"
+    telemetryConsent: "limited"
+  editor:
+    preferredLineLength: 120
