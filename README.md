@@ -52,30 +52,6 @@ My best [gist/comment](https://github.com/rails/rails/issues/31419#issuecomment-
 RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
 
 ---
-## Le projet
-###### Pourquoi app web et mobile ?
-Serveur API et different clients.
-
-###### Pourquoi open-source ?
-Pour débugger sans aide du support commercial.
-
-###### Pourquoi Github ?
-Les issues en markdown, les uploads simples d'image ou gif, les labels, les milestones et bien sûr le SCM Git.
-
-###### Pourquoi Ruby ?
-Lisibilité du code, plaisir de passer en revu le code constament à la recherche d'optimisation.
-
-###### Pourquoi Ruby on Rails ?
-MVC, open-source, *convention over configuration*, communauté, documentation.
-
-###### Pourquoi Postgresql ?
-Sa popularité dans le domain scientifique et le type de donnée jsonb.
-
-###### Pourquoi Bootstrap ?
-Mac OS et Windows ont leur UI Kit, Les app web on Bootstrap.
-
-###### Pourquoi Heroku ?
-Qui a besoin d'un Admin système et réseaux de nos jours. [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
 
 ## 👨🏾‍💻 Expériences
 
@@ -270,6 +246,34 @@ Ce que j'ai adoré :
 
 - C, Shell script, C++, LISP, JAVA, SQL, PHP and finally Ruby !
 ---
+
+## Le projet
+###### Pourquoi app web et mobile ?
+Serveur API et different clients.
+
+###### Pourquoi open-source ?
+Pour débugger sans aide du support commercial.
+
+###### Pourquoi Github ?
+Les issues en markdown, les uploads simples d'image ou gif, les labels, les milestones et bien sûr le SCM Git.
+
+###### Pourquoi Ruby ?
+Lisibilité du code, plaisir de passer en revu le code constament à la recherche d'optimisation.
+
+###### Pourquoi Ruby on Rails ?
+MVC, open-source, *convention over configuration*, communauté, documentation.
+
+###### Pourquoi Postgresql ?
+Sa popularité dans le domain scientifique et le type de donnée jsonb.
+
+###### Pourquoi Bootstrap ?
+Mac OS et Windows ont leur UI Kit, Les app web on Bootstrap.
+
+###### Pourquoi Heroku ?
+Qui a besoin d'un Admin système et réseaux de nos jours. [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
+
+---
+
 ## Freelance
 
 <details>
