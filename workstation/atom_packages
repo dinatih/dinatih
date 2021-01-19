@@ -1,3 +1,4 @@
 # Atom packages
 
 apm install linter-rubocop
+apm install language-haml
