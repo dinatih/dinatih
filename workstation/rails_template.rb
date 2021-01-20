@@ -60,6 +60,7 @@ def use_bootstrap
   HAML
 
   gsub_file 'app/views/layouts/application.html.haml', to_be_replaced, the_replacing_code
+  file 'app/assets/stylesheets/scaffolds.scss', ''
 end
 
 def use_devise
