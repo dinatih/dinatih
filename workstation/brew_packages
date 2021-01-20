@@ -1,6 +1,8 @@
 # System tools
 # http://brew.sh
 
+brew install emacs
+
 # Databases
 brew install postgresql
 brew services start postgresql
