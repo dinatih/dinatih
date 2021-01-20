@@ -16,6 +16,14 @@ def app_scaffold
   use_bootstrap
   use_devise
 
+  setup_en_fr_app
+  application do
+    <<~CODE
+      config.generators do |g|
+        g.stylesheets false
+      end
+    CODE
+  end
   # B-to-B (to-C): the app will manage a Organization for each of our clients
   generate :scaffold, 'Organization name:string'
   # Users of our company
