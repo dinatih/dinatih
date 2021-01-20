@@ -36,6 +36,40 @@ def app_scaffold
   rails_command 'db:migrate'
 end
 
+def setup_en_fr_app
+  gem 'rails-i18n'
+
+  run 'bundle install'
+
+  fr_locales = <<~YML
+    fr:
+      activerecord:
+        models:
+          admin: Admin
+          organization: Organisation
+          user: Utilisateur
+      attributes:
+        name: Nom
+  YML
+
+  en_locales = <<~YML
+    en:
+      activerecord:
+        models:
+          admin: Admin
+          organization: Organization
+          user: User
+      attributes:
+        name: Name
+  YML
+
+  file 'config/locales/fr.yml', fr_locales
+  run 'rm config/locales/en.yml'
+  file 'config/locales/en.yml', en_locales
+  # config.i18n.available_locales = [:en, :fr]
+  # config.i18n.default_locale = :en
+end
+
 def use_bootstrap
   rails_command 'webpacker:install'
 
@@ -68,7 +102,6 @@ def use_bootstrap
   HAML
 
   gsub_file 'app/views/layouts/application.html.haml', to_be_replaced, the_replacing_code
-  file 'app/assets/stylesheets/scaffolds.scss', ''
 end
 
 def use_devise
@@ -76,7 +109,7 @@ def use_devise
   gem 'devise-i18n'
   gem 'devise-bootstrap-views'
   run 'bundle install'
-  rails_command 'generate devise:install'
+  generate 'devise:install'
 end
 
 def use_haml
@@ -94,7 +127,7 @@ def use_rspec_with_factory_bot
 
   run 'bundle install'
 
-  rails_command 'generate rspec:install'
+  generate 'rspec:install'
 
   file 'spec/support/factory_bot.rb', <<~CODE
     RSpec.configure do |config|
@@ -106,7 +139,7 @@ end
 def use_simple_form_with_bootstrap
   gem 'simple_form'
   run 'bundle install'
-  rails_command 'generate simple_form:install --bootstrap'
+  generate 'simple_form:install --bootstrap'
 end
 
 app_scaffold
