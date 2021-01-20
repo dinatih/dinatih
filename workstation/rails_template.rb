@@ -49,14 +49,14 @@ def use_bootstrap
   end
 
   to_be_replaced = <<-HAML
-    %body
-      = yield
+  %body
+    = yield
   HAML
 
   the_replacing_code = <<-HAML
-    %body
-      .container
-        = yield
+  %body
+    .container
+      = yield
   HAML
 
   gsub_file 'app/views/layouts/application.html.haml', to_be_replaced, the_replacing_code
