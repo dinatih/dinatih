@@ -60,6 +60,19 @@ inject_into_file 'app/javascript/packs/application.js', before: 'Rails.start()' 
   CODE
 end
 
+to_be_replaced = <<-HAML
+  %body
+    = yield
+HAML
+
+the_replacing_code = <<-HAML
+  %body
+    .container
+      = yield
+HAML
+
+gsub_file 'app/views/layouts/application.html.haml', to_be_replaced, the_replacing_code
+
 gem 'devise'
 # https://github.com/heartcombo/devise#starting-with-rails
 run 'bundle install'
