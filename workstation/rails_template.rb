@@ -1,28 +1,31 @@
 # frozen_string_literal: true
 
 # @dinatih Ruby 3 & Rails 6 Application Template
-# PostgreSQL, Rspec, FactoryBot, Haml, Twitter Bootsrap via yarn)
+# PostgreSQL, Rspec, FactoryBot, Haml, Twitter Bootsrap (via yarn)
 #
 # http://guides.rubyonrails.org/rails_application_templates.html
 # Usage:
 # $ rails new business_information_system -m https://github.com/dinatih/dinatih/template.rb
 # $ rails new business_information_system -T -d postgresql -m https://github.com/dinatih/dinatih/template.rb
 
-gem_group :development, :test do
-  gem 'rspec-rails'
-  gem 'factory_bot_rails'
+def use_rspec_with_factory_bot
+  gem_group :development, :test do
+    gem 'rspec-rails'
+    gem 'factory_bot_rails'
+  end
+
+  run 'bundle install'
+
+  rails_command 'generate rspec:install'
+
+  file 'spec/support/factory_bot.rb', <<~CODE
+    RSpec.configure do |config|
+      config.include FactoryBot::Syntax::Methods
+    end
+  CODE
 end
 
-run 'bundle install'
-
-rails_command 'generate rspec:install'
-
-file 'spec/support/factory_bot.rb', <<~CODE
-  RSpec.configure do |config|
-    config.include FactoryBot::Syntax::Methods
-  end
-CODE
-
+use_rspec_with_factory_bot
 rails_command 'db:create'
 
 gem 'haml-rails'
