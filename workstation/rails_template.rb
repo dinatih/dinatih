@@ -64,6 +64,8 @@ end
 
 def use_devise
   gem 'devise'
+  gem 'devise-i18n'
+  gem 'devise-bootstrap-views'
   run 'bundle install'
   rails_command 'generate devise:install'
 end
