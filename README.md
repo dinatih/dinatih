@@ -53,7 +53,7 @@ RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](http
 
 ## 👨🏾‍💻 Expériences
 
-### [👷Tracktor.fr](https://tracktor.fr) 1 year - découverte d'Heroku
+### [👷 Tracktor.fr](https://tracktor.fr) 1 year - Maitrise d'Heroku
 
 <details>
   <summary>détails</summary>
@@ -95,7 +95,7 @@ En gros, Mon Stack parfait !
   </p>
 </details>
 
-### [Tech4Team.fr](http://Tech4Team.fr) - découverte de PostgreSQL
+### [🏟 Tech4Team.fr](http://Tech4Team.fr) - Maitrise de PostgreSQL
 
 <details>
   <summary>détails</summary>
@@ -118,7 +118,7 @@ Ce que j'ai adoré :
   </p>
 </details>
 
-### [Mooncard.co](http://mooncard.co)
+### [💳 Mooncard.co](http://mooncard.co)
 
 <details>
   <summary>détails</summary>
@@ -144,7 +144,7 @@ Ce que j'ai adoré ou découvert :
   </p>
 </details>
 
-### [🧑‍💼Saisirprudhommes.com](https://saisirprudhommes.com) 3 years - découverte de bootstrap
+### [🧑‍💼 Saisirprudhommes.com](https://saisirprudhommes.com) 3 years - Maitrise de Twitter Bootstrap
 
 <details>
   <summary>détails</summary>
@@ -197,7 +197,7 @@ Ce que j'ai adoré :
   </p>
 </details>
 
-### [🧑‍🎓Jobteaser.com](https://jobteaser.com) 2 years - découverte de ruby on rails
+### [🧑‍🎓 Jobteaser.com](https://jobteaser.com) 2 years - Maitrise de Ruby on Rails
 
 <details>
   <summary>détails</summary>
