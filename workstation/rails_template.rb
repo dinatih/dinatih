@@ -8,6 +8,26 @@
 # $ rails new business_information_system -m https://github.com/dinatih/dinatih/template.rb
 # $ rails new business_information_system -T -d postgresql -m https://github.com/dinatih/dinatih/template.rb
 
+def app_scaffold
+  use_rspec_with_factory_bot
+  rails_command 'db:create'
+  use_haml
+  use_simple_form_with_bootstrap
+  use_bootstrap
+  use_devise
+
+  # B-to-B (to-C): the app will manage a Organization for each of our clients
+  generate :scaffold, 'Organization name:string'
+  # Users of our company
+  generate :scaffold, 'Admin::Admin name:string'
+  # Users of our client's organizations
+  generate :scaffold, 'User name:string'
+
+  rails_command 'generate devise Admin::Admin'
+  rails_command 'generate devise User'
+  rails_command 'db:migrate'
+end
+
 def use_bootstrap
   rails_command 'webpacker:install'
 
@@ -42,6 +62,12 @@ def use_bootstrap
   gsub_file 'app/views/layouts/application.html.haml', to_be_replaced, the_replacing_code
 end
 
+def use_devise
+  gem 'devise'
+  run 'bundle install'
+  rails_command 'generate devise:install'
+end
+
 def use_haml
   gem 'haml-rails'
   run 'bundle install'
@@ -72,23 +98,4 @@ def use_simple_form_with_bootstrap
   rails_command 'generate simple_form:install --bootstrap'
 end
 
-use_rspec_with_factory_bot
-rails_command 'db:create'
-use_haml
-use_simple_form_with_bootstrap
-use_bootstrap
-
-# Generate scaffold for Admin::Admin, Organization and User
-generate :scaffold, 'Admin::Admin name:string'
-generate :scaffold, 'Organization name:string'
-generate :scaffold, 'User name:string'
-
-rails_command 'db:migrate'
-
-gem 'devise'
-# https://github.com/heartcombo/devise#starting-with-rails
-run 'bundle install'
-rails_command 'generate devise:install'
-rails_command 'generate devise Admin::Admin'
-rails_command 'generate devise User'
-rails_command 'db:migrate'
+app_scaffold
