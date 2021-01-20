@@ -8,6 +8,40 @@
 # $ rails new business_information_system -m https://github.com/dinatih/dinatih/template.rb
 # $ rails new business_information_system -T -d postgresql -m https://github.com/dinatih/dinatih/template.rb
 
+def use_bootstrap
+  rails_command 'webpacker:install'
+
+  # bin/rails app:template LOCATION=~/rails_bootstrap_template.rb
+  # https://rossta.net/blog/webpacker-with-bootstrap.html
+  run 'yarn add jquery popper.js'
+  run 'yarn add bootstrap'
+
+  file 'app/javascript/css/site.scss', <<~CODE
+    @import "~bootstrap/scss/bootstrap.scss";
+  CODE
+
+  inject_into_file 'app/javascript/packs/application.js', before: 'Rails.start()' do
+    <<~CODE
+      import 'jquery'
+      import 'popper.js'
+      import 'css/site'
+    CODE
+  end
+
+  to_be_replaced = <<-HAML
+    %body
+      = yield
+  HAML
+
+  the_replacing_code = <<-HAML
+    %body
+      .container
+        = yield
+  HAML
+
+  gsub_file 'app/views/layouts/application.html.haml', to_be_replaced, the_replacing_code
+end
+
 def use_haml
   gem 'haml-rails'
   run 'bundle install'
@@ -42,6 +76,7 @@ use_rspec_with_factory_bot
 rails_command 'db:create'
 use_haml
 use_simple_form_with_bootstrap
+use_bootstrap
 
 # Generate scaffold for Admin::Admin, Organization and User
 generate :scaffold, 'Admin::Admin name:string'
@@ -49,38 +84,6 @@ generate :scaffold, 'Organization name:string'
 generate :scaffold, 'User name:string'
 
 rails_command 'db:migrate'
-
-rails_command 'webpacker:install'
-
-# bin/rails app:template LOCATION=~/rails_bootstrap_template.rb
-# https://rossta.net/blog/webpacker-with-bootstrap.html
-run 'yarn add jquery popper.js'
-run 'yarn add bootstrap'
-
-file 'app/javascript/css/site.scss', <<~CODE
-  @import "~bootstrap/scss/bootstrap.scss";
-CODE
-
-inject_into_file 'app/javascript/packs/application.js', before: 'Rails.start()' do
-  <<~CODE
-    import 'jquery'
-    import 'popper.js'
-    import 'css/site'
-  CODE
-end
-
-to_be_replaced = <<-HAML
-  %body
-    = yield
-HAML
-
-the_replacing_code = <<-HAML
-  %body
-    .container
-      = yield
-HAML
-
-gsub_file 'app/views/layouts/application.html.haml', to_be_replaced, the_replacing_code
 
 gem 'devise'
 # https://github.com/heartcombo/devise#starting-with-rails
