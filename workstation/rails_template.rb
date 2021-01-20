@@ -8,6 +8,13 @@
 # $ rails new business_information_system -m https://github.com/dinatih/dinatih/template.rb
 # $ rails new business_information_system -T -d postgresql -m https://github.com/dinatih/dinatih/template.rb
 
+def use_haml
+  gem 'haml-rails'
+  run 'bundle install'
+
+  run 'HAML_RAILS_DELETE_ERB=true rails haml:erb2haml'
+end
+
 def use_rspec_with_factory_bot
   gem_group :development, :test do
     gem 'rspec-rails'
@@ -25,17 +32,16 @@ def use_rspec_with_factory_bot
   CODE
 end
 
+def use_simple_form_with_bootstrap
+  gem 'simple_form'
+  run 'bundle install'
+  rails_command 'generate simple_form:install --bootstrap'
+end
+
 use_rspec_with_factory_bot
 rails_command 'db:create'
-
-gem 'haml-rails'
-run 'bundle install'
-
-run 'HAML_RAILS_DELETE_ERB=true rails haml:erb2haml'
-
-gem 'simple_form'
-run 'bundle install'
-rails_command 'generate simple_form:install --bootstrap'
+use_haml
+use_simple_form_with_bootstrap
 
 # Generate scaffold for Admin::Admin, Organization and User
 generate :scaffold, 'Admin::Admin name:string'
