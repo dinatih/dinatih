@@ -20,12 +20,16 @@ def app_scaffold
 
   setup_en_fr_app
   application do
-    <<~CODE
+    <<~RUBY
       config.generators do |g|
         g.stylesheets false
+        g.test_framework :rspec, view_specs: false, controller_specs: false
       end
-    CODE
+    RUBY
   end
+  generate :controller, 'welcome index'
+  route "root to: 'welcome#index'"
+
   # Users of our client's organizations
   generate :scaffold, 'User name:string'
   # B-to-B (to-C): the app will manage a Organization for each of our clients
