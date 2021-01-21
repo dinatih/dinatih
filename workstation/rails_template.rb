@@ -169,6 +169,16 @@ def use_rspec_with_factory_bot
       end
     CODE
   end
+
+  inject_into_file 'spec/rails_helper.rb', after: 'mode!") if Rails.env.production?\n' do
+    <<~RUBY
+      require 'rspec/rails'
+      require 'capybara/rspec'
+      require 'capybara/rails'
+
+      Capybara.default_driver = :selenium_chrome
+    RUBY
+  end
 end
 
 def use_simple_form_with_bootstrap
