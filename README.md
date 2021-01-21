@@ -5,7 +5,7 @@
 
 ## A Web Developer Life with PostgreSQL, Ruby, Rails, GitHub, Heroku and Bootstrap
 
-**34 year old**, with a passion for Web App Development and Freestyle football ⚽️, domiciled in **Paris** 18th, **France**.  
+**34 year old**, with a passion for Web App Development and Freestyle Football ⚽️, domiciled in **Paris** 18th, **France**.  
 
 More than **7 years of cumulative experience** on 3 start-ups mainly (6 in all). As the only **Full-stack Ruby on Rails Developer**.
 
@@ -19,7 +19,8 @@ My best [gist/comment](https://github.com/rails/rails/issues/31419#issuecomment-
 [Business Model Generation](https://www.strategyzer.com/books/business-model-generation), [Value Proposition Design](https://www.strategyzer.com/books/value-proposition-design) ,    
 [Rails Test Prescriptions](https://pragprog.com/titles/nrtest3/rails-5-test-prescriptions/),
 [Programming Ruby](https://pragprog.com/titles/ruby4/programming-ruby-1-9-2-0-4th-edition/), [Metaprogramming Ruby 2](https://pragprog.com/titles/ppmetr2/metaprogramming-ruby-2/),
-[Agile Web Development with Rails](https://pragprog.com/titles/rails4/agile-web-development-with-rails-4/), [Effective Testing with RSpec 3](https://pragprog.com/titles/rspec3/effective-testing-with-rspec-3/) and more from [pragprog](https://pragprog.com/).
+[Agile Web Development with Rails](https://pragprog.com/titles/rails4/agile-web-development-with-rails-4/), [Effective Testing with RSpec 3](https://pragprog.com/titles/rspec3/effective-testing-with-rspec-3/) and more from [pragprog](https://pragprog.com/).  
+All [rails guides](https://guides.rubyonrails.org/) x times, a good part of the [rails codebase](https://github.com/rails/rails), all [Programming Ruby, The Pragmatic Programmer's Guide](http://ruby-doc.com/docs/ProgrammingRuby/), all [PostgreSQL (v10) official documentation](https://www.postgresql.org/docs/current/), and nearly all blog posts about Ruby or Rails 3 and above ([thoughtbot](https://thoughtbot.com/blog), [bigbinary](https://bigbinary.com/blog), ...)
 
 ###### 🧠 In my head : Keywords with link to main documentation
 
@@ -45,9 +46,7 @@ My best [gist/comment](https://github.com/rails/rails/issues/31419#issuecomment-
 [Amazone S3](https://docs.aws.amazon.com/s3/index.html),
 [Stripe](https://stripe.com/docs), Mangopay, [Twilio SendGrid](https://sendgrid.com/docs/api-reference/), Mailchimp
 
-- [Twitter Bootstrap 5](https://getbootstrap.com/docs), HTML5, CSS3, Javascript, Haml, Sass, Scss, CoffeeScript, Webpacker, Node.js, Yarn, package.json, [Stimulus](https://stimulus.hotwire.dev/),
-[Google Map API](https://developers.google.com/maps/documentation/javascript/overview),  
-RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
+- [Twitter Bootstrap 5](https://getbootstrap.com/docs), HTML5, CSS3, Javascript, Haml, Sass, Scss, CoffeeScript, Webpacker, Node.js, Yarn, package.json, [Stimulus](https://stimulus.hotwire.dev/), [Google Map API](https://developers.google.com/maps/documentation/javascript/overview), RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
 
 ---
 
