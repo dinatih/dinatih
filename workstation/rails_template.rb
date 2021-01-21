@@ -55,6 +55,18 @@ def app_scaffold
   rails_command 'generate devise User'
   rails_command 'generate devise Admin::Admin'
   rails_command 'db:migrate'
+
+  file 'spec/features/app_presentation_spec.rb' do
+    <<~RUBY
+      require "rails_helper"
+
+      RSpec.feature 'App Presentation' do
+        scenario 'Welcome' do
+          visit root_path
+        end
+      end
+    RUBY
+  end
 end
 
 def setup_en_fr_app
