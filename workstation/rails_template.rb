@@ -11,6 +11,8 @@
 def app_scaffold
   # gh repo create
   # heroku create
+  gem 'rexml' # Because ruby3 no longer build-in rexml https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/
+
   use_rspec_with_factory_bot
   rails_command 'db:create'
   use_haml
