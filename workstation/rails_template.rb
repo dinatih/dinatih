@@ -146,6 +146,7 @@ def use_rspec_with_factory_bot
     gem 'factory_bot_rails'
     gem 'rspec-rails'
     gem 'shoulda-matchers'
+    gem 'webdrivers'
   end
 
   run 'bundle install'
