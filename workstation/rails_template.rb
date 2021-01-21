@@ -77,6 +77,7 @@ def use_bootstrap
   # https://rossta.net/blog/webpacker-with-bootstrap.html
   run 'yarn add jquery popper.js'
   run 'yarn add bootstrap'
+  run 'yarn add bootstrap-table'
 
   file 'app/javascript/css/site.scss', <<~CODE
     @import "~bootstrap/scss/bootstrap.scss";
