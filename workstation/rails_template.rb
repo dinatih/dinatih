@@ -79,8 +79,7 @@ def setup_en_fr_app
   YML
 
   file 'config/locales/fr.yml', fr_locales
-  run 'rm config/locales/en.yml'
-  file 'config/locales/en.yml', en_locales
+  create_file 'config/locales/en.yml', en_locales, force: true
   # config.i18n.available_locales = [:en, :fr]
   # config.i18n.default_locale = :en
 end
