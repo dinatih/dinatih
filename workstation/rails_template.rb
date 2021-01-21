@@ -140,6 +140,7 @@ def use_rspec_with_factory_bot
     gem 'capybara'
     gem 'factory_bot_rails'
     gem 'rspec-rails'
+    gem 'shoulda-matchers'
   end
 
   run 'bundle install'
@@ -151,6 +152,17 @@ def use_rspec_with_factory_bot
       config.include FactoryBot::Syntax::Methods
     end
   CODE
+
+  append_to_file 'spec/rails_helper.rb' do
+    <<~CODE
+      Shoulda::Matchers.configure do |config|
+        config.integrate do |with|
+          with.test_framework :rspec
+          with.library :rails
+        end
+      end
+    CODE
+  end
 end
 
 def use_simple_form_with_bootstrap
