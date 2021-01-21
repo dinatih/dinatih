@@ -137,8 +137,9 @@ end
 
 def use_rspec_with_factory_bot
   gem_group :development, :test do
-    gem 'rspec-rails'
+    gem 'capybara'
     gem 'factory_bot_rails'
+    gem 'rspec-rails'
   end
 
   run 'bundle install'
