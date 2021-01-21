@@ -9,6 +9,8 @@
 # $ rails new business_information_system -T -d postgresql -m https://github.com/dinatih/dinatih/template.rb
 
 def app_scaffold
+  # gh repo create
+  # heroku create
   use_rspec_with_factory_bot
   rails_command 'db:create'
   use_haml
@@ -24,15 +26,28 @@ def app_scaffold
       end
     CODE
   end
+  # Users of our client's organizations
+  generate :scaffold, 'User name:string'
   # B-to-B (to-C): the app will manage a Organization for each of our clients
   generate :scaffold, 'Organization name:string'
   # Users of our company
   generate :scaffold, 'Admin::Admin name:string'
-  # Users of our client's organizations
-  generate :scaffold, 'User name:string'
 
-  rails_command 'generate devise Admin::Admin'
+  inject_into_file 'config/routes.rb', after: "namespace :admin do\n" do
+    <<-CODE
+    root 'admins#index'
+    CODE
+  end
+
+  inject_into_file 'config/routes.rb', after: "resources :admins\n" do
+    <<-CODE
+    resources :organizations
+    resources :users
+    CODE
+  end
+
   rails_command 'generate devise User'
+  rails_command 'generate devise Admin::Admin'
   rails_command 'db:migrate'
 end
 
