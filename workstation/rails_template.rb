@@ -32,12 +32,13 @@ def app_scaffold
   generate :controller, 'welcome index'
   route "root to: 'welcome#index'"
 
-  # B-to-B (to-C): the app will manage a Organization for each of our clients
   generate :scaffold, 'Organization name:string'
-  # Users of our client's organizations
   generate :scaffold, 'User name:string organization:references'
-  # Users of our company
   generate :scaffold, 'Admin name:string'
+  rails_command 'generate devise User'
+  rails_command 'generate devise Admin'
+  rails_command 'active_storage:install'
+  rails_command 'db:migrate'
 
   inject_into_file 'app/models/organization.rb', after: "ApplicationRecord\n" do
     <<-RUBY
@@ -84,11 +85,6 @@ def app_scaffold
   end
   RUBY
 
-  rails_command 'generate devise User'
-  rails_command 'generate devise Admin'
-  rails_command 'active_storage:install'
-  rails_command 'db:migrate'
-
   run 'mkdir -p spec/support/assets'
   run 'wget  --directory-prefix=spec/support/assets https://dummyimage.com/100/1.png&text=1'
 
@@ -98,15 +94,21 @@ def app_scaffold
     RUBY
   end
 
-  file 'spec/features/app_presentation_spec.rb' do
+  file 'spec/system/app_presentation_spec.rb' do
     <<~RUBY
       require "rails_helper"
 
       RSpec.feature 'App Presentation' do
         scenario 'Welcome to #{@app_name}' do
-          create :organization
+          4.times do
+            create :organization
+          end
+
           organization = Organization.first
-          visit organization_path organization
+          visit organizations_path
+          sleep 6
+          # visit organization_path organization
+          click_on 'Show', match: :first
           sleep 3
           # visit edit_organization_path organization
           click_on 'Edit'
