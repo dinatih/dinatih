@@ -50,15 +50,28 @@ def app_scaffold
   gsub_file 'app/controllers/organizations_controller.rb',
             'params.require(:organization).permit(:name)', 'params.require(:organization).permit(:name, :logo)'
 
+  gsub_file 'app/views/organizations/index.html.haml', '%table', '%table.table.table-striped'
   inject_into_file 'app/views/organizations/index.html.haml', before: '      %th Name' do
     <<-HAML
       %th Logo
     HAML
   end
 
+  inject_into_file 'app/views/organizations/index.html.haml', after: "%th Name\n" do
+    <<-HAML
+      %th Users
+    HAML
+  end
+
   inject_into_file 'app/views/organizations/index.html.haml', before: '        %td= organization.name' do
     <<-HAML
-        %td= image_tag organization.logo
+        %td= image_tag organization.logo, style: 'height: 3em;'
+    HAML
+  end
+
+  inject_into_file 'app/views/organizations/index.html.haml', after: "%td= organization.name\n" do
+    <<-HAML
+        %td= organization.users.count
     HAML
   end
 
@@ -86,11 +99,36 @@ def app_scaffold
   RUBY
 
   run 'mkdir -p spec/support/assets'
-  run 'wget  --directory-prefix=spec/support/assets https://dummyimage.com/100/1.png&text=1'
 
-  inject_into_file 'spec/factories/organizations.rb', after: "name { \"MyString\" }\n" do
+  prepend_to_file 'spec/factories/organizations.rb', "require 'open-uri'\n"
+  gsub_file 'spec/factories/organizations.rb', 'name { "MyString" }', 'name { Faker::Company.name }'
+  inject_into_file 'spec/factories/organizations.rb', after: "name { Faker::Company.name }\n" do
     <<-RUBY
-    logo { Rack::Test::UploadedFile.new('spec/support/assets/1.png', 'image/png') }
+    logo do
+      Rack::Test::UploadedFile.new(URI.parse(Faker::Company.unique.logo).open, 'image/png')
+    end
+    RUBY
+  end
+
+  inject_into_file 'spec/factories/organizations.rb', after: "'image/png')\n    end\n" do
+    <<-RUBY
+    transient do
+      users_count { rand(6) }
+    end
+    after(:create) do |organization, evaluator|
+      create_list(:user, evaluator.users_count, organization: organization)
+
+      # You may need to reload the record here, depending on your application
+      organization.reload
+    end
+    RUBY
+  end
+
+  gsub_file 'spec/factories/users.rb', 'name { "MyString" }', 'name { Faker::Name.name }'
+  inject_into_file 'spec/factories/users.rb', after: "name { Faker::Name.name }\n" do
+    <<-RUBY
+    email { Faker::Internet.email(name: name) }
+    password { Faker::Internet.password }
     RUBY
   end
 
@@ -122,8 +160,9 @@ def app_scaffold
     <<~RUBY
       # [OPTIMIZE] Create a module or class to be able to include this:
       # include FactoryBot::Syntax::Methods
-
-      FactoryBot.create :organization
+      4.times do
+        FactoryBot.create :organization
+      end
     RUBY
   end
   rails_command 'db:seed'
