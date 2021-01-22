@@ -208,6 +208,7 @@ def use_rspec_with_factory_bot
   gem_group :development, :test do
     gem 'capybara'
     gem 'factory_bot_rails'
+    gem 'faker'
     gem 'rspec-rails'
     gem 'shoulda-matchers'
     gem 'webdrivers'
