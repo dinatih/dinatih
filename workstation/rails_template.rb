@@ -184,9 +184,8 @@ def use_rspec_with_factory_bot
     CODE
   end
 
-  inject_into_file 'spec/rails_helper.rb', after: "if Rails.env.production?\n" do
+  inject_into_file 'spec/rails_helper.rb', after: "require 'rspec/rails'\n" do
     <<~RUBY
-      require 'rspec/rails'
       require 'capybara/rspec'
       require 'capybara/rails'
 
