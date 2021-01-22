@@ -36,6 +36,9 @@ def app_scaffold
   generate :scaffold, 'Organization name:string'
   # Users of our client's organizations
   generate :scaffold, 'User name:string organization:references'
+  # Users of our company
+  generate :scaffold, 'Admin name:string'
+
   inject_into_file 'app/models/organization.rb', after: "ApplicationRecord\n" do
     <<-RUBY
   has_one_attached :logo
@@ -43,8 +46,22 @@ def app_scaffold
     RUBY
   end
 
-  # Users of our company
-  generate :scaffold, 'Admin name:string'
+  gsub_file 'app/controllers/organizations_controller.rb',
+            'params.require(:organization).permit(:name)', 'params.require(:organization).permit(:name, :logo)'
+
+  inject_into_file 'app/views/organizations/_form.html.haml', after: "    = f.input :name\n" do
+    <<-HAML
+    .form-inputs
+      = f.input :logo
+    HAML
+  end
+
+  inject_into_file 'app/views/organizations/show.html.haml', after: "= @organization.name\n" do
+    <<-HAML
+  %b
+  = image_tag @organization.logo
+    HAML
+  end
 
   route <<-RUBY
   namespace :admin do
@@ -54,13 +71,6 @@ def app_scaffold
     resources :users
   end
   RUBY
-
-  inject_into_file 'app/views/organizations/show.html.haml', after: "= @organization.name\n" do
-    <<-HAML
-  %b
-  = image_tag @organization.logo
-    HAML
-  end
 
   rails_command 'generate devise User'
   rails_command 'generate devise Admin'
@@ -83,7 +93,11 @@ def app_scaffold
       RSpec.feature 'App Presentation' do
         scenario 'Welcome to #{@app_name}' do
           create :organization
-          visit organization_path Organization.first
+          organization = Organization.first
+          visit organization_path organization
+          sleep 3
+          # visit edit_organization_path organization
+          click_on 'Edit'
           sleep 10
         end
       end
