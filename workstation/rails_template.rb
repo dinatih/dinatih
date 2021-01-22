@@ -72,6 +72,7 @@ def setup_en_fr_app
 
   fr_locales = <<~YML
     fr:
+      app_name: #{@app_name}
       activerecord:
         models:
           admin: Admin
@@ -83,6 +84,7 @@ def setup_en_fr_app
 
   en_locales = <<~YML
     en:
+      app_name: #{@app_name}
       activerecord:
         models:
           admin: Admin
