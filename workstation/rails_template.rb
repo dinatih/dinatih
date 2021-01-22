@@ -37,23 +37,19 @@ def app_scaffold
   # B-to-B (to-C): the app will manage a Organization for each of our clients
   generate :scaffold, 'Organization name:string'
   # Users of our company
-  generate :scaffold, 'Admin::Admin name:string'
+  generate :scaffold, 'Admin name:string'
 
-  inject_into_file 'config/routes.rb', after: "namespace :admin do\n" do
-    <<-CODE
+  route <<-RUBY
+  namespace :admin do
     root 'admins#index'
-    CODE
-  end
-
-  inject_into_file 'config/routes.rb', after: "resources :admins\n" do
-    <<-CODE
+    resources :admins
     resources :organizations
     resources :users
-    CODE
   end
+  RUBY
 
   rails_command 'generate devise User'
-  rails_command 'generate devise Admin::Admin'
+  rails_command 'generate devise Admin'
   rails_command 'db:migrate'
 
   file 'spec/features/app_presentation_spec.rb' do
@@ -186,7 +182,7 @@ def use_rspec_with_factory_bot
     CODE
   end
 
-  inject_into_file 'spec/rails_helper.rb', after: 'mode!") if Rails.env.production?\n' do
+  inject_into_file 'spec/rails_helper.rb', after: "if Rails.env.production?\n" do
     <<~RUBY
       require 'rspec/rails'
       require 'capybara/rspec'
