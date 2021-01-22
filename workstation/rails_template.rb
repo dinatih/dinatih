@@ -50,6 +50,7 @@ def app_scaffold
 
   rails_command 'generate devise User'
   rails_command 'generate devise Admin'
+  rails_command 'active_storage:install'
   rails_command 'db:migrate'
 
   file 'spec/features/app_presentation_spec.rb' do
