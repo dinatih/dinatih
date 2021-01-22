@@ -55,6 +55,13 @@ def app_scaffold
   end
   RUBY
 
+  inject_into_file 'app/views/organizations/show.html.haml', after: "= @organization.name\n" do
+    <<-HAML
+  %b
+  = image_tag @organization.logo
+    HAML
+  end
+
   rails_command 'generate devise User'
   rails_command 'generate devise Admin'
   rails_command 'active_storage:install'
