@@ -32,10 +32,17 @@ def app_scaffold
   generate :controller, 'welcome index'
   route "root to: 'welcome#index'"
 
-  # Users of our client's organizations
-  generate :scaffold, 'User name:string'
   # B-to-B (to-C): the app will manage a Organization for each of our clients
   generate :scaffold, 'Organization name:string'
+  # Users of our client's organizations
+  generate :scaffold, 'User name:string organization:references'
+  inject_into_file 'app/models/organization.rb', after: "ApplicationRecord\n" do
+    <<-RUBY
+  has_one_attached :logo
+  has_many :users
+    RUBY
+  end
+
   # Users of our company
   generate :scaffold, 'Admin name:string'
 
