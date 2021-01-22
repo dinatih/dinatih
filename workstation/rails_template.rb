@@ -67,13 +67,24 @@ def app_scaffold
   rails_command 'active_storage:install'
   rails_command 'db:migrate'
 
+  run 'mkdir -p spec/support/assets'
+  run 'wget  --directory-prefix=spec/support/assets https://dummyimage.com/100/1.png&text=1'
+
+  inject_into_file 'spec/factories/organizations.rb', after: "name { \"MyString\" }\n" do
+    <<-RUBY
+    logo { Rack::Test::UploadedFile.new('spec/support/assets/1.png', 'image/png') }
+    RUBY
+  end
+
   file 'spec/features/app_presentation_spec.rb' do
     <<~RUBY
       require "rails_helper"
 
       RSpec.feature 'App Presentation' do
-        scenario 'Welcome' do
-          visit root_path
+        scenario 'Welcome to #{@app_name}' do
+          create :organization
+          visit organization_path Organization.first
+          sleep 10
         end
       end
     RUBY
