@@ -143,6 +143,10 @@ def use_devise
   gem 'devise-bootstrap-views'
   run 'bundle install'
   generate 'devise:install'
+
+  inject_into_file 'config/environments/development.rb', after: "config.action_mailer.perform_caching = false\n" do
+    "  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }"
+  end
 end
 
 def use_haml
