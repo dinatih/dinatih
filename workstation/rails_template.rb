@@ -49,16 +49,28 @@ def app_scaffold
   gsub_file 'app/controllers/organizations_controller.rb',
             'params.require(:organization).permit(:name)', 'params.require(:organization).permit(:name, :logo)'
 
-  inject_into_file 'app/views/organizations/_form.html.haml', after: "    = f.input :name\n" do
+  inject_into_file 'app/views/organizations/index.html.haml', before: '      %th Name' do
     <<-HAML
-    .form-inputs
-      = f.input :logo
+      %th Logo
+    HAML
+  end
+
+  inject_into_file 'app/views/organizations/index.html.haml', before: '        %td= organization.name' do
+    <<-HAML
+        %td= image_tag organization.logo
+    HAML
+  end
+
+  inject_into_file 'app/views/organizations/_form.html.haml', after: "= f.input :name\n" do
+    <<-HAML
+  .form-inputs
+    = f.input :logo
     HAML
   end
 
   inject_into_file 'app/views/organizations/show.html.haml', after: "= @organization.name\n" do
     <<-HAML
-  %b
+  %b Logo
   = image_tag @organization.logo
     HAML
   end
