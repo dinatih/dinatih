@@ -188,10 +188,14 @@ def use_rspec_with_factory_bot
     gem 'shoulda-matchers'
     gem 'webdrivers'
   end
-
   run 'bundle install'
-
   generate 'rspec:install'
+
+  inject_into_file 'spec/rails_helper.rb', after: "require File.expand_path('../config/environment', __dir__)\n" do
+    <<~RUBY
+      Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+    RUBY
+  end
 
   file 'spec/support/factory_bot.rb', <<~CODE
     RSpec.configure do |config|
