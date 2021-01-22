@@ -89,6 +89,16 @@ def app_scaffold
       end
     RUBY
   end
+
+  file 'db/seeds.rb' do
+    <<~RUBY
+      # [OPTIMIZE] Create a module or class to be able to include this:
+      # include FactoryBot::Syntax::Methods
+
+      FactoryBot.create :organization
+    RUBY
+  end
+
 end
 
 def setup_en_fr_app
