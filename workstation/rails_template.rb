@@ -55,7 +55,8 @@ def get_remote(src, dest = nil)
   repo =  if ENV['RAILS_TEMPLATE_DEBUG'].present?
             File.join(File.dirname(__FILE__), 'rails_template/')
           else
-            'https://raw.githubusercontent.com/dinatih/dinatih/master/workstation/'
+            log :download_template_file_from_github, src
+            'https://raw.githubusercontent.com/dinatih/dinatih/master/workstation/rails_template/'
           end
   remote_file = repo + src
   get(remote_file, dest, force: true)

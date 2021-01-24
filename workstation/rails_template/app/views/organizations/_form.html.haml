@@ -1,0 +1,12 @@
+-# frozen_string_literal: true
+= simple_form_for(@organization) do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+  .form-inputs
+    = f.input :name
+  .form-inputs
+    = f.input :logo
+
+  .form-actions
+    = f.button :submit
