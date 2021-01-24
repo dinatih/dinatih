@@ -1,0 +1,23 @@
+%h1 Listing organizations
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Logo
+      %th Name
+      %th Users
+      %th
+  %tbody
+    - @organizations.each do |organization|
+      %tr
+        %td= image_tag organization.logo, style: 'height: 3em;'
+        %td
+          = link_to organization.name, organization
+        %td= organization.users.count
+        %td
+          = link_to edit_organization_path(organization) do
+            %i-pencil-square
+          = link_to organization, method: :delete, data: { confirm: 'Are you sure?' } do
+            %i.bi-trash
+%br
+= link_to 'New Organization', new_organization_path

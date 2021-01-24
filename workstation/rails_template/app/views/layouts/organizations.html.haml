@@ -1,0 +1,18 @@
+- if @organization.present?
+  - content_for(:content) do
+    %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      = link_to @organization, class: 'navbar-brand' do
+        = image_tag @organization.logo, style: 'height: 2em;'
+        = @organization ? @organization.name : 'Organisation'
+      %button.navbar-toggler{"aria-controls" => "organization_navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#organization_navbar", "data-toggle" => "collapse", type: "button"}
+        %span.navbar-toggler-icon
+      #organization_navbar.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto
+          %li.nav-item.active
+            = link_to User.model_name.human(count: 2), organization_users_path(@organization), class: 'nav-link'
+        %form.form-inline.my-2.my-lg-0
+          %input.form-control.mr-sm-2{"aria-label" => "Search", placeholder: "Search", type: "search"}
+          %button.btn.btn-outline-success.my-2.my-sm-0{:type => "submit"}
+            %i.bi-search
+    = yield
+= render template: 'layouts/application'

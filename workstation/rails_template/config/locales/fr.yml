@@ -1,0 +1,18 @@
+fr:
+  app_name: testa
+  activerecord:
+    models:
+      admin:
+        one: Admin
+        other: Admins
+      organization:
+        one: Organisation
+        other: Organisations
+      user:
+        one: Utilisateur
+        other: Utilisateurs
+  attributes:
+    name: Nom
+  layout:
+    application:
+      search: Rechercher
