@@ -1,0 +1,35 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/*'
+    - 'db/migrate/*'
+    - 'db/schema.rb'
+    - 'node_modules/**/*'
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  TargetRubyVersion: 3.0
+  TargetRailsVersion: 6.1
+Layout/ClassStructure:
+  Enabled: true
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+Lint/UselessAccessModifier:
+  ContextCreatingMethods:
+    - concerning
+Metrics/BlockLength:
+  Enabled: false
+Metrics/ClassLength:
+  Max: 500
+Metrics/LineLength:
+  Max: 120
+Metrics/ModuleLength:
+  Max: 500
+Style/AsciiComments:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false # ~~Default in ruby 3, so don't need to worry about,~~ except we go some memory leaks
