@@ -10,6 +10,8 @@
         %ul.navbar-nav.mr-auto
           %li.nav-item.active
             = link_to User.model_name.human(count: 2), organization_users_path(@organization), class: 'nav-link'
+          %li.nav-item.active
+            = link_to Article.model_name.human(count: 2), organization_articles_path(@organization), class: 'nav-link'
         %form.form-inline.my-2.my-lg-0
           %input.form-control.mr-sm-2{"aria-label" => "Search", placeholder: "Search", type: "search"}
           %button.btn.btn-outline-success.my-2.my-sm-0{:type => "submit"}
