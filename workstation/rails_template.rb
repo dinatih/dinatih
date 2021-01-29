@@ -8,48 +8,6 @@
 # $ rails new business_information_system -m https://github.com/dinatih/dinatih/wortstation/rails_template.rb
 # $ rails new business_information_system -T -d postgresql -m https://github.com/dinatih/dinatih/wortstation/rails_template.rb
 
-def apply_template!
-  gem 'rexml' # Because ruby3 no longer build-in rexml https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/
-  gem 'rails-erd', git: 'https://github.com/andrew-newell/rails-erd'
-  use_rspec_with_factory_bot
-  rails_command 'db:create'
-  rails_command 'active_storage:install'
-  use_haml
-  use_devise
-  use_simple_form_with_bootstrap
-
-  setup_en_fr_app
-  application do
-    <<~RUBY
-      config.generators do |g|
-        g.stylesheets false
-        g.test_framework :rspec, view_specs: false, controller_specs: false
-      end
-    RUBY
-  end
-
-  get_remote 'app/views/layouts/application.html.haml'
-  generate :controller, 'welcome index'
-  generate :scaffold, 'Organization name:string'
-  generate :scaffold, 'Article name:string organization:references description:text count:integer'
-  generate :scaffold, 'User name:string organization:references'
-  generate :scaffold, 'Payment organization:references user:references "amount:decimal{8,2}"'
-  generate :scaffold, 'Admin name:string'
-  rails_command 'generate devise User'
-  rails_command 'generate devise Admin'
-  rails_command 'db:migrate'
-  setup_organizations
-  get_remote 'app/controllers/users_controller.rb'
-  setup_tests
-
-  get_remote 'config/routes.rb'
-
-  get_remote 'db/seeds.rb'
-  rails_command 'db:seed'
-
-  use_bootstrap
-end
-
 def get_remote(src, dest = nil)
   dest ||= src
   repo =  if ENV['RAILS_TEMPLATE_DEBUG'].present?
@@ -62,18 +20,76 @@ def get_remote(src, dest = nil)
   get(remote_file, dest, force: true)
 end
 
+def apply_template!
+  gem 'chartkick'
+  # gem 'client_side_validations'
+  gem 'groupdate'
+  gem 'high_voltage'
+  # gem 'i18n-tasks'
+  # gem 'pg_search'
+  gem 'rails-erd', git: 'https://github.com/andrew-newell/rails-erd'
+  gem 'rexml' # Because ruby3 no longer build-in rexml https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/
+  # gem 'sidekiq'
+
+  use_rspec_with_factory_bot
+  rails_command 'db:drop'
+  rails_command 'db:create'
+  rails_command 'active_storage:install'
+  use_haml
+  use_devise
+  use_simple_form_with_bootstrap
+
+  setup_en_fr_app
+  application do
+    <<~RUBY
+      config.generators do |g|
+        g.helper false
+        g.test_framework :rspec, view_specs: false, controller_specs: false, request_specs: false
+        g.stylesheets false
+      end
+    RUBY
+  end
+
+  get_remote 'app/views/layouts/application.html.haml'
+  get_remote 'app/javascript/stylesheets/application.scss'
+  get_remote 'app/views/pages/home.html.haml'
+  get_remote 'config/initializers/high_voltage.rb'
+
+  generate :scaffold, 'Organization name:string'
+  generate :scaffold, 'Article name:string organization:references description:text count:integer'
+  generate :scaffold, 'User name:string organization:references'
+  generate :scaffold, 'Payment organization:references article:references user:references \
+                      "amount:decimal{8,2}" succeeded_at:datetime'
+  generate :scaffold, 'Admin name:string'
+  rails_command 'generate devise User'
+  rails_command 'generate devise Admin'
+  rails_command 'db:migrate'
+  setup_organizations
+  get_remote 'app/controllers/users_controller.rb'
+  setup_tests
+
+  get_remote 'config/routes.rb'
+
+  get_remote 'db/seeds.rb'
+  rails_command 'db:seed'
+  use_bootstrap
+end
+
 def setup_en_fr_app
   gem 'rails-i18n'
   run 'bundle install'
 
-  get_remote 'config/locales/fr.yml'
   get_remote 'config/locales/en.yml'
+  get_remote 'config/locales/fr.yml'
   # config.i18n.available_locales = [:en, :fr]
   # config.i18n.default_locale = :en
 end
 
 def setup_organizations
+  get_remote 'app/models/article.rb'
   get_remote 'app/models/organization.rb'
+  get_remote 'app/models/user.rb'
+
   gsub_file 'app/controllers/organizations_controller.rb',
             'params.require(:organization).permit(:name)', 'params.require(:organization).permit(:name, :logo)'
 
@@ -84,27 +100,46 @@ def setup_organizations
 end
 
 def setup_tests
+  get_remote 'spec/factories/articles.rb'
   get_remote 'spec/factories/organizations.rb'
+  get_remote 'spec/factories/payments.rb'
   get_remote 'spec/factories/users.rb'
   get_remote 'spec/system/app_presentation_spec.rb'
 end
 
 def use_bootstrap
-  rails_command 'webpacker:install'
+
   # https://rossta.net/blog/webpacker-with-bootstrap.html
   run 'yarn add jquery popper.js'
   run 'yarn add bootstrap'
   run 'yarn add bootstrap-table'
+  run 'yarn add chart.js'
+  run 'yarn add chartkick'
+  run 'yarn add resolve-url-loader'
 
-  get_remote 'app/javascript/css/application.scss'
+  get_remote 'app/javascript/stylesheets/application.scss'
   inject_into_file 'app/javascript/packs/application.js', before: 'Rails.start()' do
     <<~CODE
       import 'jquery'
       import 'popper.js'
       import 'bootstrap'
-      import 'css/application'
+      import 'bootstrap-table'
+      import 'chartkick'
+      import 'chart.js'
+      import 'stylesheets/application'
     CODE
   end
+  rails_command 'webpacker:install'
+
+  inject_into_file 'config/webpack/environment.js', after: "const { environment } = require('@rails/webpacker')\n" do
+    <<~CODE
+      // resolve-url-loader must be used before sass-loader
+      environment.loaders.get('sass').use.splice(-1, 0, {
+        loader: 'resolve-url-loader'
+      })
+    CODE
+  end
+  # get_remote 'config/webpack/environment.js'
 end
 
 def use_devise
@@ -140,6 +175,15 @@ def use_rspec_with_factory_bot
 
   get_remote 'spec/rails_helper.rb'
   get_remote 'spec/support/factory_bot.rb'
+end
+
+def use_rubocop
+  gem 'rubocop'
+  gem 'rubocop-rails'
+  gem 'rubocop-rspec'
+
+  get_remote '.rubocop.yml'
+  get_remote 'spec/system/.rubocop.yml'
 end
 
 def use_simple_form_with_bootstrap

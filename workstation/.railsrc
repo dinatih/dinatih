@@ -1,3 +1,4 @@
 --skip-test
 --database=postgresql
+--skip-webpack-install
 # --template=./rails_template.rb
