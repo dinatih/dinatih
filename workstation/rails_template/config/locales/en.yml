@@ -5,6 +5,9 @@ en:
       admin:
         one: Admin
         other: Admins
+      article:
+        one: Article
+        other: Articles
       organization:
         one: Organization
         other: Organizations
