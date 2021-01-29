@@ -1,0 +1,58 @@
+{
+  "name": "",
+  "logo": "",
+  "description": "",
+  "website": "",
+  "keywords": [],
+  "repository": "",
+  "addons": ["heroku-postgresql:hobby-dev", "scheduler:standard", "heroku-redis:hobby-dev"],
+  "buildpacks": [{ "url": "heroku/ruby" }],
+  "env": {
+    "APPSIGNAL_ACTIVE": { "required": true },
+    "APPSIGNAL_APP_ENV": { "required": true },
+    "APPSIGNAL_APP_NAME": { "required": true },
+    "APPSIGNAL_PUSH_API_KEY": { "required": true },
+    "AWS_ACCESS_KEY_ID": { "required": true },
+    "AWS_REGION": { "required": true },
+    "AWS_SECRET_ACCESS_KEY": { "required": true },
+    "GEOCODER_API_KEY": { "required": true },
+    "GOOGLE_ANALYTICS_ID": { "required": true },
+    "HEROKU_APP_NAME": { "required": true },
+    "HEROKU_PARENT_APP_NAME": { "required": true },
+    "INTERCEPTOR_EMAIL": { "required": true },
+    "MANGOPAY_API_URL": { "required": true },
+    "MANGOPAY_CLIENT_ID": { "required": true },
+    "MANGOPAY_CLIENT_PASSWORD": { "required": true },
+    "RACK_ENV": { "required": true },
+    "RAILS_ENV": { "required": true },
+    "SECRET_KEY_BASE": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "SENDGRID_PASSWORD": { "required": true },
+    "SENDGRID_USERNAME": { "required": true },
+    "S3_BUCKET_NAME": { "required": true }
+  },
+  "environments": {
+    "test": {
+      "addons":["heroku-redis", "heroku-postgresql"],
+      "buildpacks": [
+        { "url": "heroku/ruby" },
+        { "url": "https://github.com/heroku/heroku-buildpack-google-chrome" },
+        { "url": "https://github.com/heroku/heroku-buildpack-chromedriver" }
+      ],
+      "env": {
+        "RACK_ENV": "test",
+        "RAILS_ENV": "test",
+        "APPSIGNAL_APP_NAME":       "",
+        "APPSIGNAL_PUSH_API_KEY":   "",
+        "MANGOPAY_API_URL":         "https://api.sandbox.mangopay.com",
+        "MANGOPAY_CLIENT_ID":       "",
+        "MANGOPAY_CLIENT_PASSWORD": ""
+      },
+      "scripts": {
+        "test-setup": "bin/rails assets:precompile"
+      }
+    }
+  }
+}
