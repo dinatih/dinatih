@@ -1,0 +1,245 @@
+fr:
+  # https://github.com/svenfuchs/rails-i18n/blob/master/rails/rails5/active_record.yml
+  # https://github.com/svenfuchs/rails-i18n/blob/master/rails/rails5/active_model.yml
+  # Attributes names common to most models
+
+  attributes:
+    address: Adresse
+    action: Action
+    admins: Admins
+    amount: Montant
+    amount_with_taxes: Montant TTC
+    amount_without_taxes: Montant HT
+    article: Article
+    articles: Articles
+    article_prices: Prix 1 Annonce
+    articles_count: "# d'Articles"
+    attachment: Fichier ou Image
+    booking: Réservation
+    bookings: Réservations
+    category: Catégorie
+    categories: Catégories
+    city: Ville
+    client: Client
+    clients: Clients
+    comments: Commentaires
+    country: Pays
+    created_at: Créé le
+    current_password: Mot de passe actuel
+    date: Date
+    description: Description
+    email: Email
+    end: Fin
+    first_name: Prénom
+    last_name: Nom
+    month: Mois
+    name: Nom
+    organization: Organisation
+    organizations: Organisations
+    password: Mot de passe
+    payment: Paiement
+    payments: Paiements
+    payment_method: Moyen de paiment
+    payment_methods:
+      by_card: Par C.B.
+      other: Autre
+      by_bank_transfer: Par Virement
+    phone_number: Téléphone
+    price: Prix
+    product: Produit
+    products: Produits
+    quantity: Quantité
+    remember_me: Se souvenir de moi
+    start: Début
+    status: Statut
+    updated_at: M.à.j le
+    user: Utilisateur
+    users: Utilisateurs
+
+    # Not true attributes or methods, just helper for form views
+    all_the_funds_are_not_on_the_right_wallet: Attention, tous les fonds ne sont pas sur le bon wallet
+    back: Revenir à l'étape précédente
+    cancel_account: Désactiver mon compte
+    client_has_available_applied_adjustments: Atention, le client dispose de crédits de location non utilisés
+    connection_as_admin: Connexion en tant qu'admin
+    confirm: Êtes-vous sur?
+    days: Jours
+    exceptional_package: Forfait exceptionnel
+    expenses: Dépenses
+    log_in: S'identifier
+    missing_payout_mangopay_bank_account_id: Le bank_account_id Mangopay pour les Payouts est manquant
+    new_password: Nouveau mot de passe
+    new_password_confirmation: Confirmation du nouveau mot de passe
+    password_confirmation: Confirmation du mot de passe
+    password_forget: Mot de passe oublié ?
+    password_update: Modifier mon mot de passe
+    reset_password_instructions: M'envoyer les informations de réinitialisation
+    sign_up: S'inscrire
+    update: Mettre à jour
+
+  # Active Record models configuration
+  activerecord:
+    errors:
+      messages:
+        blank: ne peut pas être vide
+        invalid: n’est pas valide
+        record_invalid: Enregistrement non valide
+      models:
+        organization:
+          attributes:
+            siren:
+              invalid: n’est pas valide
+              taken: déjà utilisé par une autre entreprise
+        user:
+          attributes:
+            confirmation_token:
+              invalid: n’est pas valide
+            email:
+              already_exist: Un compte avec cette adresse email existe déjà
+              blank: ne peut pas être vide
+              invalid: n’est pas valide
+              taken: est déjà utilisé
+            password:
+              blank: ne peut pas être vide
+              too_short: doit faire au moins 8 caractères
+            password_confirmation:
+              confirmation: doit être identique au mot de passe
+            phone:
+              invalid: n'est pas valide
+
+    models:
+      admin:
+        one:    Admin
+        other:  Admins
+      article:
+        one:    Article
+        other:  Articles
+      article_prices:
+        one:    Prix
+        other:  Prix
+      booking:
+        one:    Réservation
+        other:  Réservations
+      booking_change_request:
+        one:    Modification de la location
+        other:  Modifications de la location
+      category:
+        one:    Catégorie
+        other:  Catégories
+      comment:
+        one:    Commentaire
+        other:  Commentaires
+      invoice_item:
+        one:    Élément de Facture
+        other:  Éléments de Facture
+      invoice:
+        one:    Facture
+        other:  Factures
+      organization:
+        one:    Organisation
+        other:  Organisations
+      payment:
+        one:    Paiement
+        other:  Paiements
+      product:
+        one:    Produit
+        other:  Produits
+      user:
+        one:    Utilisateur
+        other:  Utilisateurs
+
+    # Translate model attribute names. Used in Model.human_enum_name(:enum_name, :attribute_name).
+    attributes:
+      admin:
+        statuses:
+          cto: CTO
+          coo: COO
+          front_end: Développeur front-end
+          back_end: Développeur back-end
+          growth_marketer: Growth Marketer
+          sales_manager: Sales Manager
+          digital_marketing: Marketing digital
+          ceo: CEO
+          operator: Operateur
+          marketer: Marketing
+          developer: Developpeur
+      article:
+        brand: Marque
+        city: Ville de stockage
+        conditions: Conditions et règles d'utilisation
+        deposit: Caution demandée (en €)
+        model: Modèle
+      booking:
+        billing_date: Date de facturation
+        paid_amount: Montant déjà payé par le locataire de la machine
+      invoice_item:
+        quantity: Quantité
+        unit: Unité
+        unit_amount: Montant unitaire
+        total_amount: Montant total
+      organization:
+        address: Siège social
+        bic: BIC
+        billing_address: Adresse de facturation
+        city: Ville du siège social
+        organization_type: Type d'activité
+        country: Pays du siège social
+        iban: IBAN
+        intra_community_vat: Numéro de TVA intracommunautaire
+        kbis: 'Extrait K-bis de moins de 3 mois'
+        legal_form: Forme juridique
+        legal_forms:
+          auto_entrepreneur: Auto entrepreneur
+          crafstman: Artisan
+          eirl: EIRL
+          eurl: EURL
+          micro_organization: Micro entreprise
+          other: Autre
+          sa: SA
+          sarl: SARL
+          sas_sasu: SAS-SASU
+          sas: SAS
+          sasu: SASU
+          sci: SCI
+          scop: SCOP
+        name: Nom de votre société
+        naf_code: Code NAF
+        naf_name: Activité de la société
+        rcs: Ville du RCS
+        siren: SIREN (9 chiffres)
+        status_other: Autre
+        statute: Statut
+        zip_code: Code postal du siège social
+      payment:
+        amount: Montant
+        as_authorization: En tant qu'autorisation
+        authorization_status: Statut Autorisation
+        authorization_statuses:
+          pending: En attente
+          succeeded: Réussie
+          failed: Échouée
+          skipped: Ignorée
+        client_id: Id du Client
+        pre_authorization_id: Id Mangopay de la pré-autorisation
+        payment_methods: :attributes.payment_methods
+        statuses:
+          pending: 'En attente'
+          succeeded: 'Réussi'
+          failed: 'Échoué'
+          authorization: 'Autorisation'
+        succeeded_at: Réussi le
+      user:
+        birthdate: Date de naissance
+        confirmation_token: Numéro de confirmation
+        created_at: Date d'inscription
+        email: Email
+        first_name: Prénom
+        fullname: Nom
+        last_name: Nom de famille
+        last_sign_in_at: Dernière connexion le
+        locked: Utillisateur validé - les informations légales sont-elles bloquées?
+        payment_methods: :attributes.payment_methods
+        payment_periods: :attributes.payment_periods
+        phone_number: Numero de téléphone
+        sign_in_count: Nombre de connexion
+        terms_of_service: Vous devez accepter les conditions générales d'utilisation de la plateforme.
