@@ -137,28 +137,7 @@ def setup_webpacks
   run 'yarn add jquery popper.js bootstrap bootstrap-table chart.js chartkick resolve-url-loader'
 
   get_remote 'app/javascript/stylesheets/application.scss'
-  inject_into_file 'app/javascript/packs/application.js', before: 'Rails.start()' do
-    <<~CODE
-      import 'jquery'
-      import 'popper.js'
-      import 'bootstrap'
-      import 'bootstrap-table'
-      import 'chartkick'
-      import 'chart.js'
-      import 'stylesheets/application'
-
-      global.$ = require('jquery')
-      $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['fr-fr']);
-      $.extend($.fn.bootstrapTable.defaults, {
-        pageSize: 5,
-        pageList: [5, 10, 100, 1000],
-        pagination: true,
-        classes: 'table table-hover table-no-bordered',
-        sidePagination: 'server',
-        showColumns: true
-      });
-    CODE
-  end
+  get_remote 'app/javascript/packs/application.js'
 
   inject_into_file 'config/webpack/environment.js', after: "const { environment } = require('@rails/webpacker')\n" do
     <<~CODE
