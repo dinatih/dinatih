@@ -7,115 +7,134 @@
 # Usage:
 # $ rails new business_information_system -m https://github.com/dinatih/dinatih/wortstation/rails_template.rb
 # $ rails new business_information_system -T -d postgresql -m https://github.com/dinatih/dinatih/wortstation/rails_template.rb
+def apply_template!
+  add_gems
+  after_bundle do
+    generate 'simple_form:install --bootstrap'
+    generate 'rspec:install'
+    get_remote 'spec/rails_helper.rb'
+    get_remote 'spec/support/factory_bot.rb'
+    rails_command 'db:drop'
+    rails_command 'db:create'
+    rails_command 'active_storage:install'
+
+    run 'HAML_RAILS_DELETE_ERB=true rails haml:erb2haml'
+
+    generate 'devise:install'
+    inject_into_file 'config/environments/development.rb', after: "config.action_mailer.perform_caching = false\n" do
+      "  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }"
+    end
+
+    get_remote '.rubocop.yml'
+    get_remote 'spec/system/.rubocop.yml'
+
+    get_remote 'config/locales/en.yml'
+    get_remote 'config/locales/fr.yml'
+
+    application do
+      <<~RUBY
+        config.generators do |g|
+          g.helper false
+          g.stylesheets false
+          g.test_framework :rspec, view_specs: false, controller_specs: false, request_specs: false, routing_specs: false
+        end
+      RUBY
+    end
+
+    get_remote 'app/controllers/application_controller.rb'
+    get_remote 'app/views/layouts/application.html.haml'
+    get_remote 'app/javascript/stylesheets/application.scss'
+    get_remote 'app/views/pages/home.html.haml'
+    get_remote 'config/initializers/high_voltage.rb'
+
+    generate :scaffold, 'Admin name:string'
+    rails_command 'generate devise Admin'
+    setup_business_model
+    get_remote 'config/routes.rb'
+    setup_webpacks
+    run 'rubocop --auto-correct-all'
+  end
+end
+
+def add_gems
+  gem 'chartkick'
+  # gem 'client_side_validations'
+  gem 'devise'
+  gem 'devise-i18n'
+  gem 'devise-bootstrap-views'
+  gem 'groupdate'
+  gem 'haml-rails'
+  gem 'high_voltage'
+  # gem 'i18n-tasks'
+  # gem 'pg_search'
+  gem 'rails-erd', git: 'https://github.com/andrew-newell/rails-erd'
+  gem 'rails-i18n'
+  gem 'rexml' # Because ruby3 no longer build-in rexml https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/
+  # gem 'sidekiq'
+  gem 'rubocop'
+  gem 'rubocop-rails'
+  gem 'rubocop-rspec'
+  gem 'simple_form'
+
+  gem_group :development, :test do
+    gem 'capybara'
+    gem 'factory_bot_rails'
+    gem 'faker'
+    gem 'rspec-rails'
+    gem 'shoulda-matchers'
+    gem 'webdrivers'
+  end
+end
 
 def get_remote(src, dest = nil)
   dest ||= src
   repo =  if ENV['RAILS_TEMPLATE_DEBUG'].present?
-            File.join(File.dirname(__FILE__), 'rails_template/')
+            File.join(__dir__, 'rails_template/')
           else
             log :download_template_file_from_github, src
-            'https://raw.githubusercontent.com/dinatih/dinatih/master/workstation/rails_template/'
+            'https://raw.githubusercontent.com/dinatih/dinatih/main/workstation/rails_template/'
           end
   remote_file = repo + src
   get(remote_file, dest, force: true)
 end
 
-def apply_template!
-  gem 'chartkick'
-  # gem 'client_side_validations'
-  gem 'groupdate'
-  gem 'high_voltage'
-  # gem 'i18n-tasks'
-  # gem 'pg_search'
-  gem 'rails-erd', git: 'https://github.com/andrew-newell/rails-erd'
-  gem 'rexml' # Because ruby3 no longer build-in rexml https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/
-  # gem 'sidekiq'
-
-  use_rspec_with_factory_bot
-  rails_command 'db:drop'
-  rails_command 'db:create'
-  rails_command 'active_storage:install'
-  use_haml
-  use_devise
-  use_simple_form_with_bootstrap
-
-  setup_en_fr_app
-  application do
-    <<~RUBY
-      config.generators do |g|
-        g.helper false
-        g.test_framework :rspec, view_specs: false, controller_specs: false, request_specs: false
-        g.stylesheets false
-      end
-    RUBY
-  end
-
-  get_remote 'app/views/layouts/application.html.haml'
-  get_remote 'app/javascript/stylesheets/application.scss'
-  get_remote 'app/views/pages/home.html.haml'
-  get_remote 'config/initializers/high_voltage.rb'
-
+def setup_business_model
   generate :scaffold, 'Organization name:string'
   generate :scaffold, 'Article name:string organization:references description:text count:integer'
   generate :scaffold, 'User name:string organization:references'
   generate :scaffold, 'Payment organization:references article:references user:references \
                       "amount:decimal{8,2}" succeeded_at:datetime'
-  generate :scaffold, 'Admin name:string'
   rails_command 'generate devise User'
-  rails_command 'generate devise Admin'
-  rails_command 'db:migrate'
-  setup_organizations
-  get_remote 'app/controllers/users_controller.rb'
-  setup_tests
 
-  get_remote 'config/routes.rb'
-
-  get_remote 'db/seeds.rb'
-  rails_command 'db:seed'
-  use_bootstrap
-end
-
-def setup_en_fr_app
-  gem 'rails-i18n'
-  run 'bundle install'
-
-  get_remote 'config/locales/en.yml'
-  get_remote 'config/locales/fr.yml'
-  # config.i18n.available_locales = [:en, :fr]
-  # config.i18n.default_locale = :en
-end
-
-def setup_organizations
   get_remote 'app/models/article.rb'
   get_remote 'app/models/organization.rb'
   get_remote 'app/models/user.rb'
 
   gsub_file 'app/controllers/organizations_controller.rb',
             'params.require(:organization).permit(:name)', 'params.require(:organization).permit(:name, :logo)'
+  get_remote 'app/controllers/users_controller.rb'
+  get_remote 'app/controllers/payments_controller.rb'
 
   get_remote 'app/views/layouts/organizations.html.haml'
   get_remote 'app/views/organizations/index.html.haml'
   get_remote 'app/views/organizations/_form.html.haml'
   get_remote 'app/views/organizations/show.html.haml'
-end
+  get_remote 'app/views/payments/index.json.jbuilder'
 
-def setup_tests
   get_remote 'spec/factories/articles.rb'
   get_remote 'spec/factories/organizations.rb'
   get_remote 'spec/factories/payments.rb'
   get_remote 'spec/factories/users.rb'
   get_remote 'spec/system/app_presentation_spec.rb'
+
+  rails_command 'db:migrate'
+  get_remote 'db/seeds.rb'
+  rails_command 'db:seed'
 end
 
-def use_bootstrap
-
-  # https://rossta.net/blog/webpacker-with-bootstrap.html
-  run 'yarn add jquery popper.js'
-  run 'yarn add bootstrap'
-  run 'yarn add bootstrap-table'
-  run 'yarn add chart.js'
-  run 'yarn add chartkick'
-  run 'yarn add resolve-url-loader'
+def setup_webpacks
+  rails_command 'webpacker:install'
+  run 'yarn add jquery popper.js bootstrap bootstrap-table chart.js chartkick resolve-url-loader'
 
   get_remote 'app/javascript/stylesheets/application.scss'
   inject_into_file 'app/javascript/packs/application.js', before: 'Rails.start()' do
@@ -127,9 +146,19 @@ def use_bootstrap
       import 'chartkick'
       import 'chart.js'
       import 'stylesheets/application'
+
+      global.$ = require('jquery')
+      $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['fr-fr']);
+      $.extend($.fn.bootstrapTable.defaults, {
+        pageSize: 5,
+        pageList: [5, 10, 100, 1000],
+        pagination: true,
+        classes: 'table table-hover table-no-bordered',
+        sidePagination: 'server',
+        showColumns: true
+      });
     CODE
   end
-  rails_command 'webpacker:install'
 
   inject_into_file 'config/webpack/environment.js', after: "const { environment } = require('@rails/webpacker')\n" do
     <<~CODE
@@ -139,57 +168,6 @@ def use_bootstrap
       })
     CODE
   end
-  # get_remote 'config/webpack/environment.js'
-end
-
-def use_devise
-  gem 'devise'
-  gem 'devise-i18n'
-  gem 'devise-bootstrap-views'
-  run 'bundle install'
-  generate 'devise:install'
-
-  inject_into_file 'config/environments/development.rb', after: "config.action_mailer.perform_caching = false\n" do
-    "  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }"
-  end
-end
-
-def use_haml
-  gem 'haml-rails'
-  run 'bundle install'
-
-  run 'HAML_RAILS_DELETE_ERB=true rails haml:erb2haml'
-end
-
-def use_rspec_with_factory_bot
-  gem_group :development, :test do
-    gem 'capybara'
-    gem 'factory_bot_rails'
-    gem 'faker'
-    gem 'rspec-rails'
-    gem 'shoulda-matchers'
-    gem 'webdrivers'
-  end
-  run 'bundle install'
-  generate 'rspec:install'
-
-  get_remote 'spec/rails_helper.rb'
-  get_remote 'spec/support/factory_bot.rb'
-end
-
-def use_rubocop
-  gem 'rubocop'
-  gem 'rubocop-rails'
-  gem 'rubocop-rspec'
-
-  get_remote '.rubocop.yml'
-  get_remote 'spec/system/.rubocop.yml'
-end
-
-def use_simple_form_with_bootstrap
-  gem 'simple_form'
-  run 'bundle install'
-  generate 'simple_form:install --bootstrap'
 end
 
 apply_template!

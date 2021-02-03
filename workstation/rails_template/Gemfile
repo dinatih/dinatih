@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby '2.4.2'
 
@@ -20,7 +22,7 @@ gem 'comfortable_mexican_sofa'
 gem 'connection_pool'
 gem 'dalli'
 gem 'devise'
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails', groups: %i[development test]
 gem 'geocoder'
 gem 'github-markdown'
 gem 'github-markup'

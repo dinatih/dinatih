@@ -1,4 +1,10 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
+  concern :bootstrap_tableable do
+    get :table_columns, on: :collection
+  end
+
   devise_for :admins
   devise_for :users
 
@@ -22,7 +28,7 @@ Rails.application.routes.draw do
     end
 
     resources :articles
-    resources :payments
+    resources :payments, concerns: :bootstrap_tableable
     resources :users
   end
 
