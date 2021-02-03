@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
   NotAuthorized = Class.new(StandardError) # https://stackoverflow.com/questions/25892194/does-rails-come-with-a-not-authorized-exception
 
@@ -5,13 +7,21 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_action :appsignal_tagging
-  before_action :store_user_location, if: :storable_location?
+  # before_action :appsignal_tagging
+  # before_action :store_user_location, if: :storable_location?
 
   helper_method :current_page_match?
 
   rescue_from ApplicationController::NotAuthorized do
     redirect_to root_path, alert: "Vous n'avez pas l'autorisation d'accéder à cette page."
+  end
+
+  def filter(collection, params)
+    if params[:sort].present? && params[:order].present?
+      collection_by_order(collection, params[:sort], params[:order])
+    else
+      collection
+    end
   end
 
   private
@@ -26,6 +36,14 @@ class ApplicationController < ActionController::Base
         organization: current_user&.organization&.to_param,
         admin: current_admin&.to_param
       )
+    end
+
+    def collection_by_order(collection, sort, order)
+      case sort
+      when 'transactions_count' then collection.order_by_transactions_count(order)
+      else
+        collection.reorder(sort.to_sym => order.to_sym)
+      end
     end
 
     # Ex: current_page_match?(controller: :payments, action: %i[new show]). @dinatih

@@ -12,15 +12,9 @@
     - @organizations.each do |organization|
       %tr
         %td= image_tag organization.logo, style: 'height: 3em;'
-        %td
-          = link_to organization.name, organization
+        %td= link_to organization.name, organization
         %td= organization.articles.count
         %td= organization.payments.count
         %td= organization.users.count
-        %td
-          = link_to edit_organization_path(organization) do
-            %i.bi-pencil-square
-          = link_to organization, method: :delete, data: { confirm: 'Are you sure?' } do
-            %i.bi-trash
 %br
 = link_to 'New Organization', new_organization_path

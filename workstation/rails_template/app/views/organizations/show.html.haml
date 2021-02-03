@@ -3,6 +3,7 @@
   .col-md-2
     %p
       %b= User.model_name.human(count: 2)
+      %i.bi-person-badge
     %table.table.table-striped
       %thead
         %tr
@@ -15,11 +16,10 @@
             %td
               = link_to edit_organization_user_path(@organization, user) do
                 %i.bi-pencil-square
-              = link_to user, method: :delete, data: { confirm: 'Are you sure?' } do
-                %i.bi-trash
   .col-md-4
     %p
       %b= Article.model_name.human(count: 2)
+      %i.bi-gift
     %table.table.table-striped
       %thead
         %tr
@@ -35,36 +35,25 @@
             %td
               = link_to edit_organization_article_path(@organization, article) do
                 %i.bi-pencil-square
-              = link_to article, method: :delete, data: { confirm: 'Are you sure?' } do
-                %i.bi-trash
   .col-md-6
     %p
       %b
         = Payment.model_name.human(count: 2)
         %i.bi-cash-stack
     %payments_chart= line_chart Payment.group_by_day(:succeeded_at).count, height: '60'
-    %table.table.table-striped{data: {toggle: 'table', search: 'true', sortable: 'true' }}
-      %thead
-        %tr
-          %th{data: {sortable: 'true'}}= Payment.human_attribute_name(:amount)
-          %th{data: {sortable: 'true'}}
-            %i.bi-calendar
-          %th{data: {sortable: 'true'}}= Payment.human_attribute_name(:article)
-          %th
-      %tbody
-        - @organization.payments.each do |payment|
-          %tr
-            %td
-              = link_to number_to_currency(payment.amount), payment
-            %td
-              = l(payment.succeeded_at, format: :short)
-            %td= link_to payment.article.name, payment.article
-            %td
-              = link_to edit_organization_payment_path(@organization, payment) do
-                %i.bi-pencil-square
-              = link_to payment, method: :delete, data: { confirm: 'Are you sure?' } do
-                %i.bi-trash
-
+    :javascript
+      (function() {
+        $.ajax({
+          url: '#{table_columns_organization_payments_path(@organization)}'
+        }).done(function(json) {
+          return $('#payments-table').bootstrapTable({
+            columns: json,
+            url: '#{organization_payments_path(@organization)}',
+            search: true
+          });
+        });
+      }).call(this);
+    %table#payments-table
 = link_to 'Edit', edit_organization_path(@organization)
 \|
 = link_to 'Back', organizations_path
