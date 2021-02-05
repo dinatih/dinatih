@@ -1,7 +1,7 @@
-![Profile Header](https://github.com/dinatih/dinatih/raw/master/profile_header.png)
+![Profile Header](https://github.com/dinatih/dinatih/raw/main/profile_header.png)
 
 # 👷🏾‍♂️ David HERELLE
-![Profile Picture](https://github.com/dinatih/dinatih/raw/master/profile_picture.jpeg)
+![Profile Picture](https://github.com/dinatih/dinatih/raw/main/profile_picture.jpeg)
 
 ## A Web Developer Life with PostgreSQL, Ruby, Rails, GitHub, Heroku and Bootstrap
 
