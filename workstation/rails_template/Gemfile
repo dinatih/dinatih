@@ -1,98 +1,98 @@
-# frozen_string_literal: true
-
-source 'https://rubygems.org'
-ruby '2.4.2'
-
-gem 'pg'
-gem 'puma'
-gem 'rails', '~> 5.2.0'
-
-gem 'active_link_to'
-gem 'active_model_attributes'
-gem 'activerecord-typedstore'
-gem 'appsignal'
-gem 'awesome_print'
-gem 'aws-sdk', '~> 3'
-gem 'bigdecimal', '>= 1.3.2'
-gem 'client_side_validations'
-gem 'cocoon'
-gem 'coffee-rails'
-gem 'colorize'
-gem 'comfortable_mexican_sofa'
-gem 'connection_pool'
-gem 'dalli'
-gem 'devise'
-gem 'dotenv-rails', groups: %i[development test]
-gem 'geocoder'
-gem 'github-markdown'
-gem 'github-markup'
-gem 'haml-rails'
-gem 'high_voltage', '~> 3.0.0'
-gem 'httparty'
-gem 'jbuilder', '~> 2.0'
-gem 'jquery-rails'
-gem 'kaminari', '~> 1.0.1'
-gem 'kiba'
-gem 'kiba-common'
-gem 'kramdown'
-gem 'listen'
-gem 'mailboxer', '~> 0.14.0'
-gem 'mailchimp-api', require: 'mailchimp'
-gem 'mangopay'
-gem 'meta-tags'
-gem 'paperclip'
-gem 'pdfkit', '~> 0.8.2'
-gem 'pg_search'
-gem 'redis'
-gem 'sass-rails', '>= 3.2'
-gem 'sidekiq'
-gem 'slack-notifier'
-gem 'telephone_number'
-gem 'uglifier', '>= 1.3.0'
-gem 'wicked_pdf'
-gem 'wkhtmltopdf'
-gem 'wkhtmltopdf-binary'
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', '~> 0.4.0'
-end
-
-group :development, :test do
-  gem 'binding_of_caller'
-  gem 'byebug'
-  gem 'capybara'
-  gem 'chromedriver-helper', require: false
-  gem 'factory_bot_rails'
-  gem 'pry-byebug'
-  gem 'pry-rails'
-  gem 'pry-remote'
-  # gem 'rack-mini-profiler'
-  gem 'rspec-rails'
-  gem 'selenium-webdriver', '3.12.0'
-  gem 'shoulda-matchers', '>= 3.1' # check if still in use
-  gem 'xray-rails'
-  # Required for Heroku to install yarn
-  gem 'webpacker', require: false
-end
-
-group :development do
-  gem 'annotate'
-  gem 'better_errors'
-  gem 'brakeman'
-  gem 'bundler-audit'
-  gem 'lol_dba'
-  gem 'rails-erd'
-  # gem 'railroady'
-  gem 'rubocop', require: false
-  gem 'rubocop-rspec', require: false
-  gem 'rubycritic', require: false
-  gem 'spring'
-  gem 'stackprof'
-  gem 'traceroute'
-  gem 'web-console'
-end
-
-group :production do
-  gem 'wkhtmltopdf-heroku', '~> 2.12.3.0'
-end
+# # frozen_string_literal: true
+#
+# source 'https://rubygems.org'
+# ruby '2.4.2'
+#
+# gem 'pg'
+# gem 'puma'
+# gem 'rails', '~> 5.2.0'
+#
+# gem 'active_link_to'
+# gem 'active_model_attributes'
+# gem 'activerecord-typedstore'
+# gem 'appsignal'
+# gem 'awesome_print'
+# gem 'aws-sdk', '~> 3'
+# gem 'bigdecimal', '>= 1.3.2'
+# gem 'client_side_validations'
+# gem 'cocoon'
+# gem 'coffee-rails'
+# gem 'colorize'
+# gem 'comfortable_mexican_sofa'
+# gem 'connection_pool'
+# gem 'dalli'
+# gem 'devise'
+# gem 'dotenv-rails', groups: %i[development test]
+# gem 'geocoder'
+# gem 'github-markdown'
+# gem 'github-markup'
+# gem 'haml-rails'
+# gem 'high_voltage', '~> 3.0.0'
+# gem 'httparty'
+# gem 'jbuilder', '~> 2.0'
+# gem 'jquery-rails'
+# gem 'kaminari', '~> 1.0.1'
+# gem 'kiba'
+# gem 'kiba-common'
+# gem 'kramdown'
+# gem 'listen'
+# gem 'mailboxer', '~> 0.14.0'
+# gem 'mailchimp-api', require: 'mailchimp'
+# gem 'mangopay'
+# gem 'meta-tags'
+# gem 'paperclip'
+# gem 'pdfkit', '~> 0.8.2'
+# gem 'pg_search'
+# gem 'redis'
+# gem 'sass-rails', '>= 3.2'
+# gem 'sidekiq'
+# gem 'slack-notifier'
+# gem 'telephone_number'
+# gem 'uglifier', '>= 1.3.0'
+# gem 'wicked_pdf'
+# gem 'wkhtmltopdf'
+# gem 'wkhtmltopdf-binary'
+#
+# group :doc do
+#   # bundle exec rake doc:rails generates the API under doc/api.
+#   gem 'sdoc', '~> 0.4.0'
+# end
+#
+# group :development, :test do
+#   gem 'binding_of_caller'
+#   gem 'byebug'
+#   gem 'capybara'
+#   gem 'chromedriver-helper', require: false
+#   gem 'factory_bot_rails'
+#   gem 'pry-byebug'
+#   gem 'pry-rails'
+#   gem 'pry-remote'
+#   # gem 'rack-mini-profiler'
+#   gem 'rspec-rails'
+#   gem 'selenium-webdriver', '3.12.0'
+#   gem 'shoulda-matchers', '>= 3.1' # check if still in use
+#   gem 'xray-rails'
+#   # Required for Heroku to install yarn
+#   gem 'webpacker', require: false
+# end
+#
+# group :development do
+#   gem 'annotate'
+#   gem 'better_errors'
+#   gem 'brakeman'
+#   gem 'bundler-audit'
+#   gem 'lol_dba'
+#   gem 'rails-erd'
+#   # gem 'railroady'
+#   gem 'rubocop', require: false
+#   gem 'rubocop-rspec', require: false
+#   gem 'rubycritic', require: false
+#   gem 'spring'
+#   gem 'stackprof'
+#   gem 'traceroute'
+#   gem 'web-console'
+# end
+#
+# group :production do
+#   gem 'wkhtmltopdf-heroku', '~> 2.12.3.0'
+# end
