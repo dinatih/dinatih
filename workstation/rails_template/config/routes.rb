@@ -13,25 +13,31 @@ Rails.application.routes.draw do
     resources :admins
     resources :articles
     resources :organizations
-    resources :payments
+    resources :payins
+    resources :payouts
     resources :users
   end
 
   resources :admins
-  resources :articles
 
   resources :organizations do
     namespace :admin do
       resources :articles
-      resources :payments
+      resources :payins
+      resources :payouts
       resources :users
     end
 
-    resources :articles
-    resources :payments, concerns: :bootstrap_tableable
-    resources :users
+    resources :articles, concerns: :bootstrap_tableable
+    resources :products, concerns: :bootstrap_tableable
+    resources :payins, concerns: :bootstrap_tableable
+    resources :payouts, concerns: :bootstrap_tableable
+    resources :users, concerns: :bootstrap_tableable
   end
 
-  resources :payments
+  resources :articles, concerns: :bootstrap_tableable
+  resources :products, concerns: :bootstrap_tableable
+  resources :payins, concerns: :bootstrap_tableable
+  resources :payouts, concerns: :bootstrap_tableable
   resources :users
 end

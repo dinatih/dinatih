@@ -6,5 +6,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   belongs_to :organization
-  has_many :payments
+  has_many :payins
+  has_many :payouts
 end

@@ -6,7 +6,9 @@
       %th Logo
       %th Name
       %th= Organization.human_attribute_name(:articles)
-      %th= Organization.human_attribute_name(:payments)
+      %th= Organization.human_attribute_name(:products)
+      %th= Organization.human_attribute_name(:payins)
+      %th= Organization.human_attribute_name(:payouts)
       %th= Organization.human_attribute_name(:users)
   %tbody
     - @organizations.each do |organization|
@@ -14,7 +16,9 @@
         %td= image_tag organization.logo, style: 'height: 3em;'
         %td= link_to organization.name, organization
         %td= organization.articles.count
-        %td= organization.payments.count
+        %td= organization.products.count
+        %td= organization.payins.count
+        %td= organization.payouts.count
         %td= organization.users.count
 %br
 = link_to 'New Organization', new_organization_path

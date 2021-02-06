@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 FactoryBot.define do
-  factory :payment do
+  factory :payin do
     organization { nil }
-    article { nil }
+    product { nil }
     user { nil }
     amount { Faker::Commerce.price }
   end

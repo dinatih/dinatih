@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Admin::UsersController < AdminController
-  before_action :set_user, only: %i[show edit update destroy validate]
+  before_action :set_user, only: %i[show edit update destroy]
   before_action :set_organization
 
   # GET /admin/users
@@ -15,15 +17,6 @@ class Admin::UsersController < AdminController
   # GET /admin/users/1
   # GET /admin/users/1.json
   def show
-    @months = []
-
-    if @user.transactions_as_supplier.present?
-      @min_date = @user.transactions_as_supplier.minimum(:start_date)
-      @max_date = @user.transactions_as_supplier.maximum(:start_date)
-      @months = (@min_date..@max_date).map(&:beginning_of_month).uniq
-    end
-
-    @user.check_mangopay_mandate_status! if @user.check_mangopay_mandate_status?
   end
 
   # GET /admin/users/new
@@ -74,35 +67,13 @@ class Admin::UsersController < AdminController
     end
   end
 
-  def newsletter_subscribers
-    @users = User.select(:id, :last_name, :first_name, :email, :created_at, :moderated, :last_sign_in_at, :organization_id)
-    respond_to do |format|
-      format.csv do
-        render plain: @users.to_csv(%i[id last_name first_name email created_at moderated last_sign_in_at articles_count
-                                       bookings_count organization_name]), content_type: 'text/plain'
-      end
-      format.json do
-        render json: @users.as_json(methods: %i[last_sign_in_at articles_count bookings_count organization_name])
-      end
-    end
-  end
-
   def table_columns
     render json: [
-      { field: 'id', sortable: true, title: Booking.human_attribute_name(:id) },
-      { field: 'last_name', sortable: true, title: Booking.human_attribute_name(:name) },
-      { field: 'organization', title: Booking.human_attribute_name(:organization) },
-      { field: 'created_at', sortable: true, title: Booking.human_attribute_name(:created_at) },
-      { field: 'updated_at', sortable: true, title: Booking.human_attribute_name(:updated_at) },
-      { field: 'profile_complete', title: Booking.human_attribute_name(:profile_complete) },
-      { field: 'moderated', sortable: true, title: Booking.human_attribute_name(:moderated) }
+      { field: 'id', sortable: true, title: User.human_attribute_name(:id) },
+      { field: 'organization', title: User.human_attribute_name(:organization) },
+      { field: 'created_at', sortable: true, title: User.human_attribute_name(:created_at) },
+      { field: 'updated_at', sortable: true, title: User.human_attribute_name(:updated_at) }
     ].to_json
-  end
-
-  def validate
-    @user.toggle(:moderated)
-    @user.save!
-    redirect_to [:admin, @user]
   end
 
   private

@@ -11,14 +11,14 @@ RSpec.describe 'App Presentation', type: :system do
 
     visit root_path
     sleep 1
-    organization = Organization.joins(:payments).first
+    organization = Organization.joins(:payins, :payouts).first
     visit organizations_path
     sleep 3
     # visit organization_path organization
     click_on organization.name
-    sleep 3
+    sleep 6
     # visit edit_organization_path organization
     click_on 'Edit'
-    sleep 3
+    sleep 1
   end
 end
