@@ -1,5 +1,42 @@
 %p#notice= notice
 .row
+  .col-md-6
+    %p
+      %b
+        = Payin.model_name.human(count: 2)
+        %i.bi-cash-stack
+    %payins_chart= line_chart Payin.group_by_day(:succeeded_at).count, height: '60'
+    :javascript
+      (function() {
+        $.ajax({
+          url: '#{table_columns_organization_payins_path(@organization)}'
+        }).done(function(json) {
+          return $('#payins-table').bootstrapTable({
+            columns: json,
+            url: '#{organization_payins_path(@organization)}'
+          });
+        });
+      }).call(this);
+    %table#payins-table
+  .col-md-6
+    %p
+      %b
+        = Payout.model_name.human(count: 2)
+        %i.bi-cash-stack
+    %payouts_chart= line_chart Payout.group_by_day(:succeeded_at).count, height: '60'
+    :javascript
+      (function() {
+        $.ajax({
+          url: '#{table_columns_organization_payouts_path(@organization)}'
+        }).done(function(json) {
+          return $('#payouts-table').bootstrapTable({
+            columns: json,
+            url: '#{organization_payouts_path(@organization)}'
+          });
+        });
+      }).call(this);
+    %table#payouts-table
+.row
   .col-md-2
     %p
       %b= User.model_name.human(count: 2)
@@ -16,44 +53,44 @@
             %td
               = link_to edit_organization_user_path(@organization, user) do
                 %i.bi-pencil-square
-  .col-md-4
+  .col-md-5
     %p
       %b= Article.model_name.human(count: 2)
+      %i.bi-gift
+    :javascript
+      (function() {
+        $.ajax({
+          url: '#{table_columns_organization_articles_path(@organization)}'
+        }).done(function(json) {
+          return $('#articles-table').bootstrapTable({
+            columns: json,
+            url: '#{organization_articles_path(@organization)}',
+            search: 'true',
+            showColumns: 'false'
+          });
+        });
+      }).call(this);
+    %table#articles-table
+
+  .col-md-5
+    %p
+      %b= Product.model_name.human(count: 2)
       %i.bi-gift
     %table.table.table-striped
       %thead
         %tr
-          %th= Article.human_attribute_name(:name)
+          %th= Product.human_attribute_name(:name)
           %th
             %i.bi-cash-stack
           %th
       %tbody
-        - @organization.articles.each do |article|
+        - @organization.products.each do |product|
           %tr
-            %td= link_to article.name, article
-            %td= article.payments.count
+            %td= link_to product.name, product
+            %td= product.payins.count
             %td
-              = link_to edit_organization_article_path(@organization, article) do
+              = link_to edit_organization_product_path(@organization, product) do
                 %i.bi-pencil-square
-  .col-md-6
-    %p
-      %b
-        = Payment.model_name.human(count: 2)
-        %i.bi-cash-stack
-    %payments_chart= line_chart Payment.group_by_day(:succeeded_at).count, height: '60'
-    :javascript
-      (function() {
-        $.ajax({
-          url: '#{table_columns_organization_payments_path(@organization)}'
-        }).done(function(json) {
-          return $('#payments-table').bootstrapTable({
-            columns: json,
-            url: '#{organization_payments_path(@organization)}',
-            search: true
-          });
-        });
-      }).call(this);
-    %table#payments-table
 = link_to 'Edit', edit_organization_path(@organization)
 \|
 = link_to 'Back', organizations_path
