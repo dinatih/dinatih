@@ -16,13 +16,39 @@ class ApplicationController < ActionController::Base
     redirect_to root_path, alert: "Vous n'avez pas l'autorisation d'accéder à cette page."
   end
 
-  def filter(collection, params)
-    if params[:sort].present? && params[:order].present?
-      collection_by_order(collection, params[:sort], params[:order])
-    else
-      collection
+  protected
+
+    def bootstrap_table_collection(collection, collection_name)
+      collection = filter(collection, params)
+      instance_variable_set("@#{collection_name}_count", collection.count)
+      offset_and_limit_collection(collection)
     end
-  end
+
+    def collection_by_order(collection, sort, order)
+      case sort
+      when 'transactions_count' then collection.order_by_transactions_count(order)
+      else
+        collection.reorder(sort.to_sym => order.to_sym)
+      end
+    end
+
+    def filter(collection, params)
+      collection = collection.search_by_name(params[:search]) if params[:search].present?
+      if params[:sort].present? && params[:order].present?
+        collection_by_order(collection, params[:sort], params[:order])
+      else
+        collection
+      end
+    end
+
+    def offset_and_limit_collection(collection)
+      collection = collection.offset(params[:offset]) if params[:offset].present?
+      collection.limit(params[:limit] || 10)
+    end
+
+    def set_organization
+      @organization = Organization.find(params[:organization_id]) if params[:organization_id]
+    end
 
   private
 
@@ -38,14 +64,6 @@ class ApplicationController < ActionController::Base
       )
     end
 
-    def collection_by_order(collection, sort, order)
-      case sort
-      when 'transactions_count' then collection.order_by_transactions_count(order)
-      else
-        collection.reorder(sort.to_sym => order.to_sym)
-      end
-    end
-
     # Ex: current_page_match?(controller: :payments, action: %i[new show]). @dinatih
     def current_page_match?(controller: nil, action: nil)
       [[controller_path, controller], [action_name, action]].all? do |name, option|
@@ -55,11 +73,6 @@ class ApplicationController < ActionController::Base
           true
         end
       end
-    end
-
-    def offset_and_limit_collection(collection)
-      collection = collection.offset(params[:offset]) if params[:offset].present?
-      collection.limit(params[:limit] || 10)
     end
 
     def storable_location?

@@ -7,6 +7,11 @@
 # Usage:
 # $ rails new business_information_system -m https://github.com/dinatih/dinatih/wortstation/rails_template.rb
 # $ rails new business_information_system -T -d postgresql -m https://github.com/dinatih/dinatih/wortstation/rails_template.rb
+
+def self.exit_on_failure?
+  true
+end
+
 def apply_template!
   add_gems
   after_bundle do
@@ -16,6 +21,15 @@ def apply_template!
     get_remote 'spec/support/factory_bot.rb'
     rails_command 'db:drop'
     rails_command 'db:create'
+
+    # require 'rails/generators/migration'
+    # Rails::Generators::Migration.create_migration 'enable_search_extensions', <<~RUBY
+    #   def change
+    #     enable_extension 'unaccent'
+    #     enable_extension 'pg_trgm'
+    #   end
+    # RUBY
+
     rails_command 'active_storage:install'
 
     run 'HAML_RAILS_DELETE_ERB=true rails haml:erb2haml'
@@ -66,7 +80,7 @@ def add_gems
   gem 'haml-rails'
   gem 'high_voltage'
   # gem 'i18n-tasks'
-  # gem 'pg_search'
+  gem 'pg_search'
   gem 'rails-erd', git: 'https://github.com/andrew-newell/rails-erd'
   gem 'rails-i18n'
   gem 'rexml' # Because ruby3 no longer build-in rexml https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/
@@ -100,30 +114,39 @@ end
 
 def setup_business_model
   generate :scaffold, 'Organization name:string'
-  generate :scaffold, 'Article name:string organization:references description:text count:integer'
+  generate :scaffold, 'Article name:string organization:references description:text inventory_count:integer'
+  generate :scaffold, 'Product name:string organization:references description:text inventory_count:integer'
   generate :scaffold, 'User name:string organization:references'
-  generate :scaffold, 'Payment organization:references article:references user:references \
+  generate :scaffold, 'Payout organization:references article:references user:references \
+                      "amount:decimal{8,2}" succeeded_at:datetime'
+  generate :scaffold, 'Payin organization:references product:references user:references \
                       "amount:decimal{8,2}" succeeded_at:datetime'
   rails_command 'generate devise User'
 
   get_remote 'app/models/article.rb'
+  get_remote 'app/models/product.rb'
   get_remote 'app/models/organization.rb'
   get_remote 'app/models/user.rb'
 
   gsub_file 'app/controllers/organizations_controller.rb',
             'params.require(:organization).permit(:name)', 'params.require(:organization).permit(:name, :logo)'
+  get_remote 'app/controllers/articles_controller.rb'
   get_remote 'app/controllers/users_controller.rb'
-  get_remote 'app/controllers/payments_controller.rb'
+  get_remote 'app/controllers/payouts_controller.rb'
+  get_remote 'app/controllers/payins_controller.rb'
 
   get_remote 'app/views/layouts/organizations.html.haml'
   get_remote 'app/views/organizations/index.html.haml'
   get_remote 'app/views/organizations/_form.html.haml'
   get_remote 'app/views/organizations/show.html.haml'
-  get_remote 'app/views/payments/index.json.jbuilder'
+  get_remote 'app/views/payins/index.json.jbuilder'
+  get_remote 'app/views/payouts/index.json.jbuilder'
 
   get_remote 'spec/factories/articles.rb'
+  get_remote 'spec/factories/products.rb'
   get_remote 'spec/factories/organizations.rb'
-  get_remote 'spec/factories/payments.rb'
+  get_remote 'spec/factories/payins.rb'
+  get_remote 'spec/factories/payouts.rb'
   get_remote 'spec/factories/users.rb'
   get_remote 'spec/system/app_presentation_spec.rb'
 
