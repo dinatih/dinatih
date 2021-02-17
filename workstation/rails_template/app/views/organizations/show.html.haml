@@ -37,23 +37,7 @@
       }).call(this);
     %table#payouts-table
 .row
-  .col-md-2
-    %p
-      %b= User.model_name.human(count: 2)
-      %i.bi-person-badge
-    %table.table.table-striped
-      %thead
-        %tr
-          %th= User.human_attribute_name(:name)
-          %th
-      %tbody
-        - @organization.users.each do |user|
-          %tr
-            %td= link_to user.name, user
-            %td
-              = link_to edit_organization_user_path(@organization, user) do
-                %i.bi-pencil-square
-  .col-md-5
+  .col-md-6
     %p
       %b= Article.model_name.human(count: 2)
       %i.bi-gift
@@ -72,25 +56,24 @@
       }).call(this);
     %table#articles-table
 
-  .col-md-5
+  .col-md-6
     %p
       %b= Product.model_name.human(count: 2)
       %i.bi-gift
-    %table.table.table-striped
-      %thead
-        %tr
-          %th= Product.human_attribute_name(:name)
-          %th
-            %i.bi-cash-stack
-          %th
-      %tbody
-        - @organization.products.each do |product|
-          %tr
-            %td= link_to product.name, product
-            %td= product.payins.count
-            %td
-              = link_to edit_organization_product_path(@organization, product) do
-                %i.bi-pencil-square
+    :javascript
+      (function() {
+        $.ajax({
+          url: '#{table_columns_organization_products_path(@organization)}'
+        }).done(function(json) {
+          return $('#products-table').bootstrapTable({
+            columns: json,
+            url: '#{organization_products_path(@organization)}',
+            search: 'true',
+            showColumns: 'false'
+          });
+        });
+      }).call(this);
+    %table#products-table
 = link_to 'Edit', edit_organization_path(@organization)
 \|
 = link_to 'Back', organizations_path
