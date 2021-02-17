@@ -62,7 +62,8 @@ class ArticlesController < ApplicationController
   def table_columns
     render json: [
       { field: 'name', sortable: true, title: Article.human_attribute_name(:name) },
-      { field: 'inventory_count', sortable: true, title: Article.human_attribute_name(:inventory_count) }
+      { field: 'inventory_count', sortable: true, title: Article.human_attribute_name(:inventory_count) },
+      { field: 'payouts_count', title: Article.human_attribute_name(:payouts_count) }
     ].to_json
   end
 

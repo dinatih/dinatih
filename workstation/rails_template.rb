@@ -15,6 +15,7 @@ end
 def apply_template!
   add_gems
   after_bundle do
+    run 'spring stop'
     generate 'simple_form:install --bootstrap'
     generate 'rspec:install'
     get_remote 'spec/rails_helper.rb'
@@ -66,7 +67,7 @@ def apply_template!
     setup_business_model
     get_remote 'config/routes.rb'
     setup_webpacks
-    run 'rubocop --auto-correct-all'
+    # run 'rubocop --auto-correct-all'
   end
 end
 
@@ -128,19 +129,33 @@ def setup_business_model
   get_remote 'app/models/organization.rb'
   get_remote 'app/models/user.rb'
 
-  gsub_file 'app/controllers/organizations_controller.rb',
-            'params.require(:organization).permit(:name)', 'params.require(:organization).permit(:name, :logo)'
+  get_remote 'app/controllers/admin/admin_controller.rb'
+  get_remote 'app/controllers/admin/organizations_controller.rb'
+
+  get_remote 'app/controllers/organizations_controller.rb'
   get_remote 'app/controllers/articles_controller.rb'
-  get_remote 'app/controllers/users_controller.rb'
   get_remote 'app/controllers/payouts_controller.rb'
   get_remote 'app/controllers/payins_controller.rb'
+  get_remote 'app/controllers/products_controller.rb'
+  get_remote 'app/controllers/users_controller.rb'
 
   get_remote 'app/views/layouts/organizations.html.haml'
+
+  get_remote 'app/views/admin/admin/index.html.haml'
+  get_remote 'app/views/admin/admin/_navbar.html.haml'
+  get_remote 'app/views/admin/organizations/index.html.haml'
+  get_remote 'app/views/admin/organizations/index.json.jbuilder'
+  # get_remote 'app/views/admin/organizations/show.html.haml'
+
   get_remote 'app/views/organizations/index.html.haml'
-  get_remote 'app/views/organizations/_form.html.haml'
+  get_remote 'app/views/organizations/index.json.jbuilder'
   get_remote 'app/views/organizations/show.html.haml'
+  get_remote 'app/views/organizations/_form.html.haml'
+
+  get_remote 'app/views/articles/index.json.jbuilder'
   get_remote 'app/views/payins/index.json.jbuilder'
   get_remote 'app/views/payouts/index.json.jbuilder'
+  get_remote 'app/views/products/index.json.jbuilder'
 
   get_remote 'spec/factories/articles.rb'
   get_remote 'spec/factories/products.rb'

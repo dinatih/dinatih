@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class AdminController < ApplicationController
-  def show; end
+class Admin::AdminController < ApplicationController
+  def index; end
 
   def search
     @search_results = PgSearch.multisearch(params[:admin_search_term]).includes(:searchable)

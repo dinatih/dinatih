@@ -1,0 +1,12 @@
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  = link_to 'Admin: ' + t('app_name').humanize, root_path, class: 'navbar-brand'
+  %button.navbar-toggler{"aria-controls" => "application_navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#application_navbar", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #application_navbar.collapse.navbar-collapse
+    %ul.navbar-nav.mr-auto
+      %li.nav-item
+        = link_to Organization.model_name.human(count: 2), admin_organizations_path, class: 'nav-link'
+      %li.nav-item
+        = link_to Admin.model_name.human(count: 2), admin_admins_path, class: 'nav-link'
+      %li.nav-item
+        = link_to User.model_name.human(count: 2), admin_users_path, class: 'nav-link'

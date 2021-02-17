@@ -10,6 +10,7 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     .container
+      = render 'admin/admin/navbar' if 1 # @admin.present?
       %nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
         = link_to t('app_name').humanize, root_path, class: 'navbar-brand'
         %button.navbar-toggler{"aria-controls" => "application_navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#application_navbar", "data-toggle" => "collapse", :type => "button"}
@@ -17,7 +18,7 @@
         #application_navbar.collapse.navbar-collapse
           %ul.navbar-nav.mr-auto
             %li.nav-item
-              = link_to Organization.model_name.human, organizations_path, class: 'nav-link'
+              = link_to Organization.model_name.human(count: 2), organizations_path, class: 'nav-link'
             %li.nav-item.dropdown
               %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
               .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
