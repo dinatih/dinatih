@@ -3,11 +3,12 @@
 :javascript
   (function() {
     $.ajax({
-      url: '#{table_columns_organizations_path}'
+      url: '#{table_columns_admin_organizations_path}'
     }).done(function(json) {
       return $('#organizations-table').bootstrapTable({
         columns: json,
-        url: '#{organizations_path}'
+        url: '#{admin_organizations_path}',
+        search: 'true'
       });
     });
   }).call(this);

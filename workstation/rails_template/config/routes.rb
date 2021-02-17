@@ -9,19 +9,20 @@ Rails.application.routes.draw do
   devise_for :users
 
   namespace :admin do
-    root 'admins#index'
-    resources :admins
-    resources :articles
-    resources :organizations
-    resources :payins
-    resources :payouts
-    resources :users
+    root 'admin#index'
+    resources :admins, concerns: :bootstrap_tableable
+    resources :articles, concerns: :bootstrap_tableable
+    resources :organizations, concerns: :bootstrap_tableable
+    resources :payins, concerns: :bootstrap_tableable
+    resources :payouts, concerns: :bootstrap_tableable
+    resources :users, concerns: :bootstrap_tableable
   end
 
   resources :admins
 
-  resources :organizations do
+  resources :organizations, concerns: :bootstrap_tableable do
     namespace :admin do
+      root 'admin#index'
       resources :articles
       resources :payins
       resources :payouts
