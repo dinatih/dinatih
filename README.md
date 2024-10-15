@@ -3,7 +3,7 @@
 # 👷🏾‍♂️ David HERELLE
 ![Profile Picture](https://avatars.githubusercontent.com/u/309161?v=4)
 
-## A Web Developer Life with Ruby, Rails, GitHub, PostgreSQL, Heroku and Bootstrap
+## A Web Developer Life with love ❤ for Ruby, Rails, GitHub, PostgreSQL, Heroku and Bootstrap !
 
 **38 year old**, with a passion for Web App Development and Freestyle Football ⚽️, domiciled in **Paris** 13th (near BNF, Station F), **France**.  
 
