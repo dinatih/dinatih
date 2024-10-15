@@ -3,7 +3,7 @@
 # 👷🏾‍♂️ David HERELLE
 ![Profile Picture](https://avatars.githubusercontent.com/u/309161?v=4)
 
-## A Web Developer Life with PostgreSQL, Ruby, Rails, GitHub, Heroku and Bootstrap
+## A Web Developer Life with love ❤ for Ruby, Rails, GitHub, PostgreSQL, Heroku and Bootstrap !
 
 **38 year old**, with a passion for Web App Development and Freestyle Football ⚽️, domiciled in **Paris** 13th (near BNF, Station F), **France**.  
 
@@ -246,28 +246,28 @@ Ce que j'ai adoré :
 ---
 
 ## Le projet
-###### Pourquoi app web et mobile ?
+#### Pourquoi app web et mobile ?
 Serveur API et different clients.
 
-###### Pourquoi open-source ?
+#### Pourquoi open-source ?
 Pour débugger sans aide du support commercial.
 
-###### Pourquoi Github ?
+#### Pourquoi Github ?
 Les issues en markdown, les uploads simples d'image ou gif, les labels, les milestones et bien sûr le SCM Git.
 
-###### Pourquoi Ruby ?
+#### Pourquoi Ruby ?
 Lisibilité du code, plaisir de passer en revu le code constament à la recherche d'optimisation.
 
-###### Pourquoi Ruby on Rails ?
+#### Pourquoi Ruby on Rails ?
 MVC, open-source, *convention over configuration*, communauté, documentation.
 
-###### Pourquoi Postgresql ?
+#### Pourquoi Postgresql ?
 Sa popularité dans le domain scientifique et le type de donnée jsonb.
 
-###### Pourquoi Bootstrap ?
+#### Pourquoi Bootstrap ?
 Mac OS et Windows ont leur UI Kit, Les app web on Bootstrap.
 
-###### Pourquoi Heroku ?
+#### Pourquoi Heroku ?
 Qui a besoin d'un Admin système et réseaux de nos jours. [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
 
 ---
@@ -297,7 +297,7 @@ GitHub integration, https, pipeline, production, staging, demo, review apps, her
 ---
 
 ## 💻 Work Station
-- MacBook (International English keyboard) || ChromeBook (AZERTY)
+- MacBook (International English keyboard) or ChromeBook (Azerty)
 - A good internet connection
-- ~Iphone~ Android
+- Iphone or Android
 - Offices in inner Paris, Teleworking
