@@ -1,13 +1,15 @@
 ![Profile Header](https://github.com/dinatih/dinatih/raw/main/profile_header.png)
+*A Web Information System Architect, and Passionate Code Craftsman*
 
 # 👷🏾‍♂️ David HERELLE
+
 ![Profile Picture](https://avatars.githubusercontent.com/u/309161?v=4)
 
-## A Web Developer Life with love ❤ for Ruby, Rails, GitHub, PostgreSQL, Heroku and Bootstrap !
+## A Web Developer Life with love ❤ for Ruby 💎, Rails 🛤️, GitHub 📋, PostgreSQL 🗃️, Heroku ⚙️ and Bootstrap 📱!
 
 **38 year old**, with a passion for Web App Development and Freestyle Football ⚽️, domiciled in **Paris** 13th (near BNF, Station F), **France**.  
 
-More than **7 years of cumulative experience** (2010 to 2019) on 3 start-ups mainly (6 in all). Mainly as the only **Full-stack Ruby on Rails Developer**.
+More than **7 years of cumulative experience** on 3 start-ups mainly (6 in all). Mainly as the only **Full-stack Ruby on Rails Developer**.
 
 My profiles : [Github](https://github.com/dinatih),
 [StackOverflow](https://stackoverflow.com/users/524028/dinatih), [LinkedIn](https://www.linkedin.com/in/dinatih/)
@@ -27,13 +29,13 @@ All [rails guides](https://guides.rubyonrails.org/) x times, a good part of the 
 - Minimum Viable Product, Web application, [Security](https://guides.rubyonrails.org/security.html), Open-source, [Client–server model](https://en.wikipedia.org/wiki/Client-server_model), [Model-View-Controller (MVC)](https://en.wikipedia.org/wiki/Model-view-controller), [DevOps](https://en.wikipedia.org/wiki/DevOps), [Responsive, mobile-first sites](https://getbootstrap.com/docs/5.0/getting-started/introduction/), [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming), [Refactoring](https://refactoring.guru/refactoring), [Design Patterns](https://refactoring.guru/design-patterns/ruby), [Code Smells](https://refactoring.guru/refactoring/smells), [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), [Domain model](https://en.wikipedia.org/wiki/Domain_model), Domain-specific language (DSL)
 
 - Project Management, [Markdown](https://guides.github.com/features/mastering-markdown/), [GitHub Issues](https://guides.github.com/features/issues/), [Shape-up](https://basecamp.com/shapeup/webbook), [Six-week cycle](https://basecamp.com/shapeup/0.3-chapter-01#six-week-cycles), Agile, ~[Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/)~ VSCode, 
-[Json](https://www.json.org/json-en.html), [PostgreSQL](https://www.postgresql.org/docs/current/), SQL database, [Backups](https://devcenter.heroku.com/articles/heroku-postgres-data-safety-and-continuous-protection), Jsonb, [Redis](https://redis.io/documentation)
+[Json](https://www.json.org/json-en.html), [PostgreSQL](https://www.postgresql.org/docs/current/), SQL database, [Backups](https://devcenter.heroku.com/articles/heroku-postgres-data-safety-and-continuous-protection), Jsonb, [Redis](https://redis.io/documentation), ERP (PGI)
 
 - [Ruby 3](https://docs.ruby-lang.org/en/), Garbage collection, [BasicObject](https://ruby-doc.org/core-3.0.0/BasicObject.html), [Class](https://ruby-doc.org/core-3.0.0/Class.html), [Object](https://ruby-doc.org/core-3.0.0/Object.html), [stdlib](https://ruby-doc.org/stdlib-3.0.0/), [Symbol](https://ruby-doc.org/core-3.0.0/Symbol.html), [Ruby Style Guide](https://rubystyle.guide/)
 
-- [Rails](https://guides.rubyonrails.org/) [6](https://devcenter.heroku.com/articles/getting-started-with-rails6) (started with Rails 3), [Doctrine](https://rubyonrails.org/doctrine), [rails console](https://guides.rubyonrails.org/command_line.html#bin-rails-console), [Module::Concerning](https://api.rubyonrails.org/classes/Module/Concerning.html) , Byebug, [API-only Applications](https://guides.rubyonrails.org/api_app.html), [Routing](https://guides.rubyonrails.org/routing.html), [Internationalization (i18n)](https://guides.rubyonrails.org/i18n.html), [Concern](https://api.rubyonrails.org/v6.1.0/classes/ActiveSupport/Concern.html), [Active Model](https://guides.rubyonrails.org/active_model_basics.html), [Active Record](https://guides.rubyonrails.org/active_record_basics.html), [Arel](https://thoughtbot.com/blog/using-arel-to-compose-sql-queries), [Active Support](https://guides.rubyonrails.org/active_support_core_extensions.html), [Action Controller](https://guides.rubyonrails.org/action_controller_overview.html), [Action Pack](https://github.com/rails/rails/tree/master/actionpack), [Action View](https://guides.rubyonrails.org/action_view_overview.html), [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html), [Active Job](https://guides.rubyonrails.org/active_job_basics.html), [Sidekiq](https://github.com/mperham/sidekiq/wiki/Getting-Started), [Action Cable](https://guides.rubyonrails.org/action_cable_overview.html), [Action Text](https://guides.rubyonrails.org/action_text_overview.html), CMS, [Custom Rake Tasks](https://guides.rubyonrails.org/command_line.html#custom-rake-tasks), [Caching](https://guides.rubyonrails.org/caching_with_rails.html), [Devise](https://github.com/heartcombo/devise), Back-office (Admin namespace), Front-office, Admin/User Models, Haml, SimpleForm, Administrate
+- [Rails](https://guides.rubyonrails.org/) 8 (started with Rails 3), [Doctrine](https://rubyonrails.org/doctrine), [rails console](https://guides.rubyonrails.org/command_line.html#bin-rails-console), [Module::Concerning](https://api.rubyonrails.org/classes/Module/Concerning.html) , Byebug, [API-only Applications](https://guides.rubyonrails.org/api_app.html), [Routing](https://guides.rubyonrails.org/routing.html), [Internationalization (i18n)](https://guides.rubyonrails.org/i18n.html), [Concern](https://api.rubyonrails.org/v6.1.0/classes/ActiveSupport/Concern.html), [Active Model](https://guides.rubyonrails.org/active_model_basics.html), [Active Record](https://guides.rubyonrails.org/active_record_basics.html), [Arel](https://thoughtbot.com/blog/using-arel-to-compose-sql-queries), [Active Support](https://guides.rubyonrails.org/active_support_core_extensions.html), [Action Controller](https://guides.rubyonrails.org/action_controller_overview.html), [Action Pack](https://github.com/rails/rails/tree/master/actionpack), [Action View](https://guides.rubyonrails.org/action_view_overview.html), [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html), [Active Job](https://guides.rubyonrails.org/active_job_basics.html), [Sidekiq](https://github.com/mperham/sidekiq/wiki/Getting-Started), [Action Cable](https://guides.rubyonrails.org/action_cable_overview.html), [Action Text](https://guides.rubyonrails.org/action_text_overview.html), CMS, [Custom Rake Tasks](https://guides.rubyonrails.org/command_line.html#custom-rake-tasks), [Caching](https://guides.rubyonrails.org/caching_with_rails.html), [Devise](https://github.com/heartcombo/devise), Back-office (Admin namespace), Front-office, Admin/User Models, SimpleForm, Administrate
 
-- Code Quality, [RubyCritic](https://github.com/whitesmith/rubycritic), [rails notes](https://guides.rubyonrails.org/command_line.html#bin-rails-notes), Code Analyzer,  rails stats, Linter, [Rubocop](https://docs.rubocop.org/)
+- Code Quality, [RubyCritic](https://github.com/whitesmith/rubycritic), [rails notes](https://guides.rubyonrails.org/command_line.html#bin-rails-notes), Code Analyzer, rails stats, Linter, [Rubocop](https://docs.rubocop.org/)
 [Test](https://guides.rubyonrails.org/testing.html), [TDD](https://en.wikipedia.org/wiki/Test-driven_development), Spec, [Rspec](https://rspec.info/documentation/), [RSpec Style Guide](https://rspec.rubystyle.guide/), Unit tests, [Model Specs](https://relishapp.com/rspec/rspec-rails/docs/model-specs), [Job Specs](https://relishapp.com/rspec/rspec-rails/docs/job-specs/job-spec), Integration tests, [System tests](https://relishapp.com/rspec/rspec-rails/docs/system-specs/system-spec), Acceptance tests, [Capybara](https://github.com/teamcapybara/capybara), Selenium, [FactoryBot](https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md)
 
 - [Github](https://guides.github.com/), [Git](https://ndpsoftware.com/git-cheatsheet.html), [Codebase](https://12factor.net/codebase), [GitHub Flow](https://guides.github.com/introduction/flow/), [Branches, Stage Changes, Commit, Pull, Push (with Atom Integration)](https://flight-manual.atom.io/using-atom/sections/github-package/), [Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests), [Merge conflicts](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts), [Github Labels](https://docs.github.com/en/github/managing-your-work-on-github/managing-labels), [Github Milestones](https://docs.github.com/en/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-milestones)
@@ -46,7 +48,7 @@ All [rails guides](https://guides.rubyonrails.org/) x times, a good part of the 
 [Amazone S3](https://docs.aws.amazon.com/s3/index.html),
 [Stripe](https://stripe.com/docs), Mangopay, [Twilio SendGrid](https://sendgrid.com/docs/api-reference/), Mailchimp
 
-- [Twitter Bootstrap 5](https://getbootstrap.com/docs), [Chart.js](https://www.chartjs.org/), HTML5, CSS, Javascript, Haml, Sass, Scss, [Webpacker](https://edgeguides.rubyonrails.org/webpacker.html), Node.js, Yarn, package.json, [Hotwired](https://hotwired.dev/), [Turbo](https://turbo.hotwired.dev/), [Stimulus](https://stimulus.hotwire.dev/), [Native](https://native.hotwired.dev/), [Google Map API](https://developers.google.com/maps/documentation/javascript/overview), RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
+- [Twitter Bootstrap 5](https://getbootstrap.com/docs), [Bootstrap-table](https://examples.bootstrap-table.com/), [Chart.js](https://www.chartjs.org/), HTML5, CSS, Javascript, Haml, Sass, Yarn, package.json, [Hotwired](https://hotwired.dev/), [Turbo](https://turbo.hotwired.dev/), [Stimulus](https://stimulus.hotwire.dev/), [Native](https://native.hotwired.dev/), [Google Map API](https://developers.google.com/maps/documentation/javascript/overview), RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
 
 ---
 
@@ -256,7 +258,7 @@ Pour débugger sans aide du support commercial.
 Les issues en markdown, les uploads simples d'image ou gif, les labels, les milestones et bien sûr le SCM Git.
 
 #### Pourquoi Ruby ?
-Lisibilité du code, plaisir de passer en revu le code constament à la recherche d'optimisation.
+POO, Lisibilité du code, plaisir de passer en revu le code constament à la recherche d'optimisation.
 
 #### Pourquoi Ruby on Rails ?
 MVC, open-source, *convention over configuration*, communauté, documentation.
@@ -264,8 +266,8 @@ MVC, open-source, *convention over configuration*, communauté, documentation.
 #### Pourquoi Postgresql ?
 Sa popularité dans le domain scientifique et le type de donnée jsonb.
 
-#### Pourquoi Bootstrap ?
-Mac OS et Windows ont leur UI Kit, Les app web on Bootstrap.
+#### Pourquoi Bootstrap, Bootstrap-table et Chart.js ?
+Mac OS et Windows ont leur UI Kit, Les apps web ont Bootstrap.
 
 #### Pourquoi Heroku ?
 Qui a besoin d'un Admin système et réseaux de nos jours. [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
@@ -296,8 +298,3 @@ GitHub integration, https, pipeline, production, staging, demo, review apps, her
 
 ---
 
-## 💻 Work Station
-- MacBook (International English keyboard) or ChromeBook (Azerty)
-- A good internet connection
-- Iphone or Android
-- Offices in inner Paris, Teleworking
