@@ -1,13 +1,13 @@
 ![Profile Header](https://github.com/dinatih/dinatih/raw/main/profile_header.png)
 
 # 👷🏾‍♂️ David HERELLE
-![Profile Picture](https://github.com/dinatih/dinatih/raw/main/profile_picture.jpeg)
+![Profile Picture](https://avatars.githubusercontent.com/u/309161?v=4)
 
 ## A Web Developer Life with PostgreSQL, Ruby, Rails, GitHub, Heroku and Bootstrap
 
 **38 year old**, with a passion for Web App Development and Freestyle Football ⚽️, domiciled in **Paris** 13th (near BNF, Station F), **France**.  
 
-More than **7 years of cumulative experience** on 3 start-ups mainly (6 in all). As the only **Full-stack Ruby on Rails Developer**.
+More than **7 years of cumulative experience** (2010 to 2019) on 3 start-ups mainly (6 in all). Mainly as the only **Full-stack Ruby on Rails Developer**.
 
 My profiles : [Github](https://github.com/dinatih),
 [StackOverflow](https://stackoverflow.com/users/524028/dinatih), [LinkedIn](https://www.linkedin.com/in/dinatih/)
@@ -26,7 +26,7 @@ All [rails guides](https://guides.rubyonrails.org/) x times, a good part of the 
 
 - Minimum Viable Product, Web application, [Security](https://guides.rubyonrails.org/security.html), Open-source, [Client–server model](https://en.wikipedia.org/wiki/Client-server_model), [Model-View-Controller (MVC)](https://en.wikipedia.org/wiki/Model-view-controller), [DevOps](https://en.wikipedia.org/wiki/DevOps), [Responsive, mobile-first sites](https://getbootstrap.com/docs/5.0/getting-started/introduction/), [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming), [Refactoring](https://refactoring.guru/refactoring), [Design Patterns](https://refactoring.guru/design-patterns/ruby), [Code Smells](https://refactoring.guru/refactoring/smells), [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language), [Domain model](https://en.wikipedia.org/wiki/Domain_model), Domain-specific language (DSL)
 
-- Project Management, [Markdown](https://guides.github.com/features/mastering-markdown/), [GitHub Issues](https://guides.github.com/features/issues/), [Shape-up](https://basecamp.com/shapeup/webbook), [Six-week cycle](https://basecamp.com/shapeup/0.3-chapter-01#six-week-cycles), Agile, [Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/)
+- Project Management, [Markdown](https://guides.github.com/features/mastering-markdown/), [GitHub Issues](https://guides.github.com/features/issues/), [Shape-up](https://basecamp.com/shapeup/webbook), [Six-week cycle](https://basecamp.com/shapeup/0.3-chapter-01#six-week-cycles), Agile, ~[Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/)~ VSCode, 
 [Json](https://www.json.org/json-en.html), [PostgreSQL](https://www.postgresql.org/docs/current/), SQL database, [Backups](https://devcenter.heroku.com/articles/heroku-postgres-data-safety-and-continuous-protection), Jsonb, [Redis](https://redis.io/documentation)
 
 - [Ruby 3](https://docs.ruby-lang.org/en/), Garbage collection, [BasicObject](https://ruby-doc.org/core-3.0.0/BasicObject.html), [Class](https://ruby-doc.org/core-3.0.0/Class.html), [Object](https://ruby-doc.org/core-3.0.0/Object.html), [stdlib](https://ruby-doc.org/stdlib-3.0.0/), [Symbol](https://ruby-doc.org/core-3.0.0/Symbol.html), [Ruby Style Guide](https://rubystyle.guide/)
@@ -46,7 +46,7 @@ All [rails guides](https://guides.rubyonrails.org/) x times, a good part of the 
 [Amazone S3](https://docs.aws.amazon.com/s3/index.html),
 [Stripe](https://stripe.com/docs), Mangopay, [Twilio SendGrid](https://sendgrid.com/docs/api-reference/), Mailchimp
 
-- [Twitter Bootstrap 5](https://getbootstrap.com/docs), HTML5, CSS3, Javascript, Haml, Sass, Scss, CoffeeScript, [Webpacker](https://edgeguides.rubyonrails.org/webpacker.html), Node.js, Yarn, package.json, [Stimulus](https://stimulus.hotwire.dev/), [Google Map API](https://developers.google.com/maps/documentation/javascript/overview), RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
+- [Twitter Bootstrap 5](https://getbootstrap.com/docs), [Chart.js](https://www.chartjs.org/), HTML5, CSS, Javascript, Haml, Sass, Scss, [Webpacker](https://edgeguides.rubyonrails.org/webpacker.html), Node.js, Yarn, package.json, [Hotwired](https://hotwired.dev/), [Turbo](https://turbo.hotwired.dev/), [Stimulus](https://stimulus.hotwire.dev/), [Native](https://native.hotwired.dev/), [Google Map API](https://developers.google.com/maps/documentation/javascript/overview), RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
 
 ---
 
@@ -143,7 +143,7 @@ Ce que j'ai adoré ou découvert :
   </p>
 </details>
 
-### [🧑‍💼 Saisirprudhommes.com](https://saisirprudhommes.com) 3 years - Maitrise de Twitter Bootstrap
+### [🧑‍💼 Saisirprudhommes.com](https://saisirprudhommes.com) 3 years - Maitrise de RSpec et Twitter Bootstrap
 
 <details>
   <summary>détails</summary>
@@ -297,7 +297,7 @@ GitHub integration, https, pipeline, production, staging, demo, review apps, her
 ---
 
 ## 💻 Work Station
-- MacBook Pro 13'3" (International English keyboard)
+- MacBook (International English keyboard) || ChromeBook (AZERTY)
 - A good internet connection
-- Iphone
+- ~Iphone~ Android
 - Offices in inner Paris, Teleworking
