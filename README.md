@@ -9,7 +9,7 @@
 
 **38 year old**, with a passion for Web App Development and Freestyle Football ⚽️, domiciled in **Paris** 13th (near BNF, Station F), **France**.  
 
-More than **7 years of cumulative experience** (2010 to 2019) on 3 start-ups mainly (6 in all). Mainly as the only **Full-stack Ruby on Rails Developer**.
+More than **7 years of cumulative experience** on 3 start-ups mainly (6 in all). Mainly as the only **Full-stack Ruby on Rails Developer**.
 
 My profiles : [Github](https://github.com/dinatih),
 [StackOverflow](https://stackoverflow.com/users/524028/dinatih), [LinkedIn](https://www.linkedin.com/in/dinatih/)
@@ -48,7 +48,7 @@ All [rails guides](https://guides.rubyonrails.org/) x times, a good part of the 
 [Amazone S3](https://docs.aws.amazon.com/s3/index.html),
 [Stripe](https://stripe.com/docs), Mangopay, [Twilio SendGrid](https://sendgrid.com/docs/api-reference/), Mailchimp
 
-- [Twitter Bootstrap 5](https://getbootstrap.com/docs), [Chart.js](https://www.chartjs.org/), HTML5, CSS, Javascript, Haml, Sass, Scss, [Webpacker](https://edgeguides.rubyonrails.org/webpacker.html), Node.js, Yarn, package.json, [Hotwired](https://hotwired.dev/), [Turbo](https://turbo.hotwired.dev/), [Stimulus](https://stimulus.hotwire.dev/), [Native](https://native.hotwired.dev/), [Google Map API](https://developers.google.com/maps/documentation/javascript/overview), RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
+- [Twitter Bootstrap 5](https://getbootstrap.com/docs), [Bootstrap-table](https://examples.bootstrap-table.com/), [Chart.js](https://www.chartjs.org/), HTML5, CSS, Javascript, Haml, Sass, Scss, , Yarn, package.json, [Hotwired](https://hotwired.dev/), [Turbo](https://turbo.hotwired.dev/), [Stimulus](https://stimulus.hotwire.dev/), [Native](https://native.hotwired.dev/), [Google Map API](https://developers.google.com/maps/documentation/javascript/overview), RESTful API, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
 
 ---
 
@@ -298,8 +298,3 @@ GitHub integration, https, pipeline, production, staging, demo, review apps, her
 
 ---
 
-## 💻 Work Station
-- MacBook (International English keyboard) or ChromeBook (Azerty)
-- A good internet connection
-- Iphone or Android
-- Offices in inner Paris, Teleworking
