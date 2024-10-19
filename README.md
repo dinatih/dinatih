@@ -266,8 +266,8 @@ MVC, open-source, *convention over configuration*, communauté, documentation.
 #### Pourquoi Postgresql ?
 Sa popularité dans le domain scientifique et le type de donnée jsonb.
 
-#### Pourquoi Bootstrap ?
-Mac OS et Windows ont leur UI Kit, Les app web on Bootstrap.
+#### Pourquoi Bootstrap, Bootstrap-table et Chart.js?
+Mac OS et Windows ont leur UI Kit, Les app web ont Bootstrap.
 
 #### Pourquoi Heroku ?
 Qui a besoin d'un Admin système et réseaux de nos jours. [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
