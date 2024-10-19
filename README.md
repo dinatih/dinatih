@@ -258,7 +258,7 @@ Pour débugger sans aide du support commercial.
 Les issues en markdown, les uploads simples d'image ou gif, les labels, les milestones et bien sûr le SCM Git.
 
 #### Pourquoi Ruby ?
-Lisibilité du code, plaisir de passer en revu le code constament à la recherche d'optimisation.
+POO, Lisibilité du code, plaisir de passer en revu le code constament à la recherche d'optimisation.
 
 #### Pourquoi Ruby on Rails ?
 MVC, open-source, *convention over configuration*, communauté, documentation.
