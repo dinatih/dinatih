@@ -9,7 +9,7 @@
 
 **38 year old**, with a passion for Web App Development and Freestyle Football ⚽️, domiciled in **Paris** 13th (near BNF, Station F), **France**.  
 
-More than **7 years of cumulative experience** on 3 start-ups mainly (6 in all). Mainly as the only **Full-stack Ruby on Rails Developer**.
+More than **7 years of cumulative experience** on 3 start-ups mainly (6 in all). Mainly as **Full-stack Ruby on Rails Lead Developer**.
 
 My profiles : [Github](https://github.com/dinatih),
 [StackOverflow](https://stackoverflow.com/users/524028/dinatih), [LinkedIn](https://www.linkedin.com/in/dinatih/)
