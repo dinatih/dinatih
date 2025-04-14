@@ -4,7 +4,7 @@
 # 👷🏾‍♂️ David HERELLE
 
 ![Profile Picture](https://avatars.githubusercontent.com/u/309161?v=4)
-![Starter Pack Picture](https://github.com/dinatih/dinatih/raw/main/starter_pack.png)
+<img src="https://github.com/dinatih/dinatih/raw/main/starter_pack.png" width="200" alt="Starter Pack Picture" style="float: right; margin-left: 10px;">
 
 ## A Web Developer Life with love ❤ for Ruby 💎, Rails 🛤️, GitHub 📋, PostgreSQL 🗃️, Heroku ⚙️ and Bootstrap 📱!
 
