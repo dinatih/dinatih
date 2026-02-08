@@ -15,7 +15,7 @@ Développeur Ruby on Rails Senior | 8 ans d'expérience | Startups | Disponible
 ```
 Développeur Ruby on Rails depuis 2010, je reviens sur le marché après plusieurs années de pause.
 
-Pendant cette période, j'ai pris du recul, retrouvé un équilibre de vie, et surtout : je n'ai jamais arrêté de coder. Rails 8, Ruby 3… je suis à jour et prêt à m'investir dans un nouveau projet.
+Pendant cette période, j'ai pris du recul, retrouvé un équilibre de vie, et surtout : je n'ai jamais perdu ma passion pour le code. Rails 8, Ruby 3… je suis à jour et prêt à m'investir dans un nouveau projet.
 
 Ce que je recherche :
 → Une startup qui construit en Rails sans obligation React/Vue
