@@ -102,14 +102,14 @@ Technologies : Ruby, Rails 3/4, PostgreSQL, RSpec, Capybara, Stripe, Bootstrap, 
 ---
 
 ### JobTeaser
-**Chef de projet & Développeur Ruby on Rails**
+**Chef de projet & Premier développeur de l'entreprise**
 Mars 2010 - Février 2012 · Paris
 
 Plateforme marque employeur — Aujourd'hui leader européen du recrutement étudiant.
 
-Membre de la première équipe technique.
+Premier employé, recruté par les 2 co-fondateurs (non-techniques). J'ai pris la décision stratégique de migrer le MVP depuis Faveod (framework propriétaire coûteux, développement via interface web, impossible d'ajouter des gems) vers Rails 3 (fraîchement sorti). Cette réécriture complète, menée en parallèle de la maintenance de l'existant, a été ma première grande décision professionnelle.
 
-- Réécriture du MVP en Rails 3
+- Réécriture complète du MVP en Rails 3
 - Site multilingue (i18n)
 - Version mobile avec jQuery Mobile
 - Job-board API (FTP, Email, REST)
