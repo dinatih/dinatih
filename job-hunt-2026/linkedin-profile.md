@@ -29,6 +29,8 @@ Ce que j'apporte :
 
 Ma vision : Hotwire prouve qu'on peut construire des apps réactives sans sacrifier la simplicité. C'est l'approche que je veux approfondir dans mon prochain poste.
 
+Setup : Framework 13 + Omarchy (la distrib Linux de DHH). Enfin un environnement de dev qui me correspond.
+
 Disponible pour échanger.
 ```
 
