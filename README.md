@@ -17,6 +17,8 @@ Mes profils : [GitHub](https://github.com/dinatih) ·
 
 Mon meilleur [gist/commentaire](https://github.com/rails/rails/issues/31419#issuecomment-370900013) est un exemple de "patch" en métaprogrammation pour ActiveStorage avant qu'ils n'introduisent l'[accès public](https://edgeguides.rubyonrails.org/active_storage_overview.html#public-access).
 
+![Gist Rails - Likes et réactions](https://github.com/dinatih/dinatih/raw/main/gist_rails.png)
+
 ---
 
 ###### Lectures
