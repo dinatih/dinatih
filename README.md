@@ -1,4 +1,3 @@
-![Profile Header](https://github.com/dinatih/dinatih/raw/main/profile_header.png)
 *Architecte de Systèmes d'Information Web, Artisan du Code*
 
 # David HERELLE
