@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=dinatih's repo
+Comment=dinatih/dinatih repository
+Exec=omarchy-launch-webapp https://github.com/dinatih/dinatih
+Terminal=false
+Type=Application
+Icon=/home/dinatih/.local/share/applications/icons/dinatih's github.png
+StartupNotify=true
