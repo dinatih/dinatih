@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Claude Usage
+Comment=Claude AI usage dashboard
+Exec=omarchy-launch-webapp https://claude.ai/settings/usage
+Terminal=false
+Type=Application
+Icon=/home/dinatih/.local/share/applications/icons/Claude Usage.png
+StartupNotify=true
