@@ -8,6 +8,7 @@ Configuration files for my Omarchy (Arch Linux + Hyprland) setup.
 dotfiles/
 ├── bash/          # ~/.bashrc
 ├── hypr/          # ~/.config/hypr/bindings.conf
+├── webapps/       # ~/.local/share/applications/ (omarchy web apps + icons)
 ├── packages.txt   # Explicitly installed packages (pacman/yay)
 ```
 
@@ -27,6 +28,10 @@ ln -sf ~/Projects/dinatih/dotfiles/bash/.bashrc ~/.bashrc
 
 # Hyprland bindings
 ln -sf ~/Projects/dinatih/dotfiles/hypr/.config/hypr/bindings.conf ~/.config/hypr/bindings.conf
+
+# Web apps
+cp dotfiles/webapps/.local/share/applications/*.desktop ~/.local/share/applications/
+cp dotfiles/webapps/.local/share/applications/icons/*.png ~/.local/share/applications/icons/
 ```
 
 ## Updating packages.txt
