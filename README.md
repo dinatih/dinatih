@@ -76,6 +76,7 @@ Plateforme marque employeur — Aujourd'hui leader européen du recrutement étu
 Premier employé, recruté par les 2 co-fondateurs (non-techniques). J'ai pris la décision stratégique de migrer le MVP depuis Faveod (framework propriétaire coûteux, développement via interface web, impossible d'ajouter des gems) vers Rails 3 (fraîchement sorti). Cette réécriture complète, menée en parallèle de la maintenance de l'existant, a été ma première grande décision professionnelle.
 
 - Réécriture complète du MVP en Rails 3
+- Migration du système de chiffrement des mots de passe : les deux systèmes cohabitaient, chaque utilisateur était migré automatiquement lors de sa prochaine connexion
 - Site multilingue (i18n)
 - Version mobile avec jQuery Mobile
 - Job-board API (FTP, Email, REST)
@@ -102,6 +103,7 @@ Procédures judiciaires en ligne pour particuliers.
 Projet que j'ai porté seul pendant 3 ans, de zéro jusqu'à mon départ.
 
 - Conception et développement complet de l'application
+- Gestion de crise : serveur dédié OVH incendié, récupération complète via les sauvegardes
 - Migration Rails 3 → Rails 4
 - Documentation UML du domaine métier et des processus
 - Paiement en ligne (Stripe)
@@ -127,7 +129,7 @@ Juillet 2016 – Novembre 2016 · Paris
 
 - Réécriture complète de l'application en Rails 5 et Bootstrap 4
 - Migration d'un serveur dédié vers Heroku
-- Optimisation PostgreSQL avec JSONB
+- Optimisation PostgreSQL avec JSONB sur une base de données de plus d'1 To
 - Détection et résolution de fuites mémoire Ruby (étude du garbage collector)
 
 Technologies : Rails 5, PostgreSQL 10+, Bootstrap 4, Heroku
@@ -165,10 +167,13 @@ Août 2017 – Octobre 2018 · Le Cargo, Paris
 
 Application B2B pour la location de matériel BTP.
 
+Réécriture de zéro du codebase v1 et migration v1 → v2 avec les deux systèmes en parallèle pendant la transition.
+
 - Architecture complète de l'application
 - Choix du stack technique : Rails 5.2, PostgreSQL, Heroku, RSpec, Bootstrap 4
 - Mise en place CI/CD avec Heroku Review Apps et Heroku-CI
 - Intégration AWS S3 et ActiveStorage
+- Réalisation d'un back-office custom en complément d'Administrate
 
 Technologies : Ruby 2.4, Rails 5.2, PostgreSQL, RSpec, FactoryBot, Heroku, Bootstrap 4, AppSignal
 
