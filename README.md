@@ -1,14 +1,14 @@
-*Architecte de Systèmes d'Information Web, Artisan du Code*
+*Architecte de Systèmes d'Information Web, ~~Artisan du Code~~ Superviseur d'Agents IA*
 
 # David HERELLE
 
 <img src="https://avatars.githubusercontent.com/u/309161?v=4" height="200" alt="Profile Picture"> <img src="https://github.com/dinatih/dinatih/raw/main/profile_picture.jpeg" height="200" alt="Photo Corporate Mooncard">
 
-## Une vie de développeur web avec amour pour Ruby, Rails, GitHub, PostgreSQL, Heroku et Bootstrap
+## Une vie d'architecte web avec amour pour Ruby, Rails, GitHub, PostgreSQL, Heroku et Bootstrap
 
 Passionné de développement web et de Freestyle Football, basé à **Paris 13ème** (près de la BNF, Station F), **France**.
 
-Plus de **8 ans d'expérience cumulée** sur 5 startups. Principalement en tant que **Développeur Full-stack Ruby on Rails Senior**.
+Plus de **8 ans d'expérience cumulée** sur 5 startups. Principalement en tant qu'**Architecte Web & Chef de projet technique Ruby on Rails**.
 
 Setup : Framework 13 + Omarchy (la distrib Linux de DHH). Enfin un environnement de dev qui me correspond.
 

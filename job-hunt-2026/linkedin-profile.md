@@ -5,7 +5,7 @@
 ## Headline
 
 ```
-Développeur Ruby on Rails Senior | 8 ans d'expérience | Startups | Disponible
+Architecte Web & Chef de projet technique | Ruby on Rails | 8 ans | Startups | Disponible
 ```
 
 ---

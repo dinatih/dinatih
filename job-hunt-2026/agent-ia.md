@@ -11,7 +11,7 @@ C'est le meilleur moment de l'histoire pour être développeur informatique. Les
 ## Ce que l'IA a changé dans mon quotidien
 
 ### Avant (90% du temps)
-- ~~Écriture de boilerplate et code répétitif~~
+- Écriture manuelle de code standard et répétitif (migrations, CRUD, configurations...)
 - Recherches préliminaires (documentation, Stack Overflow, blogs)
 - Recherche du bon nommage (variables, fonctions, classes, fichiers)
 - Rédaction et mise à jour de la documentation
@@ -41,19 +41,19 @@ On passe de "comment écrire ce code" à "quel code faut-il écrire et pourquoi"
 
 ## Ce que j'utilise
 
-- **Claude Code** (~~Anthropic~~) : mon agent principal, celui qui a vraiment changé ma façon de travailler
+- **Claude Code** : mon agent principal, celui qui a vraiment changé ma façon de travailler
 - **Claude** (chat) : pour la réflexion, les brainstormings, les décisions d'architecture
-- **GitHub Copilot** : autocomplétion dans l'éditeur
+- **GitHub Copilot** : utilisé avant, remplacé par Claude Code qui va plus loin
 
 ---
 
 ## Ce qui m'a surpris
 
-- ~~La qualité du code généré par les agents : souvent meilleur que ce que j'aurais écrit en étant pressé~~
+- La qualité du code généré : une bonne base, mais c'est l'expérience du développeur qui l'affine — utiliser les dernières features de Rails/Ruby, optimiser, simplifier
 - La vitesse : des tâches qui prenaient des heures se font en minutes
-- ~~L'apprentissage : l'IA m'apprend des patterns que je ne connaissais pas~~
+- La veille technologique accélérée : l'IA me fait gagner du temps sur les nouveautés que je n'ai pas encore explorées
 - La documentation : enfin à jour, car ça ne coûte plus rien de la maintenir
-- Le pair programming avec une IA : on n'est plus jamais vraiment seul sur un projet
+- Le pair programming avec une IA : j'étais anti-pair-programming humain (plus pénible que productif). Avec une IA, on garde le meilleur — le brainstorming permanent, sans les frictions
 
 ---
 
