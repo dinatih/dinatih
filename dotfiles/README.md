@@ -24,6 +24,17 @@ yay -S --needed - < dotfiles/packages.txt
 
 ### 2. Link config files
 
+Symlinks are managed with [GNU Stow](https://www.gnu.org/software/stow/). From the dotfiles directory:
+
+```bash
+cd ~/Projects/dinatih/dotfiles
+stow -t ~ bash
+stow -t ~ hypr
+stow -t ~ waybar
+```
+
+Or manually:
+
 ```bash
 # Bash
 ln -sf ~/Projects/dinatih/dotfiles/bash/.bashrc ~/.bashrc
