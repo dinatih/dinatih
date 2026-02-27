@@ -2,7 +2,7 @@
 
 # David HERELLE
 
-![Profile Picture](https://avatars.githubusercontent.com/u/309161?v=4)
+<img src="https://avatars.githubusercontent.com/u/309161?v=4" height="200" alt="Profile Picture"> <img src="https://github.com/dinatih/dinatih/raw/main/profile_picture.jpeg" height="200" alt="Photo Corporate Mooncard">
 
 ## Une vie de développeur web avec amour pour Ruby, Rails, GitHub, PostgreSQL, Heroku et Bootstrap
 
