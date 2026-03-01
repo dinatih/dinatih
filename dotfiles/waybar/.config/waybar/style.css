@@ -96,3 +96,8 @@ tooltip {
 #custom-voxtype.recording {
   color: #a55555;
 }
+
+#battery.critical {
+  color: #ff3333;
+  font-weight: bold;
+}

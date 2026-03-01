@@ -82,6 +82,7 @@
   "battery": {
     "format": "{capacity}% {icon}",
     "format-discharging": "{icon}",
+    "format-discharging-critical": "PLUG-IN ! {icon}",
     "format-charging": "{icon}",
     "format-plugged": "",
     "format-icons": {
