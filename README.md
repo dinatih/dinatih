@@ -10,6 +10,8 @@ Passionné de développement web et de Freestyle Football, basé à **Paris 13è
 
 Plus de **8 ans d'expérience cumulée** sur 5 startups. Principalement en tant qu'**Architecte Web & Chef de projet technique Ruby on Rails**.
 
+Fier d'avoir été chef de projet ou tech lead **dès les premiers jours** pour 3 de ces startups — [JobTeaser](https://jobteaser.com), [Saisirprudhommes.com](https://saisirprudhommes.com) et [Tracktor](https://tracktor.fr) — toutes trois toujours en activité en 2026.
+
 Setup : Framework 13 + Omarchy (la distrib Linux de DHH). Enfin un environnement de dev qui me correspond.
 
 Mes profils : [GitHub](https://github.com/dinatih) ·

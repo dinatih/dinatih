@@ -26,6 +26,7 @@ Ce que j'apporte :
 → 8 ans d'expérience en startup (JobTeaser, Saisirprudhommes, Mooncard, Tracktor)
 → La capacité à porter un projet de A à Z en totale autonomie (3 ans solo sur Saisirprudhommes.com)
 → Une maîtrise complète du stack Rails : RSpec, PostgreSQL, Heroku
+→ Fier d'avoir été chef de projet dès les premiers jours pour 3 startups — JobTeaser, Saisirprudhommes.com et Tracktor — toutes trois toujours en activité en 2026
 
 Ma vision : Hotwire prouve qu'on peut construire des apps réactives sans sacrifier la simplicité. C'est l'approche que je veux approfondir dans mon prochain poste.
 
