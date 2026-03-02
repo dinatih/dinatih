@@ -5,7 +5,7 @@
 ## Headline
 
 ```
-Architecte Web & Chef de projet technique | Ruby on Rails | 8 ans | Startups | Disponible
+Architecte Web & Chef de projet technique | Responsable SI | Ruby on Rails | 8 ans | Startups | Disponible
 ```
 
 ---
@@ -27,6 +27,11 @@ Ce que j'apporte :
 → La capacité à porter un projet de A à Z en totale autonomie (3 ans solo sur Saisirprudhommes.com)
 → Une maîtrise complète du stack Rails : RSpec, PostgreSQL, Heroku
 → Fier d'avoir été chef de projet dès les premiers jours pour 3 startups — JobTeaser, Saisirprudhommes.com et Tracktor — toutes trois toujours en activité en 2026
+→ Profil Responsable SI : systèmes internes, back-office et produit — de A à Z
+
+Passionné depuis toujours par tout ce qui est électronique, informatique et intelligence artificielle.
+
+Sur les agents IA : Claude Code a transformé ma façon de travailler. Fini le boilerplate et les recherches de nommage. Le développeur peut enfin se concentrer sur ce qui compte vraiment — la réflexion, l'architecture et les décisions métier. L'IA ne remplace pas le développeur, elle le libère.
 
 Ma vision : Hotwire prouve qu'on peut construire des apps réactives sans sacrifier la simplicité. C'est l'approche que je veux approfondir dans mon prochain poste.
 

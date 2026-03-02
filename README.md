@@ -6,9 +6,11 @@
 
 ## Une vie d'architecte web avec amour pour Ruby, Rails, GitHub, PostgreSQL, Heroku et Bootstrap
 
-Passionné de développement web et de Freestyle Football, basé à **Paris 13ème** (près de la BNF, Station F), **France**.
+Passionné depuis toujours par tout ce qui est électronique, informatique et intelligence artificielle — de A à Z. Basé à **Paris 13ème** (près de la BNF, Station F), **France** · Fan de Freestyle Football.
 
 Plus de **8 ans d'expérience cumulée** sur 5 startups. Principalement en tant qu'**Architecte Web & Chef de projet technique Ruby on Rails**.
+
+Profil **Responsable de Système d'Information** : systèmes internes, back-office et produit — capable de prendre en charge et faire évoluer l'ensemble du SI d'une entreprise, de A à Z.
 
 Fier d'avoir été chef de projet ou tech lead **dès les premiers jours** pour 3 de ces startups — [JobTeaser](https://jobteaser.com), [Saisirprudhommes.com](https://saisirprudhommes.com) et [Tracktor](https://tracktor.fr) — toutes trois toujours en activité en 2026.
 
@@ -222,3 +224,22 @@ Qui a besoin d'un admin système de nos jours ? [heroku-cli](https://devcenter.h
 
 #### Pourquoi Hotwire ?
 Construire des apps réactives sans sacrifier la simplicité. Pas de React, pas de complexité inutile.
+
+---
+
+## Les Agents IA et le Développement
+
+C'est le meilleur moment de l'histoire pour être développeur. Les agents IA (Claude Code, GitHub Copilot...) ont fondamentalement changé la nature de notre travail.
+
+#### Avant (90% du temps)
+Boilerplate, recherches de documentation, nommage, mise à jour de la doc, débogage ligne par ligne, configuration d'outils. Des heures perdues.
+
+#### Maintenant (l'essentiel)
+La réflexion et l'architecture, les décisions métier et techniques, la créativité, la revue de code, la compréhension du domaine métier.
+
+#### Ma vision
+L'IA ne remplace pas le développeur. Elle lui enlève le travail ingrat pour ne garder que le travail intellectuel.
+
+Le développeur devient un architecte qui pense, décide et dirige. On passe de *"comment écrire ce code"* à *"quel code faut-il écrire et pourquoi"*.
+
+> *Ce repo en est la preuve : construit avec Claude Code comme co-équipier. Les commits `Co-Authored-By: Claude` sont là pour le prouver.*
