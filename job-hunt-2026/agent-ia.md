@@ -89,4 +89,13 @@ Avant les agents IA, reconstruire tout ça m'aurait pris des jours. Avec Claude 
 
 *(Espace pour ajouter des pensées au fil du temps)*
 
--
+- rédiger tous les messages de commit avoir un historique documentaire optimum 
+- la discussion en franglish permet aux non natif anglais, de retravailler pleinement au lieu de perdre 50% du temps à faire les traductions d'idée en langue maternelle - anglais
+- les boilerplates d'UI où l'on pouvait perdre (trop) de temps pour rien
+- la découverte du vocabulaire du domaine en français et en anglais le long de conversation 
+- permet de passer d'une idée à du concret rapidement, les iterations sont plus nombreuses et resserrées 
+- évaluer financièrement le coup de la partie la plus coûteuse en temps pour un gain minime
+- la documentation toujours a jours (commentaire dans le code et documents markdown)
+- le temps libéré pendant l'exécution des tâches d'agent ia, sert a lire les raisonnemenr, et apprendre plus de vocabulaire du domaine
+- la communication naturel et non honteuse avec l'agent (ne juge pas les fautes de frappe ou d'orthographe), ne juge pas le style de language
+
