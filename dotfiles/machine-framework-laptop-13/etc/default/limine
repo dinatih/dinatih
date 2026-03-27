@@ -1,0 +1,22 @@
+TARGET_OS_NAME="Omarchy"
+
+ESP_PATH="/boot"
+
+KERNEL_CMDLINE[default]="cryptdevice=PARTUUID=03706c1a-7068-45ee-9100-2f9bfaeab7d2:root root=/dev/mapper/root zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs"
+KERNEL_CMDLINE[default]+="quiet splash"
+
+ENABLE_UKI=yes
+CUSTOM_UKI_NAME="omarchy"
+
+ENABLE_LIMINE_FALLBACK=yes
+
+# Find and add other bootloaders
+FIND_BOOTLOADERS=yes
+
+BOOT_ORDER="*, *fallback, Snapshots"
+
+MAX_SNAPSHOT_ENTRIES=5
+
+SNAPSHOT_FORMAT_CHOICE=5
+# amdgpu.mes=0 and mes_kiq=0: disable MES and MES KIQ to prevent GPU hangs/freezes on Radeon 840M/860M (Krackan)
+KERNEL_CMDLINE[default]+="amdgpu.mes=0 amdgpu.mes_kiq=0 amdgpu.gpu_recovery=1"

@@ -58,6 +58,22 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 sudo systemctl daemon-reload && sudo systemctl enable --now fingerprint-monitor.service
 ```
 
+## Framework Laptop 13 (machine-specific)
+
+Config in `machine-framework-laptop-13/`:
+
+- `.config/hypr/monitors.conf` — monitor layout
+- `etc/default/limine` — bootloader config with amdgpu MES fix (prevents GPU freezes on Radeon 840M/860M)
+
+```bash
+# Hyprland monitors
+stow -t ~ machine-framework-laptop-13
+
+# Limine bootloader config (requires sudo)
+sudo cp dotfiles/machine-framework-laptop-13/etc/default/limine /etc/default/limine
+sudo limine-update
+```
+
 ## Updating packages.txt
 
 After installing new packages, regenerate the list:
