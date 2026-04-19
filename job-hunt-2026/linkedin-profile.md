@@ -29,6 +29,8 @@ Ce que j'apporte :
 → Fier d'avoir été chef de projet dès les premiers jours pour 3 startups — JobTeaser, Saisirprudhommes.com et Tracktor — toutes trois toujours en activité en 2026
 → Profil Responsable SI : systèmes internes, back-office et produit — de A à Z
 
+Convaincu que l'architecture technique et la direction de projet reposent avant tout sur une synergie humaine, je privilégie les rencontres réelles avec les décideurs (CTO/Lead/CEO). Je ne participe pas aux processus de recrutement intermédiés ou exclusivement en distanciel.
+
 Passionné depuis toujours par tout ce qui est électronique, informatique et intelligence artificielle.
 
 Sur les agents IA : Claude Code a transformé ma façon de travailler. Fini le boilerplate et les recherches de nommage. Le développeur peut enfin se concentrer sur ce qui compte vraiment — la réflexion, l'architecture et les décisions métier. L'IA ne remplace pas le développeur, elle le libère.

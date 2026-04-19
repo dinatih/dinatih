@@ -27,6 +27,7 @@ Convaincu que les agents IA (Claude Code) sont aujourd'hui un levier de producti
 - Heroku (déploiement, pipelines, Review Apps, CI)
 - OVH (serveur dédié, gestion des incidents, récupération après sinistre)
 - AWS S3 / ActiveStorage
+- Docker (conteneurisation)
 - Capistrano (déploiement automatisé)
 
 ### Systèmes & Environnements
@@ -53,12 +54,6 @@ Convaincu que les agents IA (Claude Code) sont aujourd'hui un levier de producti
 ### Monitoring & Observabilité
 - AppSignal (monitoring, alertes)
 - Gestion de fuites mémoire Ruby (étude du garbage collector)
-
-### En cours
-- Docker
-- Hotwire / Turbo
-
----
 
 ## Expériences
 

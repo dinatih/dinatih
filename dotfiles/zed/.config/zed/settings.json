@@ -1,4 +1,12 @@
 {
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
   "scroll_beyond_last_line": "vertical_scroll_margin",
   "ui_font_size": 16.0,
   "buffer_font_size": 15.0,
@@ -23,6 +31,7 @@
     "dock": "right",
   },
   "git_panel": {
+    "tree_view": false,
     "dock": "right",
   },
   "languages": {

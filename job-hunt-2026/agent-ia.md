@@ -98,4 +98,7 @@ Avant les agents IA, reconstruire tout ça m'aurait pris des jours. Avec Claude 
 - la documentation toujours a jours (commentaire dans le code et documents markdown)
 - le temps libéré pendant l'exécution des tâches d'agent ia, sert a lire les raisonnemenr, et apprendre plus de vocabulaire du domaine
 - la communication naturel et non honteuse avec l'agent (ne juge pas les fautes de frappe ou d'orthographe), ne juge pas le style de language
-
+- le débuguage, comprends les screenshots
+- plus besoin de savoir "chercher" (c'etait la phrase qu'on m'avait sortie a EPITECH, en vous apprend a rechercher) a travail tout les sources différentes avec chacune leur style
+- beaucoup moins d'erreur lors des taches, car genere facilement des commandes git ou bash complexe sans erreur, qui prenne trop de temps a generer mentalement si on n'est ai pas quotidiennement d'aussi complexe
+- 

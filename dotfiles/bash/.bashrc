@@ -29,12 +29,15 @@ dot-sync() {
     # 2. Git operations
     # We only add the specific module folder to keep the commit atomic
     git -C .. add "dotfiles/$module"
-    
+
     local commit_msg="${msg:-Update $module configuration}"
     git -C .. commit -m "$commit_msg"
     git -C .. push origin main
-    
+
     # Return to previous directory
     cd - > /dev/null
     echo "✅ Module $module synchronized and pushed to GitHub."
 }
+
+# export EDITOR=nvim
+export OLLAMA_API_BASE=http://localhost:11434
