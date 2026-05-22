@@ -64,6 +64,8 @@ Config in `machine-framework-laptop-13/`:
 
 - `.config/hypr/monitors.conf` — monitor layout
 - `etc/default/limine` — bootloader config with amdgpu MES fix (prevents GPU freezes on Radeon 840M/860M)
+- `etc/systemd/logind.conf.d/omarchy_suspend_then_hibernate.conf` — lid close behavior (suspend-then-hibernate)
+- `etc/systemd/sleep.conf.d/omarchy_suspend_then_hibernate.conf` — hibernation delay (2 hours)
 
 ```bash
 # Hyprland monitors
@@ -72,6 +74,13 @@ stow -t ~ machine-framework-laptop-13
 # Limine bootloader config (requires sudo)
 sudo cp dotfiles/machine-framework-laptop-13/etc/default/limine /etc/default/limine
 sudo limine-update
+
+# Veille hybride / suspend-then-hibernate (requires sudo)
+sudo mkdir -p /etc/systemd/logind.conf.d /etc/systemd/sleep.conf.d
+sudo cp dotfiles/machine-framework-laptop-13/etc/systemd/logind.conf.d/omarchy_suspend_then_hibernate.conf /etc/systemd/logind.conf.d/
+sudo cp dotfiles/machine-framework-laptop-13/etc/systemd/sleep.conf.d/omarchy_suspend_then_hibernate.conf /etc/systemd/sleep.conf.d/
+sudo chmod 644 /etc/systemd/logind.conf.d/omarchy_suspend_then_hibernate.conf /etc/systemd/sleep.conf.d/omarchy_suspend_then_hibernate.conf
+sudo systemctl kill -s HUP systemd-logind
 ```
 
 ## Updating packages.txt
