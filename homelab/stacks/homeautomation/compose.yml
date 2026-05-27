@@ -1,17 +1,27 @@
 services:
+  matter-server:
+    image: ghcr.io/home-assistant-libs/python-matter-server:stable
+    container_name: matter-server
+    network_mode: host
+    volumes:
+      - ./matter-data:/data
+      - /run/dbus:/run/dbus:ro
+    restart: unless-stopped
+
   homeassistant:
     image: ghcr.io/home-assistant/home-assistant:stable
     container_name: homeassistant
     network_mode: host
     privileged: true
-    devices:
-      - /dev/ttyUSB0:/dev/ttyUSB0
+    # devices:
+    #   - /dev/ttyUSB0:/dev/ttyUSB0  # décommenter quand dongle branché (vérifier path: ls /dev/tty{USB,ACM}*)
     volumes:
-      - ./ha-config:/config
+      - /opt/homeassistant/config:/config
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     depends_on:
       - mosquitto
+      - matter-server
 
   mosquitto:
     image: eclipse-mosquitto:latest
