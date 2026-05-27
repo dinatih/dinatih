@@ -1,4 +1,8 @@
 {
+  "cli_default_open_behavior": "existing_window",
+  "sticky_scroll": {
+    "enabled": true
+  },
   "collaboration_panel": {
     "dock": "left"
   },
