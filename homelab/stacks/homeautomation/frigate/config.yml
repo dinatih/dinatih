@@ -1,0 +1,61 @@
+mqtt:
+  enabled: true
+  host: 127.0.0.1
+  port: 1883
+
+ffmpeg:
+  hwaccel_args: preset-vaapi
+
+detectors:
+  cpu:
+    type: cpu
+    num_threads: 2
+
+go2rtc:
+  streams:
+    fisheye_main:
+      - "rtsp://admin:{FRIGATE_CAMERA_PASSWORD}@192.168.1.145:554/user=admin&password={FRIGATE_CAMERA_PASSWORD}&channel=1&stream=0.sdp"
+    fisheye_sub:
+      - "rtsp://admin:{FRIGATE_CAMERA_PASSWORD}@192.168.1.145:554/user=admin&password={FRIGATE_CAMERA_PASSWORD}&channel=1&stream=1.sdp"
+
+cameras:
+  fisheye:
+    ffmpeg:
+      inputs:
+        - path: rtsp://127.0.0.1:8554/fisheye_sub
+          roles:
+            - detect
+        - path: rtsp://127.0.0.1:8554/fisheye_main
+          roles:
+            - record
+    detect:
+      enabled: true
+      width: 704
+      height: 576
+      fps: 5
+    record:
+      enabled: true
+      retain:
+        days: 7
+        mode: motion
+      events:
+        retain:
+          default: 14
+          mode: active_objects
+    snapshots:
+      enabled: true
+      retain:
+        default: 14
+    motion:
+      enabled: true
+
+record:
+  enabled: true
+  retain:
+    days: 7
+
+snapshots:
+  enabled: true
+
+ui:
+  live_mode: webrtc

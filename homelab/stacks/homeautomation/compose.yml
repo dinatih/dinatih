@@ -23,6 +23,28 @@ services:
       - mosquitto
       - matter-server
 
+  frigate:
+    image: ghcr.io/blakeblackshear/frigate:stable
+    container_name: frigate
+    privileged: true
+    shm_size: "256mb"
+    devices:
+      - /dev/dri/renderD128:/dev/dri/renderD128
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./frigate/config.yml:/config/config.yml
+      - /srv/frigate:/media/frigate
+    ports:
+      - "5000:5000"
+      - "8554:8554"
+      - "8555:8555/tcp"
+      - "8555:8555/udp"
+    env_file:
+      - .env
+    restart: unless-stopped
+    depends_on:
+      - mosquitto
+
   mosquitto:
     image: eclipse-mosquitto:latest
     container_name: mosquitto
