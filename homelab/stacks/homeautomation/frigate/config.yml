@@ -1,7 +1,9 @@
 mqtt:
   enabled: true
-  host: 127.0.0.1
+  host: mosquitto
   port: 1883
+  user: homeassistant
+  password: "{FRIGATE_MQTT_PASSWORD}"
 
 ffmpeg:
   hwaccel_args: preset-vaapi
