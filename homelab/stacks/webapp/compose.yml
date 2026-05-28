@@ -1,35 +1,32 @@
 services:
-  db:
-    image: postgres:16
-    container_name: webapp_db
-    environment:
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-      POSTGRES_DB: ${DB_NAME}
+  nginx:
+    image: nginx:alpine
+    container_name: webapp-nginx
     volumes:
-      - pg_data:/var/lib/postgresql/data
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
-      interval: 10s
-      retries: 5
-
-  rails:
-    build: .
-    container_name: webapp_rails
-    command: bundle exec rails server -b 0.0.0.0
-    environment:
-      DATABASE_URL: postgresql://${DB_USER}:${DB_PASSWORD}@db/${DB_NAME}
-      RAILS_ENV: ${RAILS_ENV:-production}
-      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
-      RAILS_SERVE_STATIC_FILES: "true"
-      RAILS_LOG_TO_STDOUT: "true"
-    ports:
-      - "3000:3000"
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./frontend/dist:/usr/share/nginx/html:ro
     depends_on:
-      db:
-        condition: service_healthy
+      - api
+    restart: unless-stopped
+
+  api:
+    build: ./api
+    container_name: webapp-api
+    environment:
+      RAILS_ENV: production
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+      STATS_TOKEN: ${STATS_TOKEN}
+    volumes:
+      - api_storage:/rails/storage
+    restart: unless-stopped
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: webapp-cloudflared
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      - nginx
     restart: unless-stopped
 
 volumes:
-  pg_data:
+  api_storage:

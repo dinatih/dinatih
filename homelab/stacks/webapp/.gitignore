@@ -1,0 +1,5 @@
+.env
+frontend/dist/
+api/tmp/
+api/log/
+api/Gemfile.lock
