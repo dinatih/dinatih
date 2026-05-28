@@ -32,7 +32,7 @@ services:
       - /dev/dri/renderD128:/dev/dri/renderD128
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ./frigate/config.yml:/config/config.yml
+      - ./frigate/config:/config
       - /srv/frigate:/media/frigate
     ports:
       - "5000:5000"
