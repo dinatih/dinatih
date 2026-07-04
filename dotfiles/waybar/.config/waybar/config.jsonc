@@ -4,7 +4,7 @@
   "position": "top",
   "spacing": 0,
   "height": 26,
-  "modules-left": ["custom/omarchy", "hyprland/workspaces", "mpris"],
+  "modules-left": ["custom/omarchy", "hyprland/workspaces", "hyprland/window", "mpris"],
   "modules-center": ["clock", "custom/update", "custom/voxtype", "custom/screenrecording-indicator", "custom/idle-indicator", "custom/notification-silencing-indicator"],
   "modules-right": [
     "group/tray-expander",
@@ -39,6 +39,11 @@
       "4": [],
       "5": []
     }
+  },
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 40,
+    "separate-outputs": true
   },
   "mpris": {
     "format": "{player_icon} {title}",
