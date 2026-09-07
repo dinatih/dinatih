@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitor Framework Fingerprint Disconnections
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/monitor_fingerprint.rb
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

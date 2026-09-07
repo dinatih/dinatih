@@ -8,7 +8,7 @@ Configuration files for my Omarchy (Arch Linux + Hyprland) setup.
 dotfiles/
 ├── bash/          # ~/.bashrc
 ├── fingerprint/   # Framework 13 Goodix fingerprint monitor (udev + systemd)
-├── hypr/          # ~/.config/hypr/bindings.conf
+├── hypr/          # ~/.config/hypr/*.lua (Omarchy Quattro Lua config)
 ├── waybar/        # ~/.config/waybar/ (config + style)
 ├── webapps/       # ~/.local/share/applications/ (omarchy web apps + icons)
 ├── packages.txt   # Explicitly installed packages (pacman/yay)
@@ -39,8 +39,8 @@ Or manually:
 # Bash
 ln -sf ~/Projects/dinatih/dotfiles/bash/.bashrc ~/.bashrc
 
-# Hyprland bindings
-ln -sf ~/Projects/dinatih/dotfiles/hypr/.config/hypr/bindings.conf ~/.config/hypr/bindings.conf
+# Hyprland (Omarchy Quattro Lua)
+ln -sf ~/Projects/dinatih/dotfiles/hypr/.config/hypr/* ~/.config/hypr/
 
 # Waybar
 ln -sf ~/Projects/dinatih/dotfiles/waybar/.config/waybar/config.jsonc ~/.config/waybar/config.jsonc

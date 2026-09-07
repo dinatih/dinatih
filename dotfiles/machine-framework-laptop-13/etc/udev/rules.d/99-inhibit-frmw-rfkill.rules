@@ -1,0 +1,3 @@
+# Inhibit the Framework hardware RF kill switch (F10 airplane mode key)
+# so it doesn't trigger kernel rfkill — keyd remaps it to F10 for Hyprland
+ACTION=="add", SUBSYSTEM=="input", ATTRS{name}=="FRMW0004:00 32AC:0006 Wireless Radio Control", RUN+="/bin/sh -c 'echo 1 > /sys$env{DEVPATH}/inhibited'"

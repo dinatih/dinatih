@@ -27,6 +27,9 @@
   "indent_guides": {
     "enabled": true,
   },
+  "file_scan_exclusions": [
+      "**/*.glb*"
+  ],
   "wrap_guides": [120],
   "project_panel": {
     "dock": "right",
