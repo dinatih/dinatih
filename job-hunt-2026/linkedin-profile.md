@@ -5,7 +5,7 @@
 ## Headline
 
 ```
-Architecte Web & Lead Développeur | Ruby on Rails & React | DevOps & SI | 8 ans | Startups | Disponible
+Développeur Full-Stack & DevOps | Ruby on Rails & React | 8 ans d'expérience startup | Opérationnel Jour 1 | Disponible immédiatement
 ```
 
 ---
@@ -13,32 +13,29 @@ Architecte Web & Lead Développeur | Ruby on Rails & React | DevOps & SI | 8 ans
 ## À propos
 
 ```
-Développeur full-stack depuis 2010 (Ruby on Rails, PostgreSQL, Linux), j'ai élargi mon stack avec passion vers TypeScript, React 18 et React Three Fiber (R3F).
+Développeur full-stack depuis 2010 (Ruby on Rails, PostgreSQL, Linux), j'ai enrichi mon stack avec rigueur et passion vers TypeScript, React 18 et React Three Fiber (R3F).
 
-Aujourd'hui, React ne me fait plus peur : je suis totalement ouvert et prêt à concevoir sur un stack 100% React ou hybride avec la même exigence de rigueur et d'architecture.
+Après une pause pour prendre du recul et retrouver un équilibre solide, ma priorité aujourd'hui est claire : retrouver le terrain technique, produire du code robuste et m'investir pleinement au sein d'une équipe.
 
 Ce que je recherche :
-→ Une opportunité en tant qu'Architecte Web, Lead Dev ou Ingénieur Full-Stack (Rails ou React)
-→ Une équipe qui valorise le code propre, typé, lisible et testé
-→ Un produit ambitieux avec une réelle valeur ajoutée
+→ Un poste opérationnel de Développeur Full-Stack (Rails ou React / TypeScript) ou DevOps
+→ Une intégration rapide : disponible immédiatement, à Paris ou hybride
+→ Une approche pragmatique : très souple sur la rémunération et le niveau de poste. Ce qui m'importe avant tout, c'est la dynamique d'équipe, la qualité du produit et le plaisir de construire.
 
-Ce que j'apporte :
+Ce que j'apporte (immédiatement, sans temps d'onboarding) :
 → 8 ans d'expérience en startup (JobTeaser, Saisirprudhommes, Mooncard, Tracktor)
-→ La capacité à porter un projet de A à Z en totale autonomie (3 ans solo sur Saisirprudhommes.com)
-→ Maîtrise complète de l'écosystème web : backend solide (Rails, PostgreSQL, APIs) et interfaces interactives modernes (TypeScript, React 18, React Three Fiber, Bootstrap 5)
-→ Solide culture DevOps / Cloud : Heroku, CI/CD, Linux, Docker, résilience et PRA
-→ Fier d'avoir été chef de projet dès les premiers jours pour 3 startups — JobTeaser, Saisirprudhommes.com et Tracktor — toutes trois toujours en activité en 2026
-→ Profil Responsable SI : systèmes internes, back-office, infrastructure et produit — de A à Z
+→ Autonomie et fiabilité éprouvées (3 ans solo sur Saisirprudhommes.com sans interruption de service)
+→ Maîtrise complète de la chaîne de valeur : backend pérenne (Rails, PostgreSQL, APIs), interfaces réactives modernes (TypeScript, React 18, Bootstrap 5) et infrastructure résiliente (CI/CD, Heroku, Linux, Docker, PRA)
+→ Fier d'avoir été chef de projet / tech lead dès les premiers jours pour 3 startups — JobTeaser, Saisirprudhommes.com et Tracktor — toutes trois toujours en activité en 2026
+→ Esprit d'équipe et humilité : aucune prétention de statut, juste l'envie d'être le développeur fiable qui livre et simplifie la vie du collectif
 
-Convaincu que l'architecture technique et la direction de projet reposent avant tout sur une synergie humaine, je privilégie les rencontres réelles avec les décideurs (CTO/Lead/CEO). Je ne participe pas aux processus de recrutement intermédiés ou exclusivement en distanciel.
+Convaincu que la collaboration technique repose avant tout sur une vraie synergie humaine, je privilégie les échanges directs avec les équipes et décideurs techniques (CTO / Lead Dev / CEO).
 
-Passionné depuis toujours par l'électronique, l'informatique, la 3D temps réel et l'intelligence artificielle.
-
-Sur les agents IA : Claude Code et les agents IA ont transformé ma façon de concevoir. Fini le boilerplate et les tâches répétitives. Le développeur devient un architecte qui se concentre sur les choix structurants, la modélisation et les décisions métier. L'IA ne remplace pas l'ingénieur, elle le démultiplie.
+Sur les agents IA : je pilote au quotidien les agents IA (Claude Code, Gemini) pour éliminer le boilerplate, accélérer la documentation et fiabiliser les tests. L'ingénieur se concentre ainsi à 100% sur l'architecture et les enjeux métier.
 
 Setup : Framework 13 + Omarchy (environnement Linux optimisé).
 
-Disponible pour échanger.
+Disponible immédiatement pour échanger.
 ```
 
 ---

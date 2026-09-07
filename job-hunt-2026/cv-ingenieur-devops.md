@@ -13,11 +13,11 @@ Disponible immédiatement
 
 ## Profil
 
-Développeur full-stack Ruby on Rails depuis 2010, j'ai systématiquement porté les responsabilités DevOps dans chaque startup où j'ai travaillé : CI/CD, infrastructure cloud, déploiements automatisés, monitoring, bases de données, et gestion de crise.
+Développeur full-stack (Ruby on Rails, React / TypeScript) et DevOps depuis 2010, j'ai systématiquement porté les responsabilités d'infrastructure dans chaque startup où j'ai exercé : CI/CD, cloud, déploiements, bases de données et gestion de crise.
 
-Profil hybride développeur/ops : je comprends le code qui tourne sur les infrastructures que je construis et administre. Habitué à travailler en totale autonomie dans des environnements à forte contrainte (production critique, équipe réduite, zéro downtime).
+Profil hybride développeur/ops opérationnel dès le premier jour : autonome, rigoureux et pragmatique, capable de s'intégrer instantanément au sein d'une équipe technique pour délivrer en production sans temps d'onboarding.
 
-Convaincu que les agents IA (Claude Code) sont un levier de productivité majeur pour automatiser, documenter et fiabiliser les processus DevOps modernes.
+Convaincu que les agents IA (Claude Code, Gemini) sont un levier de productivité majeur pour automatiser, documenter et fiabiliser les processus techniques modernes.
 
 ---
 
