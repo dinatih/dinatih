@@ -5,7 +5,7 @@
 ## Headline
 
 ```
-Architecte Web & Lead Développeur | Ruby on Rails & React / React Native | DevOps & SI | 8 ans | Startups | Disponible
+Architecte Web & Lead Développeur | Ruby on Rails & React | DevOps & SI | 8 ans | Startups | Disponible
 ```
 
 ---
@@ -13,19 +13,19 @@ Architecte Web & Lead Développeur | Ruby on Rails & React / React Native | DevO
 ## À propos
 
 ```
-Développeur full-stack depuis 2010 (Ruby on Rails, PostgreSQL, Linux), j'ai élargi mon stack avec passion vers TypeScript, React 18, React Three Fiber (R3F) et React Native.
+Développeur full-stack depuis 2010 (Ruby on Rails, PostgreSQL, Linux), j'ai élargi mon stack avec passion vers TypeScript, React 18 et React Three Fiber (R3F).
 
-Aujourd'hui, je suis totalement ouvert et prêt à concevoir sur un stack 100% React / React Native ou hybride avec la même exigence de rigueur et d'architecture.
+Aujourd'hui, React ne me fait plus peur : je suis totalement ouvert et prêt à concevoir sur un stack 100% React ou hybride avec la même exigence de rigueur et d'architecture.
 
 Ce que je recherche :
-→ Une opportunité en tant qu'Architecte Web, Lead Dev ou Ingénieur Full-Stack (Rails ou React / React Native)
+→ Une opportunité en tant qu'Architecte Web, Lead Dev ou Ingénieur Full-Stack (Rails ou React)
 → Une équipe qui valorise le code propre, typé, lisible et testé
 → Un produit ambitieux avec une réelle valeur ajoutée
 
 Ce que j'apporte :
 → 8 ans d'expérience en startup (JobTeaser, Saisirprudhommes, Mooncard, Tracktor)
 → La capacité à porter un projet de A à Z en totale autonomie (3 ans solo sur Saisirprudhommes.com)
-→ Maîtrise complète de l'écosystème web : backend solide (Rails, PostgreSQL, APIs) et interfaces interactives modernes (TypeScript, React 18, React Three Fiber, React Native, Bootstrap 5)
+→ Maîtrise complète de l'écosystème web : backend solide (Rails, PostgreSQL, APIs) et interfaces interactives modernes (TypeScript, React 18, React Three Fiber, Bootstrap 5)
 → Solide culture DevOps / Cloud : Heroku, CI/CD, Linux, Docker, résilience et PRA
 → Fier d'avoir été chef de projet dès les premiers jours pour 3 startups — JobTeaser, Saisirprudhommes.com et Tracktor — toutes trois toujours en activité en 2026
 → Profil Responsable SI : systèmes internes, back-office, infrastructure et produit — de A à Z
@@ -154,20 +154,19 @@ Licence · 2005 - 2008
 3. PostgreSQL
 4. TypeScript
 5. React 18 & React Three Fiber (R3F)
-6. React Native
-7. Three.js
-8. RSpec
-9. Git / GitHub
-10. Heroku
-11. Bootstrap 5 & CSS
-12. HTML/CSS & JavaScript
-13. Vite
-14. FactoryBot
-15. Capybara
+6. Three.js
+7. RSpec
+8. Git / GitHub
+9. Heroku
+10. Bootstrap 5 & CSS
+11. HTML/CSS & JavaScript
+12. Vite
+13. FactoryBot
+14. Capybara
 
 ### En cours / Approfondissement
-16. Docker
-17. Hotwire (Turbo, Stimulus)
+15. Docker
+16. Hotwire (Turbo, Stimulus)
 
 ---
 
