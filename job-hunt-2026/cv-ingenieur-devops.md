@@ -25,7 +25,6 @@ Convaincu que les agents IA (Claude Code) sont un levier de productivité majeur
 
 ### CI/CD & Déploiement
 - Heroku : Pipelines, Review Apps, Heroku-CI
-- Capistrano : déploiement automatisé en production
 - Git / GitHub : workflows, branching, pull requests, hooks
 - Migrations zéro-downtime (deux systèmes en parallèle lors de refontes)
 
@@ -47,6 +46,7 @@ Convaincu que les agents IA (Claude Code) sont un levier de productivité majeur
 - TypeScript : typage strict (`tsc --noEmit`), interfaces modulaires et architecture de types
 - React 18 : hooks avancés (`useRef`, `useLayoutEffect`, `useMemo`), gestion du cycle de vie et synchronisation des états
 - React Three Fiber (R3F) & Three.js : modélisation et scènes 3D interactives, bounding boxes, modèles GLTF/GLB, boucles d'animation (`useFrame`)
+- Bootstrap 5 & CSS : interfaces responsives, UI kits, intégration moderne
 - Tooling Frontend : Vite, Fast Refresh, builds optimisés et pipelines d'intégration continue
 
 ### Bases de données

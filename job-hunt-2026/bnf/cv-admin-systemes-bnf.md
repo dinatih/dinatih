@@ -38,7 +38,6 @@ Sensible aux enjeux de service public, d'accessibilité numérique et de pérenn
 
 ### CI/CD & Déploiement
 - Heroku Pipelines, Review Apps, Heroku-CI
-- Capistrano (déploiement automatisé, rollbacks)
 - Git / GitHub (workflows, branching, hooks)
 - Migrations zéro-downtime (systèmes en parallèle)
 

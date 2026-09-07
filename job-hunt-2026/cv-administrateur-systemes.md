@@ -28,7 +28,6 @@ Convaincu que les agents IA (Claude Code) sont aujourd'hui un levier de producti
 - OVH (serveur dédié, gestion des incidents, récupération après sinistre)
 - AWS S3 / ActiveStorage
 - Docker (conteneurisation)
-- Capistrano (déploiement automatisé)
 
 ### Systèmes & Environnements
 - Linux (Arch Linux / Omarchy — environnement quotidien de travail)

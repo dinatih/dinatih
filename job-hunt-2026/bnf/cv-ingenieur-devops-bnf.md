@@ -26,7 +26,6 @@ Attaché aux valeurs du service public et à la pérennité des systèmes d'info
 
 ### CI/CD & Automatisation
 - Heroku Pipelines, Review Apps, Heroku-CI
-- Capistrano (déploiement automatisé, rollbacks, gestion multi-environnements)
 - Git / GitHub (workflows, branching, hooks de déploiement)
 - Migrations zéro-downtime (systèmes v1/v2 en parallèle)
 - Scripts Bash d'automatisation des tâches d'exploitation
