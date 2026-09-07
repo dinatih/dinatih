@@ -44,7 +44,7 @@ Convaincu que les agents IA (Claude Code) sont un levier de productivité majeur
 
 ### Développement Frontend & 3D
 - TypeScript : typage strict (`tsc --noEmit`), interfaces modulaires et architecture de types
-- React 18 : hooks avancés (`useRef`, `useLayoutEffect`, `useMemo`), gestion du cycle de vie et synchronisation des états
+- React 18 & React Native : composants réutilisables, hooks avancés (`useRef`, `useLayoutEffect`, `useMemo`), mobile & cross-platform
 - React Three Fiber (R3F) & Three.js : modélisation et scènes 3D interactives, bounding boxes, modèles GLTF/GLB, boucles d'animation (`useFrame`)
 - Bootstrap 5 & CSS : interfaces responsives, UI kits, intégration moderne
 - Tooling Frontend : Vite, Fast Refresh, builds optimisés et pipelines d'intégration continue

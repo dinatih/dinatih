@@ -5,7 +5,7 @@
 ## Headline
 
 ```
-Architecte Web & Chef de projet technique | Responsable SI | Ruby on Rails | 8 ans | Startups | Disponible
+Architecte Web & Lead Développeur | Ruby on Rails & React / React Native | DevOps & SI | 8 ans | Startups | Disponible
 ```
 
 ---
@@ -13,32 +13,30 @@ Architecte Web & Chef de projet technique | Responsable SI | Ruby on Rails | 8 a
 ## À propos
 
 ```
-Développeur Ruby on Rails depuis 2010, je reviens sur le marché après plusieurs années de pause.
+Développeur full-stack depuis 2010 (Ruby on Rails, PostgreSQL, Linux), j'ai élargi mon stack avec passion vers TypeScript, React 18, React Three Fiber (R3F) et React Native.
 
-Pendant cette période, j'ai pris du recul, retrouvé un équilibre de vie, et surtout : je n'ai jamais perdu ma passion pour le code. Rails 8, Ruby 3… je suis à jour et prêt à m'investir dans un nouveau projet.
+Aujourd'hui, je suis totalement ouvert et prêt à concevoir sur un stack 100% React / React Native ou hybride avec la même exigence de rigueur et d'architecture.
 
 Ce que je recherche :
-→ Une startup qui construit en Rails sans obligation React/Vue
-→ Une équipe qui valorise le code simple, lisible et testé
-→ Un produit avec du sens
+→ Une opportunité en tant qu'Architecte Web, Lead Dev ou Ingénieur Full-Stack (Rails ou React / React Native)
+→ Une équipe qui valorise le code propre, typé, lisible et testé
+→ Un produit ambitieux avec une réelle valeur ajoutée
 
 Ce que j'apporte :
 → 8 ans d'expérience en startup (JobTeaser, Saisirprudhommes, Mooncard, Tracktor)
 → La capacité à porter un projet de A à Z en totale autonomie (3 ans solo sur Saisirprudhommes.com)
-→ Une maîtrise complète du stack Rails : RSpec, PostgreSQL, Heroku
-→ Compétences solides en TypeScript & React 18 / React Three Fiber (R3F) pour les interfaces interactives et 3D
+→ Maîtrise complète de l'écosystème web : backend solide (Rails, PostgreSQL, APIs) et interfaces interactives modernes (TypeScript, React 18, React Three Fiber, React Native, Bootstrap 5)
+→ Solide culture DevOps / Cloud : Heroku, CI/CD, Linux, Docker, résilience et PRA
 → Fier d'avoir été chef de projet dès les premiers jours pour 3 startups — JobTeaser, Saisirprudhommes.com et Tracktor — toutes trois toujours en activité en 2026
-→ Profil Responsable SI : systèmes internes, back-office et produit — de A à Z
+→ Profil Responsable SI : systèmes internes, back-office, infrastructure et produit — de A à Z
 
 Convaincu que l'architecture technique et la direction de projet reposent avant tout sur une synergie humaine, je privilégie les rencontres réelles avec les décideurs (CTO/Lead/CEO). Je ne participe pas aux processus de recrutement intermédiés ou exclusivement en distanciel.
 
-Passionné depuis toujours par tout ce qui est électronique, informatique et intelligence artificielle.
+Passionné depuis toujours par l'électronique, l'informatique, la 3D temps réel et l'intelligence artificielle.
 
-Sur les agents IA : Claude Code a transformé ma façon de travailler. Fini le boilerplate et les recherches de nommage. Le développeur peut enfin se concentrer sur ce qui compte vraiment — la réflexion, l'architecture et les décisions métier. L'IA ne remplace pas le développeur, elle le libère.
+Sur les agents IA : Claude Code et les agents IA ont transformé ma façon de concevoir. Fini le boilerplate et les tâches répétitives. Le développeur devient un architecte qui se concentre sur les choix structurants, la modélisation et les décisions métier. L'IA ne remplace pas l'ingénieur, elle le démultiplie.
 
-Ma vision : Hotwire prouve qu'on peut construire des apps réactives sans sacrifier la simplicité. C'est l'approche que je veux approfondir dans mon prochain poste.
-
-Setup : Framework 13 + Omarchy (la distrib Linux de DHH). Enfin un environnement de dev qui me correspond.
+Setup : Framework 13 + Omarchy (environnement Linux optimisé).
 
 Disponible pour échanger.
 ```
@@ -150,26 +148,26 @@ Licence · 2005 - 2008
 
 ## Compétences
 
-### Maîtrisées
+### Maîtrisées & Pratiquées
 1. Ruby on Rails
 2. Ruby
 3. PostgreSQL
-4. RSpec
-5. Git
-6. Heroku
-7. TypeScript
-8. React 18 & React Three Fiber (R3F)
-9. Three.js
-10. HTML/CSS
-11. JavaScript (Vanilla, jQuery)
-12. Bootstrap
-13. FactoryBot
-14. Capybara
-15. Vite
+4. TypeScript
+5. React 18 & React Three Fiber (R3F)
+6. React Native
+7. Three.js
+8. RSpec
+9. Git / GitHub
+10. Heroku
+11. Bootstrap 5 & CSS
+12. HTML/CSS & JavaScript
+13. Vite
+14. FactoryBot
+15. Capybara
 
-### En cours d'apprentissage & Approfondissement
-16. Hotwire (Turbo, Stimulus)
-17. Docker
+### En cours / Approfondissement
+16. Docker
+17. Hotwire (Turbo, Stimulus)
 
 ---
 
@@ -193,8 +191,8 @@ Licence · 2005 - 2008
 ### Aktio (Hotwire)
 > "Je suis particulièrement intéressé par Aktio car vous utilisez Hotwire, une approche que je veux approfondir en contexte professionnel après m'y être formé."
 
-### MyJobGlasses (React mentionné)
-> "Je postule pour le back-end Rails. Je préfère être transparent : je ne suis pas intéressé par React, mais si le back est découplé du front, je serais ravi d'en discuter."
+### MyJobGlasses
+> "Votre stack m'intéresse beaucoup. J'ai une solide expertise backend (Rails/PostgreSQL) tout en étant désormais très actif sur TypeScript et React, ce qui me permet d'intervenir sereinement sur l'ensemble de la chaîne applicative."
 
 ### Simundia
 > "Votre mission autour du coaching professionnel m'intéresse. J'ai moi-même traversé une période de remise en question qui m'a permis de revenir plus solide et motivé."
