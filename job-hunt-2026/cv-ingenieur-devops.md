@@ -43,6 +43,12 @@ Convaincu que les agents IA (Claude Code) sont un levier de productivité majeur
 - Bash / scripts shell
 - Administration DNS, certificats SSL, gestion des accès
 
+### Développement Frontend & 3D
+- TypeScript : typage strict (`tsc --noEmit`), interfaces modulaires et architecture de types
+- React 18 : hooks avancés (`useRef`, `useLayoutEffect`, `useMemo`), gestion du cycle de vie et synchronisation des états
+- React Three Fiber (R3F) & Three.js : modélisation et scènes 3D interactives, bounding boxes, modèles GLTF/GLB, boucles d'animation (`useFrame`)
+- Tooling Frontend : Vite, Fast Refresh, builds optimisés et pipelines d'intégration continue
+
 ### Bases de données
 - PostgreSQL : administration, optimisation, migrations, JSONB, >1 To
 - Sauvegardes, stratégies de reprise après sinistre
@@ -126,8 +132,9 @@ Aujourd'hui leader européen du recrutement étudiant.
 
 ## Atouts différenciants
 
-- **Profil hybride développeur/DevOps** : comprend le code en production, pas seulement l'infra
+- **Profil hybride développeur/DevOps** : comprend le code en production (Ruby on Rails, TypeScript / React 18), pas seulement l'infra
 - **Autonomie totale prouvée** : 3 ans seul sur un système critique en production
 - **Résilience en gestion de crise** : expérience réelle de récupération après sinistre majeur (incendie OVH)
 - **Migrations zéro-downtime** : plusieurs refontes complètes menées sans interruption de service
-- **Productivité augmentée par les agents IA** (Claude Code) : automatisation, scripting, documentation
+- **Développement Frontend moderne & 3D** : interfaces interactives avancées en TypeScript, React Three Fiber (R3F) et Three.js
+- **Productivité augmentée par les agents IA** (Claude Code, Gemini) : automatisation, scripting, documentation

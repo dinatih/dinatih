@@ -26,6 +26,7 @@ Ce que j'apporte :
 → 8 ans d'expérience en startup (JobTeaser, Saisirprudhommes, Mooncard, Tracktor)
 → La capacité à porter un projet de A à Z en totale autonomie (3 ans solo sur Saisirprudhommes.com)
 → Une maîtrise complète du stack Rails : RSpec, PostgreSQL, Heroku
+→ Compétences solides en TypeScript & React 18 / React Three Fiber (R3F) pour les interfaces interactives et 3D
 → Fier d'avoir été chef de projet dès les premiers jours pour 3 startups — JobTeaser, Saisirprudhommes.com et Tracktor — toutes trois toujours en activité en 2026
 → Profil Responsable SI : systèmes internes, back-office et produit — de A à Z
 
@@ -156,15 +157,19 @@ Licence · 2005 - 2008
 4. RSpec
 5. Git
 6. Heroku
-7. HTML/CSS
-8. JavaScript (jQuery, Vanilla)
-9. Bootstrap
-10. FactoryBot
-11. Capybara
+7. TypeScript
+8. React 18 & React Three Fiber (R3F)
+9. Three.js
+10. HTML/CSS
+11. JavaScript (Vanilla, jQuery)
+12. Bootstrap
+13. FactoryBot
+14. Capybara
+15. Vite
 
-### En cours d'apprentissage
-12. Hotwire (Turbo, Stimulus)
-13. Docker
+### En cours d'apprentissage & Approfondissement
+16. Hotwire (Turbo, Stimulus)
+17. Docker
 
 ---
 

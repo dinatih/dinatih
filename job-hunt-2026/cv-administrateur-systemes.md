@@ -32,7 +32,7 @@ Convaincu que les agents IA (Claude Code) sont aujourd'hui un levier de producti
 
 ### Systèmes & Environnements
 - Linux (Arch Linux / Omarchy — environnement quotidien de travail)
-- Stack 100% open source (PostgreSQL, Git, Docker, Ruby, Rails…)
+- Stack 100% open source (PostgreSQL, Git, Docker, Ruby, Rails, Node.js / TypeScript / Vite…)
 - Bash / scripts shell
 - Git / GitHub (workflows, branching, CI)
 
