@@ -6,6 +6,7 @@ Configuration files for my Omarchy (Arch Linux + Hyprland) setup.
 
 ```
 dotfiles/
+├── agy/           # ~/.local/bin/agy-statusline.sh (Antigravity CLI statusline)
 ├── bash/          # ~/.bashrc
 ├── fingerprint/   # Framework 13 Goodix fingerprint monitor (udev + systemd)
 ├── hypr/          # ~/.config/hypr/*.lua (Omarchy Quattro Lua config)
@@ -28,6 +29,7 @@ Symlinks are managed with [GNU Stow](https://www.gnu.org/software/stow/). From t
 
 ```bash
 cd ~/Projects/dinatih/dotfiles
+stow -t ~ agy
 stow -t ~ bash
 stow -t ~ hypr
 stow -t ~ waybar
