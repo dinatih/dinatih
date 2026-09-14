@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
-# Antigravity CLI (agy) status line with Context, Cost & Quotas (/usage)
+# Antigravity CLI (agy) status line with Quota (/usage & reset time), Model, Context, Cost & Git
 
 input=$(cat)
+
+# ANSI colors
+CYAN=$'\e[36m'
+BOLD_CYAN=$'\e[1;36m'
+YELLOW=$'\e[33m'
+BOLD_YELLOW=$'\e[1;33m'
+GREEN=$'\e[32m'
+MAGENTA=$'\e[35m'
+DIM=$'\e[2m'
+RESET=$'\e[0m'
 
 # -----------------------------------------------------------------------------
 # 1. Model & Context Window
@@ -21,36 +31,31 @@ last_input=$(echo "$input" | jq -r '.context_window.current_usage.input_tokens /
 last_output=$(echo "$input" | jq -r '.context_window.current_usage.output_tokens // empty')
 last_cache_read=$(echo "$input" | jq -r '.context_window.current_usage.cache_read_input_tokens // 0')
 
-# ANSI colors
-CYAN=$'\e[36m'
-BOLD_CYAN=$'\e[1;36m'
-YELLOW=$'\e[33m'
-BOLD_YELLOW=$'\e[1;33m'
-GREEN=$'\e[32m'
-MAGENTA=$'\e[35m'
-DIM=$'\e[2m'
-RESET=$'\e[0m'
+# -----------------------------------------------------------------------------
+# 2. Quota / Usage info with reset time (placed at start of line)
+# -----------------------------------------------------------------------------
+fmt_time() {
+  local reset_iso=$1
+  [ -z "$reset_iso" ] || [ "$reset_iso" = "null" ] && return
+  local reset_epoch now diff
+  reset_epoch=$(date -d "$reset_iso" +%s 2>/dev/null) || return
+  now=$(date +%s)
+  diff=$((reset_epoch - now))
+  if [ "$diff" -le 0 ]; then
+    return
+  fi
+  local d=$((diff / 86400))
+  local h=$(( (diff % 86400) / 3600 ))
+  local m=$(( (diff % 3600) / 60 ))
+  if [ "$d" -gt 0 ]; then
+    echo "${d}j${h}h"
+  elif [ "$h" -gt 0 ]; then
+    echo "${h}h${m}m"
+  else
+    echo "${m}m"
+  fi
+}
 
-# -----------------------------------------------------------------------------
-# 2. Cost (Added in 1.1.21)
-# -----------------------------------------------------------------------------
-cost_val=$(echo "$input" | jq -r '.cost.total_usd // .cost // empty')
-cost_str=""
-if [ -n "$cost_val" ] && [ "$cost_val" != "null" ]; then
-  cost_formatted=$(awk "BEGIN {
-    c = $cost_val;
-    if (c >= 0.10) {
-      printf \"$%.2f\", c
-    } else {
-      printf \"$%.4f\", c
-    }
-  }")
-  cost_str="  ${GREEN}${cost_formatted}${RESET}"
-fi
-
-# -----------------------------------------------------------------------------
-# 3. Quota / Usage info
-# -----------------------------------------------------------------------------
 quota_str=""
 
 # Check if quota is directly passed in stdin
@@ -63,7 +68,7 @@ quota_direct=$(echo "$input" | jq -r '
 ' 2>/dev/null)
 
 if [ -n "$quota_direct" ]; then
-  quota_str="  ${DIM}quota: [${quota_direct}]${RESET}"
+  quota_str="${DIM}[${RESET}${MAGENTA}${quota_direct}${RESET}${DIM}]${RESET}  "
 else
   # Background cache for `agy -p "/usage"` (refreshed every 5 minutes to stay instantaneous)
   USAGE_CACHE="/tmp/agy_usage_cache_${USER}.json"
@@ -80,22 +85,66 @@ else
   fi
 
   if [ -f "$USAGE_CACHE" ]; then
-    # Adapt to model family (Claude/GPT vs Gemini)
     case "$model" in
       *[cC]laude*|*[gG][pP][tT]*)
-        q_5h=$(jq -r '[.command.data.groups[]?.buckets[]? | select(.id == "3p-5h") | ((.remaining_fraction // 0) * 100 | floor)][0] // empty' "$USAGE_CACHE" 2>/dev/null)
-        q_w=$(jq -r '[.command.data.groups[]?.buckets[]? | select(.id == "3p-weekly") | ((.remaining_fraction // 0) * 100 | floor)][0] // empty' "$USAGE_CACHE" 2>/dev/null)
+        id_5h="3p-5h"
+        id_w="3p-weekly"
         ;;
       *)
-        q_5h=$(jq -r '[.command.data.groups[]?.buckets[]? | select(.id == "gemini-5h") | ((.remaining_fraction // 0) * 100 | floor)][0] // empty' "$USAGE_CACHE" 2>/dev/null)
-        q_w=$(jq -r '[.command.data.groups[]?.buckets[]? | select(.id == "gemini-weekly") | ((.remaining_fraction // 0) * 100 | floor)][0] // empty' "$USAGE_CACHE" 2>/dev/null)
+        id_5h="gemini-5h"
+        id_w="gemini-weekly"
         ;;
     esac
-    
-    if [ -n "$q_5h" ] || [ -n "$q_w" ]; then
-      quota_str="  ${DIM}quota:${RESET} ${MAGENTA}5h:${q_5h:-?}%${RESET} ${DIM}w:${q_w:-?}%${RESET}"
+
+    raw_q=$(jq -r --arg id5 "$id_5h" --arg idw "$id_w" '
+      def b(bid): [.command.data.groups[]?.buckets[]? | select(.id == bid)][0];
+      [
+        (b($id5) | [((.remaining_fraction // empty) * 100 | floor), (.reset_time // "")]),
+        (b($idw) | [((.remaining_fraction // empty) * 100 | floor), (.reset_time // "")])
+      ] | flatten | @tsv
+    ' "$USAGE_CACHE" 2>/dev/null)
+
+    read -r q_5h r_5h q_w r_w <<< "$raw_q"
+
+    part_5h=""
+    if [ -n "$q_5h" ]; then
+      t_5h=$(fmt_time "$r_5h")
+      part_5h="${MAGENTA}5h:${q_5h}%${RESET}"
+      [ -n "$t_5h" ] && part_5h+=" ${DIM}(${t_5h})${RESET}"
+    fi
+
+    part_w=""
+    if [ -n "$q_w" ]; then
+      t_w=$(fmt_time "$r_w")
+      part_w="${MAGENTA}w:${q_w}%${RESET}"
+      [ -n "$t_w" ] && part_w+=" ${DIM}(${t_w})${RESET}"
+    fi
+
+    if [ -n "$part_5h" ] && [ -n "$part_w" ]; then
+      quota_str="${DIM}[${RESET}${part_5h} ${DIM}|${RESET} ${part_w}${DIM}]${RESET}  "
+    elif [ -n "$part_5h" ]; then
+      quota_str="${DIM}[${RESET}${part_5h}${DIM}]${RESET}  "
+    elif [ -n "$part_w" ]; then
+      quota_str="${DIM}[${RESET}${part_w}${DIM}]${RESET}  "
     fi
   fi
+fi
+
+# -----------------------------------------------------------------------------
+# 3. Cost (Added in 1.1.21)
+# -----------------------------------------------------------------------------
+cost_val=$(echo "$input" | jq -r '.cost.total_usd // .cost // empty')
+cost_str=""
+if [ -n "$cost_val" ] && [ "$cost_val" != "null" ]; then
+  cost_formatted=$(awk "BEGIN {
+    c = $cost_val;
+    if (c >= 0.10) {
+      printf \"$%.2f\", c
+    } else {
+      printf \"$%.4f\", c
+    }
+  }")
+  cost_str="  ${GREEN}${cost_formatted}${RESET}"
 fi
 
 # -----------------------------------------------------------------------------
@@ -144,9 +193,9 @@ if [ -n "$used_tokens" ] && [ -n "$total_tokens" ]; then
     last_str=""
   fi
 
-  printf "${DIM}${CYAN}%s${RESET}  ${BOLD_CYAN}%s${RESET}${DIM}/%s${RESET}${DIM} (%s%%)${RESET}%s%s%s%s" \
-    "$model" "$used_fmt" "$total_fmt" "$used_int" "$last_str" "$cost_str" "$quota_str" "$git_diff_str"
+  printf "%s${DIM}${CYAN}%s${RESET}  ${BOLD_CYAN}%s${RESET}${DIM}/%s${RESET}${DIM} (%s%%)${RESET}%s%s%s" \
+    "$quota_str" "$model" "$used_fmt" "$total_fmt" "$used_int" "$last_str" "$cost_str" "$git_diff_str"
 else
-  printf "${DIM}${CYAN}%s${RESET}  ${DIM}ready${RESET}%s%s%s" \
-    "$model" "$cost_str" "$quota_str" "$git_diff_str"
+  printf "%s${DIM}${CYAN}%s${RESET}  ${DIM}ready${RESET}%s%s" \
+    "$quota_str" "$model" "$cost_str" "$git_diff_str"
 fi

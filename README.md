@@ -4,11 +4,11 @@
 
 <img src="https://avatars.githubusercontent.com/u/309161?v=4" height="200" alt="Profile Picture"> <img src="https://github.com/dinatih/dinatih/raw/main/profile_picture.jpeg" height="200" alt="Photo Corporate Mooncard">
 
-## Une vie d'architecte web avec amour pour Ruby, Rails, GitHub, PostgreSQL, Heroku et Bootstrap
+## Une vie d'architecte web passionné : Ruby on Rails, TypeScript, React, PostgreSQL, Linux & Cloud
 
 Passionné depuis toujours par tout ce qui est électronique, informatique et intelligence artificielle — de A à Z. Basé à **Paris 13ème** (près de la BNF, Station F), **France** · Fan de Freestyle Football.
 
-Plus de **8 ans d'expérience cumulée** sur 5 startups. Principalement en tant qu'**Architecte Web & Chef de projet technique Ruby on Rails**.
+Plus de **8 ans d'expérience cumulée** sur 5 startups. Principalement en tant qu'**Architecte Web & Lead Développeur (Ruby on Rails, React)**.
 
 Profil **Responsable de Système d'Information** : systèmes internes, back-office et produit — capable de prendre en charge et faire évoluer l'ensemble du SI d'une entreprise, de A à Z.
 
@@ -61,7 +61,14 @@ Tous les [guides Rails](https://guides.rubyonrails.org/) plusieurs fois, une bon
 [Amazon S3](https://docs.aws.amazon.com/s3/index.html),
 [Stripe](https://stripe.com/docs), Mangopay, [Twilio SendGrid](https://sendgrid.com/docs/api-reference/), Mailchimp
 
-- [Twitter Bootstrap 5](https://getbootstrap.com/docs), [Bootstrap-table](https://examples.bootstrap-table.com/), [Chart.js](https://www.chartjs.org/), HTML5, CSS, JavaScript, Sass, Yarn, package.json, [Hotwire](https://hotwired.dev/), [Turbo](https://turbo.hotwired.dev/), [Stimulus](https://stimulus.hotwire.dev/), [Native](https://native.hotwired.dev/), [Google Map API](https://developers.google.com/maps/documentation/javascript/overview), API RESTful, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
+- [Twitter Bootstrap 5](https://getbootstrap.com/docs), [Bootstrap-table](https://examples.bootstrap-table.com/), [Chart.js](https://www.chartjs.org/), HTML5, CSS, JavaScript, [TypeScript](https://www.typescriptlang.org/), [React 18](https://react.dev/), [React Three Fiber (R3F)](https://r3f.docs.pmnd.rs/), [Three.js](https://threejs.org/), [Vite](https://vitejs.dev/), Sass, Yarn, npm, package.json, [Hotwire](https://hotwired.dev/), [Turbo](https://turbo.hotwired.dev/), [Stimulus](https://stimulus.hotwire.dev/), [Native](https://native.hotwired.dev/), [Google Map API](https://developers.google.com/maps/documentation/javascript/overview), API RESTful, [Twilio Segment](https://segment.com/), [Google Analytics API](https://developers.google.com/analytics), [Slack API](https://api.slack.com/), [Twilio](https://www.twilio.com/), [Aircall](https://aircall.io/)
+
+## Projets & Réalisations Récentes
+
+### [room-3d](https://github.com/dinatih/room-3d) · Application 3D Interactive & Architecture Frontend
+- Visualisation interactive 3D d'aménagement intérieur en temps réel développée avec **React 18**, **TypeScript**, **React Three Fiber (R3F)**, **Three.js** et **Vite**.
+- Modélisation mathématique spatiale : gestion des Bounding Boxes dynamiques (`Box3`), repères de coordonnées local vs monde, centrage automatique et gestion d'échelle des modèles glTF/GLB.
+- Architecture modulaire et typage strict TypeScript sans compromis (`tsc --noEmit`).
 
 ---
 
@@ -222,8 +229,11 @@ macOS et Windows ont leur UI Kit, les apps web ont Bootstrap.
 #### Pourquoi Heroku ?
 Qui a besoin d'un admin système de nos jours ? [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
 
+#### Pourquoi React ?
+Pour les interfaces hautement interactives, la modélisation 3D (R3F), les composants riches et réactifs.
+
 #### Pourquoi Hotwire ?
-Construire des apps réactives sans sacrifier la simplicité. Pas de React, pas de complexité inutile.
+Pour les architectures web où la simplicité côté serveur prime, sans sacrifier l'interactivité. Chaque outil a sa juste place selon les besoins du produit.
 
 ---
 
