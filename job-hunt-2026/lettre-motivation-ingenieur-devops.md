@@ -26,7 +26,7 @@ Chez Demander Justice, j'ai administré seul pendant trois ans l'ensemble du sys
 
 Ce qui me distingue d'un ingénieur DevOps classique, c'est que je comprends le code qui tourne sur les infrastructures que je construis. Je lis les logs différemment. Je sais diagnostiquer un problème applicatif avant même qu'il devienne infrastructurel. Et quand je conçois un pipeline, je pense à ce que le développeur vivra au quotidien — parce que j'ai été ce développeur.
 
-Je travaille quotidiennement sous Linux (Arch Linux / Omarchy), j'utilise Git comme outil de base, et j'ai intégré les agents IA (Claude Code) dans ma pratique : automatisation de tâches répétitives, scripting, documentation de configurations — un levier de productivité concret dans un contexte DevOps.
+Je travaille quotidiennement sous Linux (Arch Linux / Omarchy), j'utilise Git comme outil de base, et j'ai intégré l'approche AIDD (AI-Driven Development) et les agents IA (Codex, antigravity-cli et Gemini, Claude Code) dans ma pratique : automatisation de tâches répétitives, scripting, documentation de configurations — un levier de productivité concret dans un contexte DevOps.
 
 **Ce que je cherche**
 

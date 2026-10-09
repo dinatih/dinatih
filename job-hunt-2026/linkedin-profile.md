@@ -5,7 +5,7 @@
 ## Headline
 
 ```
-Développeur Full-Stack & DevOps | Ruby on Rails & React | 8 ans d'expérience startup | Opérationnel Jour 1 | Disponible immédiatement
+Développeur Full-Stack & DevOps | Ruby on Rails & React | Pratique AIDD | 8 ans d'expérience startup | Opérationnel Jour 1 | Disponible immédiatement
 ```
 
 ---
@@ -13,9 +13,9 @@ Développeur Full-Stack & DevOps | Ruby on Rails & React | 8 ans d'expérience s
 ## À propos
 
 ```
-Développeur full-stack depuis 2010 (Ruby on Rails, PostgreSQL, Linux), j'ai enrichi mon stack avec rigueur et passion vers TypeScript, React 18 et React Three Fiber (R3F).
+Développeur full-stack depuis 2010 (Ruby on Rails, PostgreSQL, Linux), j'ai enrichi mon stack avec rigueur vers TypeScript, React 18 et React Three Fiber (R3F).
 
-Après une pause pour prendre du recul et retrouver un équilibre solide, ma priorité aujourd'hui est claire : retrouver le terrain technique, produire du code robuste et m'investir pleinement au sein d'une équipe.
+Après une pause pour prendre du recul, ma priorité est claire : retrouver le terrain technique, produire du code robuste et m'investir pleinement au sein d'une équipe.
 
 Ce que je recherche :
 → Un poste opérationnel de Développeur Full-Stack (Rails ou React / TypeScript) ou DevOps
@@ -25,13 +25,24 @@ Ce que je recherche :
 Ce que j'apporte (immédiatement, sans temps d'onboarding) :
 → 8 ans d'expérience en startup (JobTeaser, Saisirprudhommes, Mooncard, Tracktor)
 → Autonomie et fiabilité éprouvées (3 ans solo sur Saisirprudhommes.com sans interruption de service)
-→ Maîtrise complète de la chaîne de valeur : backend pérenne (Rails, PostgreSQL, APIs), interfaces réactives modernes (TypeScript, React 18, Bootstrap 5) et infrastructure résiliente (CI/CD, Heroku, Linux, Docker, PRA)
-→ Fier d'avoir été chef de projet / tech lead dès les premiers jours pour 3 startups — JobTeaser, Saisirprudhommes.com et Tracktor — toutes trois toujours en activité en 2026
-→ Esprit d'équipe et humilité : aucune prétention de statut, juste l'envie d'être le développeur fiable qui livre et simplifie la vie du collectif
+→ Maîtrise de la chaîne complète : backend (Rails, PostgreSQL, APIs), frontend réactif (TypeScript, React 18, Bootstrap 5) et infrastructure (CI/CD, Heroku, Linux, Docker, PRA)
+→ Fier d'avoir été chef de projet / tech lead dès les premiers jours pour 3 startups (JobTeaser, Saisirprudhommes, Tracktor), toutes toujours en activité en 2026
+→ Esprit d'équipe et humilité : le développeur fiable qui livre et simplifie la vie du collectif
 
 Convaincu que la collaboration technique repose avant tout sur une vraie synergie humaine, je privilégie les échanges directs avec les équipes et décideurs techniques (CTO / Lead Dev / CEO).
 
-Sur les agents IA : je pilote au quotidien les agents IA (Claude Code, Gemini) pour éliminer le boilerplate, accélérer la documentation et fiabiliser les tests. L'ingénieur se concentre ainsi à 100% sur l'architecture et les enjeux métier.
+Sur l'AIDD et les agents IA : adepte convaincu du développement piloté par l'IA (AIDD - AI-Driven Development), je pilote au quotidien les agents IA (Codex, antigravity-cli et Gemini, Claude Code) pour éliminer le boilerplate, accélérer la documentation et fiabiliser les tests. L'ingénieur se concentre ainsi à 100% sur l'architecture et les enjeux métier.
+
+Stack opérationnelle :
+• Backend : Ruby on Rails, Ruby, PostgreSQL (>1 To, JSONB), APIs REST
+• Frontend : TypeScript, React 18, React Three Fiber (R3F), Three.js, Bootstrap 5, Vite
+• Infrastructure & Ops : Linux (Arch / Omarchy), CI/CD, Heroku, OVH, PRA, Git
+
+Environnements cibles & Appétence :
+• Conteneurisation & Orchestration : Docker (local/dev), Kubernetes (concepts fondamentaux & architecture)
+• Langages & Bas niveau : Rust (alternative moderne C/C++, sécurité mémoire), Python (bases, scripting), Bash
+• UI moderne : Tailwind CSS
+• Approches alternatives : Hotwire (Turbo, Stimulus)
 
 Setup : Framework 13 + Omarchy (environnement Linux optimisé).
 
@@ -161,9 +172,14 @@ Licence · 2005 - 2008
 13. FactoryBot
 14. Capybara
 
-### En cours / Approfondissement
-15. Docker
-16. Hotwire (Turbo, Stimulus)
+### Environnements cibles & Appétence
+15. Docker (conteneurisation locale, Dockerfiles)
+16. Kubernetes (concepts fondamentaux, architecture de pods et services)
+17. Rust (appétence bas niveau / système, successeur C/C++)
+18. Python (bases syntaxiques, ponts Ruby/Python, scripting)
+19. Tailwind CSS (styling moderne en synergie avec React / TypeScript)
+20. AIDD (AI-Driven Development) & Agents IA (Codex, antigravity-cli et Gemini, Claude Code — cycle de dev augmenté, automatisation, tests)
+21. Hotwire (Turbo, Stimulus)
 
 ---
 

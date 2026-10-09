@@ -1,4 +1,4 @@
-*Architecte de Systèmes d'Information Web, ~~Artisan du Code~~ Superviseur d'Agents IA*
+*Architecte de Systèmes d'Information Web, ~~Artisan du Code~~ Praticien AIDD & Superviseur d'Agents IA*
 
 # David HERELLE
 
@@ -49,7 +49,7 @@ Tous les [guides Rails](https://guides.rubyonrails.org/) plusieurs fois, une bon
 - [Rails 8](https://guides.rubyonrails.org/) (commencé avec Rails 3), [Doctrine](https://rubyonrails.org/doctrine), [rails console](https://guides.rubyonrails.org/command_line.html#bin-rails-console), [Module::Concerning](https://api.rubyonrails.org/classes/Module/Concerning.html), Byebug, [Applications API-only](https://guides.rubyonrails.org/api_app.html), [Routing](https://guides.rubyonrails.org/routing.html), [Internationalisation (i18n)](https://guides.rubyonrails.org/i18n.html), [Concern](https://api.rubyonrails.org/v6.1.0/classes/ActiveSupport/Concern.html), [Active Model](https://guides.rubyonrails.org/active_model_basics.html), [Active Record](https://guides.rubyonrails.org/active_record_basics.html), [Arel](https://thoughtbot.com/blog/using-arel-to-compose-sql-queries), [Active Support](https://guides.rubyonrails.org/active_support_core_extensions.html), [Action Controller](https://guides.rubyonrails.org/action_controller_overview.html), [Action Pack](https://github.com/rails/rails/tree/master/actionpack), [Action View](https://guides.rubyonrails.org/action_view_overview.html), [Active Storage](https://guides.rubyonrails.org/active_storage_overview.html), [Active Job](https://guides.rubyonrails.org/active_job_basics.html), [Sidekiq](https://github.com/mperham/sidekiq/wiki/Getting-Started), [Action Cable](https://guides.rubyonrails.org/action_cable_overview.html), [Action Text](https://guides.rubyonrails.org/action_text_overview.html), CMS, [Tâches Rake personnalisées](https://guides.rubyonrails.org/command_line.html#custom-rake-tasks), [Caching](https://guides.rubyonrails.org/caching_with_rails.html), [Devise](https://github.com/heartcombo/devise), Back-office (namespace Admin), Front-office, Modèles Admin/User, SimpleForm, Administrate
 
 - Qualité du code, [RubyCritic](https://github.com/whitesmith/rubycritic), [rails notes](https://guides.rubyonrails.org/command_line.html#bin-rails-notes), Analyseur de code, rails stats, Linter, [Rubocop](https://docs.rubocop.org/)
-[Tests](https://guides.rubyonrails.org/testing.html), [TDD](https://en.wikipedia.org/wiki/Test-driven_development), Spec, [RSpec](https://rspec.info/documentation/), [RSpec Style Guide](https://rspec.rubystyle.guide/), Tests unitaires, [Model Specs](https://relishapp.com/rspec/rspec-rails/docs/model-specs), [Job Specs](https://relishapp.com/rspec/rspec-rails/docs/job-specs/job-spec), Tests d'intégration, [Tests système](https://relishapp.com/rspec/rspec-rails/docs/system-specs/system-spec), Tests d'acceptance, [Capybara](https://github.com/teamcapybara/capybara), Selenium, [FactoryBot](https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md)
+[Tests](https://guides.rubyonrails.org/testing.html), [TDD](https://en.wikipedia.org/wiki/Test-driven_development), AIDD (AI-Driven Development), Spec, [RSpec](https://rspec.info/documentation/), [RSpec Style Guide](https://rspec.rubystyle.guide/), Tests unitaires, [Model Specs](https://relishapp.com/rspec/rspec-rails/docs/model-specs), [Job Specs](https://relishapp.com/rspec/rspec-rails/docs/job-specs/job-spec), Tests d'intégration, [Tests système](https://relishapp.com/rspec/rspec-rails/docs/system-specs/system-spec), Tests d'acceptance, [Capybara](https://github.com/teamcapybara/capybara), Selenium, [FactoryBot](https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md)
 
 - [GitHub](https://guides.github.com/), [Git](https://ndpsoftware.com/git-cheatsheet.html), [Codebase](https://12factor.net/codebase), [GitHub Flow](https://guides.github.com/introduction/flow/), Branches, Stage Changes, Commit, Pull, Push, [Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests), [Conflits de merge](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts), [GitHub Labels](https://docs.github.com/en/github/managing-your-work-on-github/managing-labels), [GitHub Milestones](https://docs.github.com/en/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-milestones)
 
@@ -235,17 +235,23 @@ Pour les interfaces hautement interactives, la modélisation 3D (R3F), les compo
 #### Pourquoi Hotwire ?
 Pour les architectures web où la simplicité côté serveur prime, sans sacrifier l'interactivité. Chaque outil a sa juste place selon les besoins du produit.
 
+#### Pourquoi l'AIDD (AI-Driven Development) ?
+Parce que le développeur moderne n'est plus un simple ouvrier de la frappe au clavier : il devient l'architecte qui pilote et valide la production logicielle assistée par agents.
+
 ---
 
 ## Les Agents IA et le Développement
 
-C'est le meilleur moment de l'histoire pour être développeur. Les agents IA (Claude Code, GitHub Copilot...) ont fondamentalement changé la nature de notre travail.
+C'est le meilleur moment de l'histoire pour être développeur. Les agents IA (Codex, antigravity-cli et Gemini, Claude Code...) ont fondamentalement changé la nature de notre travail.
 
 #### Avant (90% du temps)
 Boilerplate, recherches de documentation, nommage, mise à jour de la doc, débogage ligne par ligne, configuration d'outils. Des heures perdues.
 
 #### Maintenant (l'essentiel)
 La réflexion et l'architecture, les décisions métier et techniques, la créativité, la revue de code, la compréhension du domaine métier.
+
+#### L'approche AIDD (AI-Driven Development)
+Au-delà du simple assistant de complétion, j'applique une véritable méthodologie de développement piloté par l'IA (AIDD) : spécification structurée du besoin, décisions d'architecture en amont, orchestration d'agents autonomes (Codex, antigravity-cli et Gemini, Claude Code), validation continue par les tests (TDD) et relecture critique systématique du code produit.
 
 #### Ma vision
 L'IA ne remplace pas le développeur. Elle lui enlève le travail ingrat pour ne garder que le travail intellectuel.

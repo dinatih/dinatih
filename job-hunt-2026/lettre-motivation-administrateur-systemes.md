@@ -26,7 +26,7 @@ Chez TECH'4'TEAM, j'ai migré un serveur dédié vers Heroku, optimisé une base
 
 Mon expérience de développeur me permet de comprendre le code qui tourne sur les serveurs que j'administre. Je lis les logs autrement qu'un administrateur qui n'a jamais codé. Je sais diagnostiquer un problème applicatif, pas seulement infrastructurel. Cette vision transversale me rend plus efficace et plus autonome.
 
-Je travaille quotidiennement sous Linux (Arch Linux / Omarchy), j'utilise Git comme outil de base, et j'ai intégré les agents IA (Claude Code) dans ma pratique pour automatiser les tâches répétitives et documenter rigoureusement les configurations — un gain de productivité significatif pour tout travail d'administration.
+Je travaille quotidiennement sous Linux (Arch Linux / Omarchy), j'utilise Git comme outil de base, et j'ai intégré l'approche AIDD (AI-Driven Development) et les agents IA (Codex, antigravity-cli et Gemini, Claude Code) dans ma pratique pour automatiser les tâches répétitives et documenter rigoureusement les configurations — un gain de productivité significatif pour tout travail d'administration.
 
 **Ce que je recherche**
 

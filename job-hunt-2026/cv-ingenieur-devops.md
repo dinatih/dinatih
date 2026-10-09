@@ -17,7 +17,7 @@ Développeur full-stack (Ruby on Rails, React / TypeScript) et DevOps depuis 201
 
 Profil hybride développeur/ops opérationnel dès le premier jour : autonome, rigoureux et pragmatique, capable de s'intégrer instantanément au sein d'une équipe technique pour délivrer en production sans temps d'onboarding.
 
-Convaincu que les agents IA (Claude Code, Gemini) sont un levier de productivité majeur pour automatiser, documenter et fiabiliser les processus techniques modernes.
+Adepte de l'AIDD (AI-Driven Development) et convaincu que les agents IA (Codex, antigravity-cli et Gemini, Claude Code) sont un levier de productivité majeur pour automatiser, documenter et fiabiliser les processus techniques modernes.
 
 ---
 
@@ -34,8 +34,12 @@ Convaincu que les agents IA (Claude Code, Gemini) sont un levier de productivit�
 - OVH (serveur dédié, DNS, certificats SSL)
 - Gestion multi-environnements (dev / staging / production)
 
-### Conteneurisation & Orchestration
-- Docker (en cours d'approfondissement)
+### Environnements cibles & Appétence
+- Conteneurisation : Docker (Dockerfiles, conteneurisation d'environnements en local)
+- Orchestration : Kubernetes (concepts fondamentaux, architecture de pods et services, manifests YAML)
+- Systèmes & Langages : Rust (intérêt bas niveau / tooling système, successeur C/C++), Python (bases, scripting)
+- Styling & UI moderne : Tailwind CSS (intérêt fort en complément de React / TypeScript et Bootstrap)
+- AIDD & Agents IA : Codex, antigravity-cli et Gemini, Claude Code intégrés au flux de travail dev/ops (AI-Driven Development)
 
 ### Systèmes & Linux
 - Arch Linux (environnement quotidien — Omarchy)
@@ -137,4 +141,4 @@ Aujourd'hui leader européen du recrutement étudiant.
 - **Résilience en gestion de crise** : expérience réelle de récupération après sinistre majeur (incendie OVH)
 - **Migrations zéro-downtime** : plusieurs refontes complètes menées sans interruption de service
 - **Développement Frontend moderne & 3D** : interfaces interactives avancées en TypeScript, React Three Fiber (R3F) et Three.js
-- **Productivité augmentée par les agents IA** (Claude Code, Gemini) : automatisation, scripting, documentation
+- **Pratique AIDD & Productivité augmentée par les agents IA** (Codex, antigravity-cli et Gemini, Claude Code) : automatisation, scripting, documentation

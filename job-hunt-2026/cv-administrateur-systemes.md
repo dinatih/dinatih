@@ -17,7 +17,7 @@ Développeur full-stack Ruby on Rails depuis 2010, j'ai exercé tout au long de 
 
 Habitué à piloter l'ensemble du système d'information de A à Z, en totale autonomie, dans des environnements à contraintes fortes (startup, équipe réduite, production critique).
 
-Convaincu que les agents IA (Claude Code) sont aujourd'hui un levier de productivité majeur pour l'administration système moderne.
+Adepte de l'AIDD (AI-Driven Development) et convaincu que les agents IA (Codex, antigravity-cli et Gemini, Claude Code) sont aujourd'hui un levier de productivité majeur pour l'administration système moderne.
 
 ---
 
@@ -27,7 +27,13 @@ Convaincu que les agents IA (Claude Code) sont aujourd'hui un levier de producti
 - Heroku (déploiement, pipelines, Review Apps, CI)
 - OVH (serveur dédié, gestion des incidents, récupération après sinistre)
 - AWS S3 / ActiveStorage
-- Docker (conteneurisation)
+
+### Environnements cibles & Appétence
+- Conteneurisation : Docker (Dockerfiles, environnements de développement local)
+- Orchestration : Kubernetes (concepts fondamentaux, architecture de pods et services, manifests)
+- Systèmes & Langages : Rust (appétence bas niveau / système, successeur C/C++), Python (bases, automatisation)
+- Frontend moderne : TypeScript, React, Tailwind CSS (compréhension des architectures frontend modernes)
+- AIDD & Agents IA : Codex, antigravity-cli et Gemini, Claude Code au service de l'administration système et de l'automatisation (AI-Driven Development)
 
 ### Systèmes & Environnements
 - Linux (Arch Linux / Omarchy — environnement quotidien de travail)
@@ -122,4 +128,4 @@ Aujourd'hui leader européen du recrutement étudiant.
 - **Profil hybride** développeur/admin : comprend le code qui tourne sur les serveurs qu'il administre
 - **Autonomie totale** prouvée (3 ans seul sur un système critique en production)
 - **Résilience en gestion de crise** : expérience réelle de récupération après sinistre majeur
-- **Productivité augmentée** par les agents IA (Claude Code) : administration, scripting, documentation
+- **Pratique AIDD & Productivité augmentée** par les agents IA (Codex, antigravity-cli et Gemini, Claude Code) : administration, scripting, documentation

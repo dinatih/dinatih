@@ -39,11 +39,27 @@ On passe de "comment écrire ce code" à "quel code faut-il écrire et pourquoi"
 
 ---
 
+## L'approche AIDD (AI-Driven Development)
+
+L'AIDD n'est pas simplement l'usage ponctuel d'un chatbot pour générer un snippet : c'est un paradigme de développement structuré à part entière, successeur naturel du TDD (Test-Driven Development) :
+
+- **Cadrage & Spécifications rigoureuses** : formulation claire de l'intention technique, des frontières de domaine et des cas limites en amont.
+- **Orchestration d'agents autonomes** : délégation du boilerplate, des refactorings et de la production de code à des agents spécialisés.
+- **Validation continue (Specs & Tests)** : boucle de rétroaction immédiate via les suites de tests (RSpec, tests système, typage strict TypeScript) pour garantir la non-régression.
+- **Supervision critique humaine** : l'ingénieur reste le garant absolu de l'architecture, de la sécurité, de la maintenabilité et de l'adéquation métier.
+
+---
+
 ## Ce que j'utilise
 
-- **Claude Code** : mon agent principal, celui qui a vraiment changé ma façon de travailler
-- **Claude** (chat) : pour la réflexion, les brainstormings, les décisions d'architecture
-- **GitHub Copilot** : utilisé avant, remplacé par Claude Code qui va plus loin
+Par ordre de préférence : **Codex**, **antigravity-cli et Gemini**, **Claude**.
+*(À titre personnel, j'utilise l'écosystème Google / Gemini avec antigravity-cli, et en environnement professionnel mon choix n°1 se porte sur Codex).*
+
+- **Codex** : mon outil et agent préféré pour le développement en contexte pro
+- **antigravity-cli et Gemini** : mon quotidien personnel, orchestration d'agents, exploration multi-modèles et automatisation avancée
+- **Claude Code** : pour le refactoring et l'exécution agentique
+- **Claude** (chat) : pour la réflexion conceptuelle, les brainstormings et les choix d'architecture
+- **GitHub Copilot** : utilisé initialement, dépassé par les agents autonomes en CLI
 
 ---
 
@@ -77,11 +93,11 @@ Avant les agents IA, reconstruire tout ça m'aurait pris des jours. Avec Claude 
 ## Phrases à intégrer dans les profils
 
 ### Pour LinkedIn (À propos)
-> Les agents IA ont transformé mon métier : fini le temps perdu sur le boilerplate, les recherches de nommage et la documentation. Aujourd'hui, le développeur peut enfin se concentrer sur ce qui compte vraiment : la réflexion, l'architecture et les décisions métier.
+> Sur l'AIDD et les agents IA : adepte convaincu du développement piloté par l'IA (AIDD - AI-Driven Development), je pilote au quotidien les agents IA (Codex, antigravity-cli et Gemini, Claude Code) pour éliminer le boilerplate, accélérer la documentation et fiabiliser les tests. L'ingénieur se concentre ainsi à 100% sur l'architecture et les enjeux métier.
 
 ### Pour le README GitHub (section "Ma philosophie")
-> #### Pourquoi les agents IA ?
-> C'est le meilleur moment pour être développeur. Les agents IA ont supprimé 90% du travail non productif pour ne garder que l'essentiel : la réflexion, l'architecture et les décisions métier. L'IA ne remplace pas le développeur, elle le libère.
+> #### Pourquoi l'AIDD (AI-Driven Development) ?
+> Parce que le développeur moderne n'est plus un simple ouvrier de la frappe au clavier : il devient l'architecte qui pilote et valide la production logicielle assistée par agents. L'IA ne remplace pas le développeur, elle le libère.
 
 ---
 
