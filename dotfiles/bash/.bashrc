@@ -71,3 +71,6 @@ git-blend() {
 }
 
 
+
+# mimocode
+export PATH=/home/dinatih/.mimocode/bin:$PATH

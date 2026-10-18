@@ -28,7 +28,9 @@
     "enabled": true,
   },
   "file_scan_exclusions": [
-      "**/*.glb*"
+      "**/*.glb*",
+      "**/*.gltf",
+      "**/*.hdr"
   ],
   "wrap_guides": [120],
   "project_panel": {

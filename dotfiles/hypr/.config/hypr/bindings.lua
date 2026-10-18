@@ -31,6 +31,9 @@ o.bind("SUPER + SHIFT + E", "Email", 'omarchy-launch-webapp "https://gmail.com"'
 hl.unbind("SUPER + SHIFT + K")
 o.bind("SUPER + SHIFT + K", "Google Keep", 'omarchy-launch-webapp "https://keep.google.com"')
 
+-- Screenshot optimisé pour agents IA (résolution max 1280px, presse-papier)
+o.bind("SHIFT + PRINT", "Screenshot presse-papier (IA)", "omarchy-capture-screenshot-ai")
+
 -- Add a new binding.
 -- o.bind("SUPER + SHIFT + R", "SSH", "alacritty -e ssh your-server")
 

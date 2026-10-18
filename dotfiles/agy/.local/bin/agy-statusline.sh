@@ -165,7 +165,17 @@ if [ -n "$cwd" ] && git -C "$cwd" rev-parse --is-inside-work-tree >/dev/null 2>&
 fi
 
 # -----------------------------------------------------------------------------
-# 5. Formatting & Rendering
+# 5. Conversation Title
+# -----------------------------------------------------------------------------
+conv_title=$(echo "$input" | jq -r '.conversation_title // .title // .cascade_conversation_title // .conversation_name // empty' 2>/dev/null)
+conv_str=""
+if [ -n "$conv_title" ] && [ "$conv_title" != "null" ]; then
+  conv_title=$(printf "%s" "$conv_title" | tr -d '\n\r')
+  conv_str="  ${DIM}·${RESET} ${DIM}${conv_title}${RESET}"
+fi
+
+# -----------------------------------------------------------------------------
+# 6. Formatting & Rendering
 # -----------------------------------------------------------------------------
 fmt() {
   local n=$1
@@ -193,9 +203,9 @@ if [ -n "$used_tokens" ] && [ -n "$total_tokens" ]; then
     last_str=""
   fi
 
-  printf "%s${DIM}${CYAN}%s${RESET}  ${BOLD_CYAN}%s${RESET}${DIM}/%s${RESET}${DIM} (%s%%)${RESET}%s%s%s" \
-    "$quota_str" "$model" "$used_fmt" "$total_fmt" "$used_int" "$last_str" "$cost_str" "$git_diff_str"
+  printf "%s${DIM}${CYAN}%s${RESET}  ${BOLD_CYAN}%s${RESET}${DIM}/%s${RESET}${DIM} (%s%%)${RESET}%s%s%s%s" \
+    "$quota_str" "$model" "$used_fmt" "$total_fmt" "$used_int" "$last_str" "$cost_str" "$git_diff_str" "$conv_str"
 else
-  printf "%s${DIM}${CYAN}%s${RESET}  ${DIM}ready${RESET}%s%s" \
-    "$quota_str" "$model" "$cost_str" "$git_diff_str"
+  printf "%s${DIM}${CYAN}%s${RESET}  ${DIM}ready${RESET}%s%s%s" \
+    "$quota_str" "$model" "$cost_str" "$git_diff_str" "$conv_str"
 fi
