@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# omarchy:summary=Take an AI-optimized screenshot (downscaled to max 1280px, copied to clipboard and file)
+# omarchy:summary=Take an AI-optimized screenshot (instant direct capture downscaled to max 1280px)
 # omarchy:group=capture
-# omarchy:args=[smart|region|windows|fullscreen]
-# omarchy:examples=omarchy-capture-screenshot-ai | omarchy-capture-screenshot-ai fullscreen
+# omarchy:args=[fullscreen|active|smart|region]
+# omarchy:examples=omarchy-capture-screenshot-ai | omarchy-capture-screenshot-ai active
 
 [[ -f ~/.config/user-dirs.dirs ]] && source ~/.config/user-dirs.dirs
 OUTPUT_DIR="${OMARCHY_SCREENSHOT_DIR:-${XDG_PICTURES_DIR:-$HOME/Pictures}}"
@@ -14,26 +14,36 @@ fi
 
 pkill slurp && exit 0
 
-MODE="${1:-smart}"
+MODE="${1:-fullscreen}"
 FILENAME="screenshot-ai-$(date +'%Y-%m-%d_%H-%M-%S').png"
 FILEPATH="$OUTPUT_DIR/$FILENAME"
 TMPPATH="/tmp/screenshot-ai.png"
 
-NO_HW_CURSORS=$(hyprctl getoption cursor:no_hardware_cursors -j | jq '.int')
+case "$MODE" in
+fullscreen)
+  SELECTION=$(omarchy-capture-region fullscreen 2>/dev/null)
+  ;;
+active | activewindow)
+  SELECTION=$(hyprctl activewindow -j | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' 2>/dev/null)
+  ;;
+smart | region | *)
+  NO_HW_CURSORS=$(hyprctl getoption cursor:no_hardware_cursors -j | jq '.int')
 
-set_no_hw_cursors() {
-  hyprctl eval "hl.config({ cursor = { no_hardware_cursors = $1 } })" &>/dev/null ||
-    hyprctl keyword cursor:no_hardware_cursors "$1" &>/dev/null
-}
+  set_no_hw_cursors() {
+    hyprctl eval "hl.config({ cursor = { no_hardware_cursors = $1 } })" &>/dev/null ||
+      hyprctl keyword cursor:no_hardware_cursors "$1" &>/dev/null
+  }
 
-cleanup() {
-  [[ -n $FREEZE_PID ]] && kill $FREEZE_PID 2>/dev/null
-  set_no_hw_cursors "$NO_HW_CURSORS"
-}
-trap cleanup EXIT
+  cleanup() {
+    [[ -n $FREEZE_PID ]] && kill $FREEZE_PID 2>/dev/null
+    set_no_hw_cursors "$NO_HW_CURSORS"
+  }
+  trap cleanup EXIT
 
-set_no_hw_cursors 0
-{ read -r FREEZE_PID; read -r SELECTION; } < <(omarchy-capture-region "$MODE" --keep-freeze)
+  set_no_hw_cursors 0
+  { read -r FREEZE_PID; read -r SELECTION; } < <(omarchy-capture-region "$MODE" --keep-freeze)
+  ;;
+esac
 
 [[ -z $SELECTION ]] && exit 0
 
@@ -46,5 +56,7 @@ cp -f "$FILEPATH" "$TMPPATH"
 # Copy to Wayland clipboard
 wl-copy --type image/png <"$FILEPATH"
 
-omarchy-notification-send "Capture IA prête" "Image optimisée (max 1280px) copiée dans le presse-papier" \
+DIMENSIONS=$(magick identify -format "%wx%h" "$FILEPATH" 2>/dev/null || echo "1280px max")
+
+omarchy-notification-send "Capture IA directe prête" "Résolution réduite ($DIMENSIONS) copiée dans le presse-papier" \
   --image "$FILEPATH" -t 2500 || true
